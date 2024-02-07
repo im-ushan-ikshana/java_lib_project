@@ -35,7 +35,7 @@ dbName=LibDB
 url: The URL for connecting to the MySQL database. Change the port number (e.g., localhost:3306) based on your MySQL server's configuration. Feel free to modify the configuration according to your MySQL database setup.
 
 ### Building the Database 🛠️
-Run only the LIB_PROJECT.java Main Class to set up the SQL database. The database name is LibDB. Ensure that there is no existing database with this name before running.
-Inside the Config Properties file, replace your MySQL server details and save it before running the LIB_PROJECT.java Main Class.
+Run only the `LIB_PROJECT.java` Main Class to set up the SQL database. The database name is `LibDB`. Ensure that there is no existing database with this name before running.
+Inside the Config Properties file, replace your MySQL server details and save it before running the `LIB_PROJECT.java` Main Class.
 Feel free to modify this template to suit the specific details and structure of your project.
  
