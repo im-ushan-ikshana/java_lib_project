@@ -39,3 +39,17 @@ Run only the `LIB_PROJECT.java` Main Class to set up the SQL database. The datab
 Inside the Config Properties file, replace your MySQL server details and save it before running the `LIB_PROJECT.java` Main Class.
 Feel free to modify this template to suit the specific details and structure of your project.
  
+## Log In Information 🔐
+- **Username:** admin
+- **Password:** admin
+
+## Additional Links 🌐
+- [Report](REPORT.md)
+- [Database](DATABASE.md)
+
+## System Screenshots 📸
+1. ![Screenshot 1](SYSTEM_SS/system-1.png)
+2. ![Screenshot 2](SYSTEM_SS/system-2.png)
+3. ![Screenshot 3](SYSTEM_SS/system-3.png)
+4. ![Screenshot 4](SYSTEM_SS/system-4.png)
+5. ![Screenshot 5](SYSTEM_SS/system-5.png)
