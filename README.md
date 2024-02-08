@@ -1,17 +1,7 @@
-# Sri Premanda College Library Management System 📚
-
-## Authors 🧑‍💻
-- Ushan Ikshana (Main Developer and Team Leader)
-- Kezara Kulathunga
-- Dulanjika
-- Thulini
-- Sumayiya
-- Vinoshika
-- Sandani
-- Sujikaran
+# Library Management System 📚
 
 ## Purpose 🎯
-The Sri Premanda College Library Management System is designed to efficiently manage the library operations of Sri Premanda College. It facilitates tasks such as adding books, managing members, handling lending transactions, and more.
+College Library Management System is designed to efficiently manage the library operations of Sri Premanda College. It facilitates tasks such as adding books, managing members, handling lending transactions, and more.
 
 ## Database Configuration ⚙️
 ### config.properties
