@@ -43,6 +43,9 @@ public class SqlConnection {
                 );
                 return sqlConnection;
             } catch (ClassNotFoundException | SQLException e) {
+                System.out.println("The connection could not be established.");
+                System.out.println("Please check the configuration details in the properties file.");
+                System.out.println("Make sure the MySQL server is running.");
                 // Print stack trace for debugging purposes
                 e.printStackTrace();
             }
@@ -86,6 +89,9 @@ public class SqlConnection {
                 // Close the root connection
                 rootConnection.close();
             } catch (ClassNotFoundException | SQLException e) {
+                System.out.println("The database could not be created.");
+                System.out.println("Please check the configuration details in the properties file.");
+                System.out.println("Make sure the MySQL server is running.");
                 // Print stack trace for debugging purposes
                 e.printStackTrace();
             }
@@ -97,6 +103,9 @@ public class SqlConnection {
         try (FileInputStream input = new FileInputStream("config.properties")) {
             properties.load(input);
         } catch (IOException e) {
+            System.out.println("The properties file is not found.");
+            System.out.println("Please make sure the file is in the project root directory.");
+            // Print stack trace for debugging purposes
             e.printStackTrace();
         }
         return properties;
