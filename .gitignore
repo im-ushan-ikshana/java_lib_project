@@ -23,3 +23,8 @@ hs_err_pid*
 replay_pid*
 /LIB_PROJECT/nbproject/private/
 /LIB_PROJECT/build/
+
+# prevent from pushing the target directory - private connection properties and Tempory PDF files
+Receipts/
+*.pdf 
+config.properties
