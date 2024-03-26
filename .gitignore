@@ -27,5 +27,7 @@ replay_pid*
 # prevent from pushing the target directory - private connection properties and Tempory PDF files
 Receipts/
 *.pdf 
-/LIB_PROJECT/*.properties
+
+
+#marked as untracked in .gitignore   
 /LIB_PROJECT/config.properties
