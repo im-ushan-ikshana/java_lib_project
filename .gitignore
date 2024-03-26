@@ -27,4 +27,5 @@ replay_pid*
 # prevent from pushing the target directory - private connection properties and Tempory PDF files
 Receipts/
 *.pdf 
+/LIB_PROJECT/*.properties
 /LIB_PROJECT/config.properties
