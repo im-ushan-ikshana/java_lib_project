@@ -31,3 +31,4 @@ Receipts/
 
 #marked as untracked in .gitignore   
 /LIB_PROJECT/config.properties
+/LIB_PROJECT/dist/

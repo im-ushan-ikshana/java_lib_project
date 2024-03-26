@@ -4,6 +4,7 @@
  */
 package lib_project.guiFiles;
 
+import java.awt.Color;
 import javax.swing.JOptionPane;
 import javax.swing.UIManager;
 import lib_project.MainJFrameProperties;
@@ -22,18 +23,19 @@ public class FrogotPasswordPage extends MainJFrameProperties {
         MainJFrameProperties.MainFrame(this);
         this.setSize(super.width, super.height);
         close_messege(this);
-        UIManager.put("Button.arc", 999);
-        UIManager.put("TextComponent.arc", 999);
+        UIManager.put("Button.arc", 30);
+        UIManager.put("TextComponent.arc", 30);
         UIManager.put("Component.focusWidth", 3);
         initComponents();
+        jPanel2.setBackground(new Color(0,0,0,Math.round(255 * 0.8f)));
     }
 
     public FrogotPasswordPage(boolean call) {
         if (call) {
             MainJFrameProperties.MainFrame(this);
             this.setSize(super.width, super.height);
-            UIManager.put("Button.arc", 999);
-            UIManager.put("TextComponent.arc", 999);
+            UIManager.put("Button.arc", 30);
+            UIManager.put("TextComponent.arc", 30);
             UIManager.put("Component.focusWidth", 3);
             initComponents();
             close_messege(this);
@@ -52,7 +54,6 @@ public class FrogotPasswordPage extends MainJFrameProperties {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
         parentPanel = new javax.swing.JPanel();
         frogotPanel = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
@@ -71,9 +72,12 @@ public class FrogotPasswordPage extends MainJFrameProperties {
         jButton1 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setLocationByPlatform(true);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(0, 0, 0));
         jPanel1.setMinimumSize(new java.awt.Dimension(1280, 720));
@@ -82,11 +86,7 @@ public class FrogotPasswordPage extends MainJFrameProperties {
         jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("LIBRARY SYSTEM");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 580, -1, -1));
-
-        jLabel1.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lib_project/guiFiles/img/my_lib.jpg"))); // NOI18N
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 140, -1, 430));
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 590, -1, -1));
 
         parentPanel.setBackground(new java.awt.Color(255, 255, 255));
         parentPanel.setLayout(new java.awt.CardLayout());
@@ -164,7 +164,6 @@ public class FrogotPasswordPage extends MainJFrameProperties {
 
         jPasswordField3.setFont(new java.awt.Font("Segoe UI Emoji", 0, 18)); // NOI18N
         jPasswordField3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jPasswordField3.setText("jPasswordField1");
         jPasswordField3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jPasswordField3MouseClicked(evt);
@@ -178,7 +177,6 @@ public class FrogotPasswordPage extends MainJFrameProperties {
 
         jPasswordField4.setFont(new java.awt.Font("Segoe UI Emoji", 0, 18)); // NOI18N
         jPasswordField4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jPasswordField4.setText("jPasswordField1");
         jPasswordField4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jPasswordField4MouseClicked(evt);
@@ -219,7 +217,7 @@ public class FrogotPasswordPage extends MainJFrameProperties {
 
         parentPanel.add(changePassPanel, "card3");
 
-        jPanel1.add(parentPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 140, 510, 480));
+        jPanel1.add(parentPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 100, 510, 480));
 
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lib_project/guiFiles/img/back.png"))); // NOI18N
@@ -230,16 +228,25 @@ public class FrogotPasswordPage extends MainJFrameProperties {
         });
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 1280, Short.MAX_VALUE)
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1220, Short.MAX_VALUE)
         );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 720, Short.MAX_VALUE)
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 630, Short.MAX_VALUE)
         );
+
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 60, 1220, 630));
+
+        jLabel1.setForeground(new java.awt.Color(204, 0, 204));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lib_project/guiFiles/img/pattern.jpg"))); // NOI18N
+        jLabel1.setText("jLabel1");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -356,6 +363,7 @@ public class FrogotPasswordPage extends MainJFrameProperties {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JPasswordField jPasswordField2;
     private javax.swing.JPasswordField jPasswordField3;
     private javax.swing.JPasswordField jPasswordField4;

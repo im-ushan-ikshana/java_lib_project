@@ -19,8 +19,8 @@ import lib_project.sqlOperations.SqlConnection;
 public class MainJFrameProperties extends JFrame {
 
     // Default width and height for the frame
-    public int width = 1280;
-    public int height = 720;
+    public final int width = 1280;
+    public final int height = 720;
 
     /**
      * Configures the main properties of the JFrame.
