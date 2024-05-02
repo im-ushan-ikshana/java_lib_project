@@ -2573,11 +2573,6 @@ public class UserGUI extends MainJFrameProperties {
         parentPanel.add(DashBoard);
         parentPanel.repaint();
         parentPanel.revalidate();
-
-        jLabel43.setText(Book.getBookCount());
-        jLabel44.setText(Member.getMemberCount());
-        jLabel45.setText(Transaction.getTransactionCount());
-        jLabel46.setText(Transaction.getPaidTotalLateFees());
     }//GEN-LAST:event_jPanel1MouseClicked
 
     private void jPanel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel2MouseClicked
@@ -2585,22 +2580,6 @@ public class UserGUI extends MainJFrameProperties {
         parentPanel.add(CheckIn);
         parentPanel.repaint();
         parentPanel.revalidate();
-
-
-        //MemberDetails Panel
-        jLabel75.setText("( id: N/A)");
-        jLabel79.setText("N/A");
-        jLabel76.setText("N/A");
-
-        //Transaction Details Pannel
-        jLabel64.setText("( id: N/A)");
-        jLabel71.setText("N/A");
-        jLabel65.setText("N/A");
-
-        //Claculate Latefee Panel
-        jLabel62.setText("N/A");
-
-
     }//GEN-LAST:event_jPanel2MouseClicked
 
     private void jPanel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel3MouseClicked
@@ -2616,13 +2595,6 @@ public class UserGUI extends MainJFrameProperties {
         parentPanel.repaint();
         parentPanel.revalidate();
 
-        jTextField4.setText("Type Here");
-        jTextField5.setText("Type Here");
-        jTextField6.setText("Type Here");
-        jTextField7.setText("Type Here");
-        jTextField8.setText("Type Here (Optinal)");
-        jTextField9.setText("Type Here)");
-
     }//GEN-LAST:event_jPanel4MouseClicked
 
     private void jPanel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel5MouseClicked
@@ -2631,12 +2603,6 @@ public class UserGUI extends MainJFrameProperties {
         parentPanel.repaint();
         parentPanel.revalidate();
 
-        jTextField10.setText("Type Here");
-        jTextField11.setText("Type Here");
-        jTextField13.setText("Type Here");
-        jTextField14.setText("Type Here");
-        jTextField12.setText("Type Here (optional)");
-        jTextField15.setText("Type Here");
     }//GEN-LAST:event_jPanel5MouseClicked
 
     private void jPanel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel7MouseClicked
@@ -2775,43 +2741,43 @@ public class UserGUI extends MainJFrameProperties {
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jTextField3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField3MouseClicked
-        jTextField3.setText("");
+
     }//GEN-LAST:event_jTextField3MouseClicked
 
     private void jTextField4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField4MouseClicked
-        jTextField4.setText("");
+
     }//GEN-LAST:event_jTextField4MouseClicked
 
     private void jTextField5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField5MouseClicked
-        jTextField5.setText("");
+
     }//GEN-LAST:event_jTextField5MouseClicked
 
     private void jTextField6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField6MouseClicked
-        jTextField6.setText("");
+
     }//GEN-LAST:event_jTextField6MouseClicked
 
     private void jTextField7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField7MouseClicked
-        jTextField7.setText("");
+
     }//GEN-LAST:event_jTextField7MouseClicked
 
     private void jTextField8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField8MouseClicked
-        jTextField8.setText("");
+
     }//GEN-LAST:event_jTextField8MouseClicked
 
     private void jTextField9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField9MouseClicked
-        jTextField9.setText("");
+
     }//GEN-LAST:event_jTextField9MouseClicked
 
     private void jTextField10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField10MouseClicked
-        jTextField10.setText("");
+
     }//GEN-LAST:event_jTextField10MouseClicked
 
     private void jTextField11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField11MouseClicked
-        jTextField11.setText("");
+
     }//GEN-LAST:event_jTextField11MouseClicked
 
     private void jTextField12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField12MouseClicked
-        jTextField12.setText("");
+
     }//GEN-LAST:event_jTextField12MouseClicked
 
     private void jTable2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable2MouseClicked
@@ -2819,7 +2785,7 @@ public class UserGUI extends MainJFrameProperties {
     }//GEN-LAST:event_jTable2MouseClicked
 
     private void jTextField13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField13MouseClicked
-        jTextField13.setText("");
+
     }//GEN-LAST:event_jTextField13MouseClicked
 
     private void jTextField13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField13ActionPerformed
@@ -2827,7 +2793,7 @@ public class UserGUI extends MainJFrameProperties {
     }//GEN-LAST:event_jTextField13ActionPerformed
 
     private void jTextField14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField14MouseClicked
-        jTextField14.setText("");
+
     }//GEN-LAST:event_jTextField14MouseClicked
 
     private void jTextField14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField14ActionPerformed
@@ -2835,7 +2801,7 @@ public class UserGUI extends MainJFrameProperties {
     }//GEN-LAST:event_jTextField14ActionPerformed
 
     private void jTextField15MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField15MouseClicked
-        jTextField15.setText("");
+
     }//GEN-LAST:event_jTextField15MouseClicked
 
     private void jTextField15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField15ActionPerformed
@@ -2843,137 +2809,10 @@ public class UserGUI extends MainJFrameProperties {
     }//GEN-LAST:event_jTextField15ActionPerformed
 
     private void jButton6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton6MouseClicked
-        String memberID, memberName, memberTele, email, nic, address;
-
-        memberID = jTextField10.getText();
-        memberName = jTextField11.getText();
-        memberTele = jTextField13.getText();
-        email = jTextField14.getText();
-        nic = jTextField12.getText();
-        address = jTextField15.getText();
-
-        //validation
-        boolean validMemberID, validMemberName, validMemberTele, validEmail, validNIC, validAddress;
-        validMemberID = Validations.isValidMemberID(memberID);
-        validMemberName = Validations.isValidName(memberName) && !memberName.equals("Type Here");
-        validMemberTele = Validations.isValidTele(memberTele);
-        validEmail = Validations.isValidEmail(email);
-        validNIC = Validations.isValidNIC(nic);
-        validAddress = Validations.isAllString(address, 255) && !address.equals("Type Here");
-
-        if (validMemberID && validMemberName && validMemberTele && validEmail && validAddress) {
-            if (nic.equals("Type Here (optional)") || nic.isEmpty() || validNIC) {
-                if (!(Member.isMemberAlreadyExists(memberID))) {
-                    if (nic.equals("Type Here (optional)")) {
-                        nic = "NULL";
-                    }
-                    Member.regMember(memberID, memberName, address, (String) jComboBox3.getSelectedItem(), (String) jComboBox2.getSelectedItem(), nic, email, memberTele);
-                    MessageUtils.showMessage("New Member Registerd Successfully.", jLabel113, false);
-
-                    jTextField10.setText("Type Here");
-                    jTextField11.setText("Type Here");
-                    jTextField13.setText("Type Here");
-                    jTextField14.setText("Type Here");
-                    jTextField12.setText("Type Here (optional)");
-                    jTextField15.setText("Type Here");
-                } else {
-                    MessageUtils.showMessage("Member ID: " + memberID + " is already Registerd.", jTextField10, true);
-                }
-
-            }
-        } else {
-            if (!validMemberID) {
-                MessageUtils.showMessage("Invalid Member ID.", jTextField10, true);
-            }
-            if (!validMemberName) {
-                MessageUtils.showMessage("Invalid Name.", jTextField11, true);
-            }
-            if (!validMemberTele) {
-                MessageUtils.showMessage("Invalid Telephone Number.", jTextField13, true);
-            }
-            if (!validEmail) {
-                MessageUtils.showMessage("Invalid Email Address.", jTextField14, true);
-            }
-            if (!validNIC && !nic.isEmpty() && (!nic.equals("Type Here (optional)"))) {
-                MessageUtils.showMessage("Invalid NIC number.", jTextField12, true);
-            }
-            if (!validAddress) {
-                MessageUtils.showMessage("Invalid Address (length)", jTextField15, true);
-            }
-        }
-
 
     }//GEN-LAST:event_jButton6MouseClicked
 
     private void jButton4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton4MouseClicked
-        String bookID, bookTitle, author, isbn, barcode, price;
-        bookID = jTextField4.getText();
-        bookTitle = jTextField5.getText();
-        author = jTextField6.getText();
-        isbn = jTextField7.getText();
-        barcode = jTextField8.getText();
-        price = jTextField9.getText();
-
-        boolean isValidBookID, isValidBookTitle, isValidAuthor, isValidISBN, isValidBarcode, isValidPrice, isValidBookCount, isbnAlreadyExsits, bookIDAlreadyExsits;
-        isValidBookID = Validations.isValidBookID(bookID);
-        isValidBookTitle = Validations.isAllString(bookTitle, 255) && !bookTitle.equals("Type Here");
-        isValidAuthor = Validations.isValidName(author) && !author.equals("Type Here");
-        isValidISBN = Validations.isValidISBN(isbn);
-        isValidBarcode = Validations.isValidBarcode(barcode);
-        isValidPrice = Validations.isAllInt(price, 7);
-        isbnAlreadyExsits = Book.isIsbnAlreadyExists(isbn);
-        bookIDAlreadyExsits = Book.isBookIDAlreadyExists(bookID);
-
-        //book count validation
-        int count = (int) jSpinner1.getValue();
-        isValidBookCount = (count) > 0;
-
-        if (isValidBookID && isValidBookTitle && isValidAuthor && isValidISBN && isValidPrice && isValidBookCount && !isbnAlreadyExsits && !bookIDAlreadyExsits) {
-            if (barcode.isEmpty() || barcode.equals("Type Here (Optinal)")) {
-                barcode = "NULL";
-            }
-            Book.addBook(bookID, bookTitle, author, isbn, barcode, price, (String) jComboBox4.getSelectedItem(), count, (String) jComboBox5.getSelectedItem() + "-" + (String) jComboBox1.getSelectedItem());
-
-            //Set Text Feild to their Original state
-            jTextField4.setText("Type Here");
-            jTextField5.setText("Type Here");
-            jTextField6.setText("Type Here");
-            jTextField7.setText("Type Here");
-            jTextField8.setText("Type Here (Optinal)");
-            jTextField9.setText("Type Here");
-
-            //show Success Messege
-            MessageUtils.showMessage(count + " Book/Books Added to the Database. ", jLabel113, false);
-        } else {
-            if (!isValidBookID) {
-                MessageUtils.showMessage("Invalid Book Id", jTextField4, true);
-            }
-            if (!isValidBookTitle) {
-                MessageUtils.showMessage("Book Title Lenghth is High.", jTextField5, true);
-            }
-            if (!isValidAuthor) {
-                MessageUtils.showMessage("Auhtors name is Invalid.", jTextField6, true);
-            }
-            if (!isValidISBN) {
-                MessageUtils.showMessage("Invalid ISBN Number.", jTextField7, true);
-            }
-            if (!isValidBarcode && !barcode.equals("") && !barcode.equals("Type Here (Optinal)")) {
-                MessageUtils.showMessage("Invalid Barcode", jTextField8, true);
-            }
-            if (!isValidPrice) {
-                MessageUtils.showMessage("Price is Too High.", jTextField9, true);
-            }
-            if (!isValidBookCount) {
-                MessageUtils.showMessage("Book Count need to be positive.", jLabel113, true);
-            }
-            if (isbnAlreadyExsits) {
-                MessageUtils.showMessage("ISBN is duplicated. (input Valid ISBN)", jLabel113, true);
-            }
-            if (bookIDAlreadyExsits) {
-                MessageUtils.showMessage("Book ID is duplicated.", jLabel113, true);
-            }
-
-        }
 
     }//GEN-LAST:event_jButton4MouseClicked
 
@@ -2990,24 +2829,15 @@ public class UserGUI extends MainJFrameProperties {
     }//GEN-LAST:event_leftPanelComponentShown
 
     private void formComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_formComponentShown
-        jLabel21.setText(SystemVariables.getAdminUsername());
-
-        jLabel43.setText(Book.getBookCount());
-        jLabel44.setText(Member.getMemberCount());
-        jLabel45.setText(Transaction.getTransactionCount());
-        jLabel46.setText(Transaction.getPaidTotalLateFees());
+        
     }//GEN-LAST:event_formComponentShown
 
     private void jTextField3CaretUpdate(javax.swing.event.CaretEvent evt) {//GEN-FIRST:event_jTextField3CaretUpdate
-        // search page
-        DefaultTableModel model = (DefaultTableModel) jTable2.getModel();
-        MessageUtils.fillTheTable(model, LibrarySystem.searchBooks(jTextField3.getText()));
+        
     }//GEN-LAST:event_jTextField3CaretUpdate
 
     private void jTextField16MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField16MouseClicked
-        if( jTextField16.getText().equals("Type Here") ){
-            jTextField16.setText("");
-        }
+        
     }//GEN-LAST:event_jTextField16MouseClicked
 
     private void jTextField16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField16ActionPerformed
@@ -3015,9 +2845,7 @@ public class UserGUI extends MainJFrameProperties {
     }//GEN-LAST:event_jTextField16ActionPerformed
 
     private void jTextField17MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField17MouseClicked
-        if( jTextField17.getText().equals("Type Here") ){
-            jTextField17.setText("");
-        }
+        
     }//GEN-LAST:event_jTextField17MouseClicked
 
     private void jTextField17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField17ActionPerformed
@@ -3025,9 +2853,7 @@ public class UserGUI extends MainJFrameProperties {
     }//GEN-LAST:event_jTextField17ActionPerformed
 
     private void jTextField18MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField18MouseClicked
-        if( jTextField18.getText().equals("Type Here") ){
-            jTextField18.setText("");
-        }
+        
     }//GEN-LAST:event_jTextField18MouseClicked
 
     private void jTextField18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField18ActionPerformed
@@ -3035,9 +2861,7 @@ public class UserGUI extends MainJFrameProperties {
     }//GEN-LAST:event_jTextField18ActionPerformed
 
     private void jTextField19MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField19MouseClicked
-        if( jTextField19.getText().equals("Type Here") ){
-            jTextField19.setText("");
-        }
+
     }//GEN-LAST:event_jTextField19MouseClicked
 
     private void jTextField19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField19ActionPerformed
@@ -3147,19 +2971,6 @@ public class UserGUI extends MainJFrameProperties {
 
     private void clearLendingPage() {
 
-
-        //MemberDetails Panel
-        jLabel75.setText("( id: N/A)");
-        jLabel79.setText("N/A");
-        jLabel76.setText("N/A");
-
-        //Transaction Details Pannel
-        jLabel64.setText("( id: N/A)");
-        jLabel71.setText("N/A");
-        jLabel65.setText("N/A");
-
-        //Claculate Latefee Panel
-        jLabel62.setText("N/A");
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

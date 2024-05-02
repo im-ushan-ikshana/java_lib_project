@@ -2172,16 +2172,6 @@ public class AdminUserGUI extends MainJFrameProperties {
         parentPanel.add(MemberManage);
         parentPanel.repaint();
         parentPanel.revalidate();
-
-        jTextField9.setText("Disabled");
-        jTextField3.setText("Type Here");
-        jTextField4.setText("Type Here");
-        jTextField7.setText("Type Here");
-        jTextField8.setText("Type Here (Optinal)");
-        jTextField1.setText("Type Here");
-
-        jComboBox3.setSelectedIndex(0);
-        jComboBox2.setSelectedIndex(0);
     }//GEN-LAST:event_jPanel1MouseClicked
 
     private void jPanel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel2MouseClicked
@@ -2189,16 +2179,6 @@ public class AdminUserGUI extends MainJFrameProperties {
         parentPanel.add(BookManage);
         parentPanel.repaint();
         parentPanel.revalidate();
-
-        jTextField18.setText("Disabled");
-        jTextField12.setText("Type Here");
-        jTextField13.setText("Type Here");
-        jTextField14.setText("Type Here");
-        jTextField15.setText("Type Here(Optinal)");
-        jTextField16.setText("Type Here");
-        jComboBox4.setSelectedIndex(0);
-        jComboBox5.setSelectedIndex(0);
-        jComboBox1.setSelectedIndex(0);
     }//GEN-LAST:event_jPanel2MouseClicked
 
     private void jPanel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel3MouseClicked
@@ -2206,22 +2186,6 @@ public class AdminUserGUI extends MainJFrameProperties {
         parentPanel.add(PayLatefee);
         parentPanel.repaint();
         parentPanel.revalidate();
-
-        jTextField5.setText("Type Here");
-        jTextField6.setText("Type Here");
-
-        jLabel43.setText("");
-        jLabel48.setText("");
-        jLabel50.setText("");
-        jLabel52.setText("");
-        jLabel44.setText("");
-
-        jLabel56.setText("Rs . ");
-        jLabel58.setText("Rs . ");
-        jLabel54.setText("Rs . ");
-
-        DefaultTableModel model = (DefaultTableModel) jTable4.getModel();
-        model.setRowCount(0);
     }//GEN-LAST:event_jPanel3MouseClicked
 
     private void jPanel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel4MouseClicked
@@ -2229,7 +2193,6 @@ public class AdminUserGUI extends MainJFrameProperties {
         parentPanel.add(Administrator);
         parentPanel.repaint();
         parentPanel.revalidate();
-
     }//GEN-LAST:event_jPanel4MouseClicked
 
     private void jPanel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel5MouseClicked
@@ -2237,8 +2200,6 @@ public class AdminUserGUI extends MainJFrameProperties {
         parentPanel.add(LendingOperations);
         parentPanel.repaint();
         parentPanel.revalidate();
-
-        jTextField19.setText("keyword to search");
     }//GEN-LAST:event_jPanel5MouseClicked
 
     private void jPanel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel7MouseClicked
@@ -2329,121 +2290,47 @@ public class AdminUserGUI extends MainJFrameProperties {
     }//GEN-LAST:event_jTextField2ActionPerformed
 
     private void jTextField2CaretUpdate(javax.swing.event.CaretEvent evt) {//GEN-FIRST:event_jTextField2CaretUpdate
-        DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
-        MessageUtils.fillTheTable(model, Member.searchMember(jTextField2.getText()));
+
     }//GEN-LAST:event_jTextField2CaretUpdate
 
     private void jTextField2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField2MouseClicked
-        jTextField2.setText("");
+
     }//GEN-LAST:event_jTextField2MouseClicked
 
     private void jTable1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable1MouseClicked
-        String indexValue = MessageUtils.returnColomunValue("MemberID", jTable1, jLabel1);
-        String[] fullMemberDetailsArray = Member.getMemberDetails(indexValue);
-
-        jTextField9.setText(fullMemberDetailsArray[0]);
-        jTextField3.setText(fullMemberDetailsArray[1]);
-        jTextField4.setText(fullMemberDetailsArray[2]);
-
-        jComboBox3.setSelectedItem(fullMemberDetailsArray[3]);
-        jComboBox2.setSelectedItem(fullMemberDetailsArray[4]);
-
-        jTextField7.setText(fullMemberDetailsArray[5]);
-        jTextField8.setText(fullMemberDetailsArray[7]);
-        jTextField1.setText(fullMemberDetailsArray[6]);
-
 
     }//GEN-LAST:event_jTable1MouseClicked
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
 
-        if (!jTextField9.getText().equals("Disabled") && Member.isValidMember(jTextField9.getText())) {
-            JOptionPane.showMessageDialog(null, "Other user related data will be removed permently..", "Warning", JOptionPane.WARNING_MESSAGE);
-
-            // Show a Yes/No dialog and get the user's choice
-            int choice = JOptionPane.showConfirmDialog(null, "Do you want to proceed?", "Confirmation", JOptionPane.YES_NO_OPTION);
-
-            // Check the user's choice
-            if (choice == JOptionPane.YES_OPTION) {
-                Member.removeMember(jTextField9.getText());
-                MessageUtils.showMessage("Member Removed...", jLabel74, false);
-
-                DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
-                MessageUtils.fillTheTable(model, Member.searchMember(jTextField2.getText()));
-            } else {
-                MessageUtils.showMessage("Operation Canceled...", jLabel74, true);
-            }
-        } else {
-            MessageUtils.showMessage("Invalid Member ID ...", jLabel74, true);
-        }
     }//GEN-LAST:event_jButton1MouseClicked
 
     private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
-        boolean validName, validAddress, validNIC, validTel, validEmail;
-
-        validName = Validations.isValidName(jTextField3.getText()) && (!jTextField3.getText().equals("Type Here")) && (!jTextField3.getText().equals(""));
-        validAddress = Validations.isAllString(jTextField4.getText(), 255) && !jTextField4.getText().equals("Type Here") && !jTextField4.getText().equals("");
-        validTel = Validations.isValidTele(jTextField8.getText()) && !jTextField8.getText().equals("Type Here") && !jTextField8.getText().equals("");
-        validEmail = Validations.isValidEmail(jTextField1.getText()) && !jTextField1.getText().equals("Type Here") && !jTextField1.getText().equals("");
-
-        String NIC;
-        NIC = jTextField7.getText().equals("Type Here (Optinal)") || jTextField7.getText().equals("") ? "NULL" : jTextField7.getText();
-        validNIC = NIC.equals("NULL") || Validations.isValidNIC(NIC);
-        if (validName && validAddress && validTel && validEmail && validNIC) {
-
-            int choice = JOptionPane.showConfirmDialog(null, "Do you want to proceed?", "Confirmation", JOptionPane.YES_NO_OPTION);
-            if (choice == JOptionPane.YES_OPTION) {
-                Member.updateMember(jTextField9.getText(), jTextField3.getText(), jTextField4.getText(), (String) jComboBox3.getSelectedItem(), (String) jComboBox2.getSelectedItem(), NIC, jTextField1.getText(), jTextField8.getText());
-                MessageUtils.showMessage("Member Details Updated...", jLabel74, false);
-
-                DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
-                MessageUtils.fillTheTable(model, Member.searchMember(jTextField2.getText()));
-            } else {
-                MessageUtils.showMessage("Operation Canceled...", jLabel74, true);
-            }
-        } else {
-            if (!validName) {
-                MessageUtils.showMessage("Invalid Name", jTextField3, true);
-            }
-            if (!validAddress) {
-                MessageUtils.showMessage("Invalid Address", jTextField4, true);
-            }
-            if (!validNIC) {
-                MessageUtils.showMessage("Invalid NIC", jTextField7, true);
-            }
-            if (!validTel) {
-                MessageUtils.showMessage("Invalid Telephone Number", jTextField8, true);
-            }
-            if (!validEmail) {
-                MessageUtils.showMessage("Invalid Email", jTextField1, true);
-            }
-        }
-
+        
     }//GEN-LAST:event_jButton2MouseClicked
 
     private void jTextField3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField3MouseClicked
-        jTextField3.setText("");
+        
     }//GEN-LAST:event_jTextField3MouseClicked
 
     private void jTextField4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField4MouseClicked
-        jTextField4.setText("");
+        
     }//GEN-LAST:event_jTextField4MouseClicked
 
     private void jTextField7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField7MouseClicked
-        jTextField7.setText("");
+        
     }//GEN-LAST:event_jTextField7MouseClicked
 
     private void jTextField8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField8MouseClicked
-        jTextField8.setText("");
+       
     }//GEN-LAST:event_jTextField8MouseClicked
 
     private void jTextField1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField1MouseClicked
-        jTextField1.setText("");
+        
     }//GEN-LAST:event_jTextField1MouseClicked
 
     private void jTextField11CaretUpdate(javax.swing.event.CaretEvent evt) {//GEN-FIRST:event_jTextField11CaretUpdate
-        DefaultTableModel model = (DefaultTableModel) jTable2.getModel();
-        MessageUtils.fillTheTable(model, LibrarySystem.searchBooks(jTextField11.getText()));
+        
     }//GEN-LAST:event_jTextField11CaretUpdate
 
     private void jTextField18MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField18MouseClicked
@@ -2451,265 +2338,103 @@ public class AdminUserGUI extends MainJFrameProperties {
     }//GEN-LAST:event_jTextField18MouseClicked
 
     private void jTextField12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField12MouseClicked
-        jTextField12.setText("");
+        
     }//GEN-LAST:event_jTextField12MouseClicked
 
     private void jTextField13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField13MouseClicked
-        jTextField13.setText("");
+        
     }//GEN-LAST:event_jTextField13MouseClicked
 
     private void jTextField14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField14MouseClicked
-        jTextField14.setText("");
+        
     }//GEN-LAST:event_jTextField14MouseClicked
 
     private void jTextField15MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField15MouseClicked
-        jTextField15.setText("");
+        
     }//GEN-LAST:event_jTextField15MouseClicked
 
     private void jTextField16MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField16MouseClicked
-        jTextField16.setText("");
+        
     }//GEN-LAST:event_jTextField16MouseClicked
 
     private void jTextArea1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextArea1MouseClicked
-        jTextArea1.setText("");
+        
     }//GEN-LAST:event_jTextArea1MouseClicked
 
     private void jTextField11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField11MouseClicked
-        jTextField11.setText("");
+        
     }//GEN-LAST:event_jTextField11MouseClicked
 
     private void jTable2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable2MouseClicked
-        String indexValue = MessageUtils.returnColomunValue("CopyID", jTable2, jLabel74);
-        String[] bookCopyInfoArray = Book.getBookCopyInfo(indexValue);
-        String[] bookInfoArray = Book.getBookInfo((String) bookCopyInfoArray[1]);
-
-        jTextField18.setText(bookCopyInfoArray[0]);
-        jTextField12.setText(bookInfoArray[1]);
-        jTextField13.setText(bookInfoArray[2]);
-        jTextField14.setText(bookInfoArray[3]);
-        if (bookInfoArray[4] == null) {
-            bookInfoArray[4] = "";
-        } else {
-            bookInfoArray[4] = bookInfoArray[4].equals("NULL") ? "" : bookInfoArray[4];
-        }
-
-        jTextField15.setText(bookInfoArray[4]);
-        jTextField16.setText(bookInfoArray[5] = !bookInfoArray[5].equals("") ? String.format("%.0f", Float.parseFloat(bookInfoArray[5])) : "value_error");
-        jComboBox4.setSelectedItem(bookInfoArray[6]);
-        jComboBox5.setSelectedItem(String.valueOf(bookCopyInfoArray[3].charAt(0)));
-        jComboBox1.setSelectedItem((String.valueOf(bookCopyInfoArray[3].charAt(2))));
-        jTextArea1.setText(bookCopyInfoArray[4]);
+        
     }//GEN-LAST:event_jTable2MouseClicked
 
     private void jButton4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton4MouseClicked
-        boolean validTitle, validAuthor, validISBN, validBarcode, validPrice, validCondition, validBookCopyID;
-
-        validTitle = Validations.isAllString(jTextField12.getText(), 255) && !jTextField12.getText().equals("Type Here") && !jTextField12.getText().equals("");
-        validAuthor = Validations.isValidName(jTextField13.getText()) && !jTextField13.getText().equals("Type Here") && !jTextField13.getText().equals("");
-        validISBN = Validations.isValidISBN(jTextField14.getText()) && !jTextField14.getText().equals("Type Here") && !jTextField14.getText().equals("");
-        validBarcode = !jTextField15.getText().equals("Type Here(Optinal)") && !jTextField15.getText().equals("") ? Validations.isValidBarcode(jTextField15.getText()) : true;
-        validPrice = Validations.isAllInt(jTextField16.getText(), 8) && !jTextField16.getText().equals("Type Here") && !jTextField16.getText().equals("");
-        validCondition = Validations.isAllString(jTextArea1.getText(), 255) && !jTextArea1.getText().equals("");
-        validBookCopyID = Validations.isValidBookCopyID(jTextField18.getText());
-
-        if (validAuthor && validBarcode && validISBN && validPrice && validTitle && validCondition) {
-            String barCode = jTextField15.getText().equals("Type Here(Optinal)") || jTextField15.getText().equals("") ? "NULL" : jTextField15.getText();
-            int choice = JOptionPane.showConfirmDialog(null, "Do you want to proceed?", "Confirmation", JOptionPane.YES_NO_OPTION);
-            if (choice == JOptionPane.YES_OPTION) {
-                Book.updateBookData(jTextField18.getText(), jTextField12.getText(), jTextField13.getText(), jTextField14.getText(), barCode, jTextField16.getText(), (String) jComboBox4.getSelectedItem(), (String) jComboBox5.getSelectedItem() + "-" + (String) jComboBox1.getSelectedItem(), jTextArea1.getText());
-                MessageUtils.showMessage("Book (copy) Details Updated...", jLabel74, false);
-
-                DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
-                MessageUtils.fillTheTable(model, Member.searchMember(jTextField2.getText()));
-
-                jTextField18.setText("Disabled");
-                jTextField12.setText("Type Here");
-                jTextField13.setText("Type Here");
-                jTextField14.setText("Type Here");
-                jTextField15.setText("Type Here(Optinal)");
-                jTextField16.setText("Type Here");
-                jComboBox4.setSelectedIndex(0);
-                jComboBox5.setSelectedIndex(0);
-                jComboBox1.setSelectedIndex(0);
-            } else {
-                MessageUtils.showMessage("Operation Canceled...", jLabel74, true);
-            }
-        } else {
-            if (!validAuthor) {
-                MessageUtils.showMessage("Invalid Auhtor Name", jTextField13, true);
-            }
-            if (!validBarcode) {
-                MessageUtils.showMessage("Invalid Barcode", jTextField15, true);
-            }
-            if (!validCondition) {
-                MessageUtils.showMessage("Book Condition : Data Length exceed or Empty", jLabel74, true);
-            }
-            if (!validISBN) {
-                MessageUtils.showMessage("Invalid ISBN", jTextField14, true);
-            }
-            if (!validPrice) {
-                MessageUtils.showMessage("Invalid Price", jTextField16, true);
-            }
-            if (!validTitle) {
-                MessageUtils.showMessage("Invalid Title", jTextField12, true);
-            }
-            if (!validBookCopyID) {
-                MessageUtils.showMessage("Invalid BookCopyID.", jLabel74, true);
-            }
-        }
+        
     }//GEN-LAST:event_jButton4MouseClicked
 
     private void jButton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseClicked
-        if (!jTextField18.getText().equals("Disabled") && Book.isBookCopyIDAlreadyExists(jTextField18.getText())) {
-            int choice = JOptionPane.showConfirmDialog(null, "Do you want to proceed?", "Confirmation", JOptionPane.YES_NO_OPTION);
-            if (choice == JOptionPane.YES_OPTION) {
-                Book.removeBookCopy(jTextField18.getText());
-                MessageUtils.showMessage("Book (copy) is Removed.", jLabel74, false);
-
-                DefaultTableModel model = (DefaultTableModel) jTable2.getModel();
-                MessageUtils.fillTheTable(model, LibrarySystem.searchBooks(jTextField11.getText()));
-            } else {
-                MessageUtils.showMessage("Operation Canceled...", jLabel74, true);
-            }
-        } else {
-            MessageUtils.showMessage("Invalid Member ID", jLabel74, true);
-        }
+        
     }//GEN-LAST:event_jButton3MouseClicked
 
     private void jTextField19CaretUpdate(javax.swing.event.CaretEvent evt) {//GEN-FIRST:event_jTextField19CaretUpdate
-        DefaultTableModel model = (DefaultTableModel) jTable3.getModel();
-        MessageUtils.fillTheTable(model, Transaction.searchTransactions(jTextField19.getText()));
+        
     }//GEN-LAST:event_jTextField19CaretUpdate
 
     private void jTextField19MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField19MouseClicked
-        jTextField19.setText("");
+        
     }//GEN-LAST:event_jTextField19MouseClicked
 
     private void jTable3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable3MouseClicked
-        String indexValue = MessageUtils.returnColomunValue("TransactionID", jTable3, jLabel74);
-
-        int choice = JOptionPane.showConfirmDialog(null, "Do you want to remove Transaction ID: " + indexValue + " ?", "Confirmation", JOptionPane.YES_NO_OPTION);
-        if (choice == JOptionPane.YES_OPTION) {
-            String msg = Transaction.removeWrongLendingOps(indexValue);
-            MessageUtils.showMessage(msg, jLabel74, false);
-
-            DefaultTableModel model = (DefaultTableModel) jTable3.getModel();
-            MessageUtils.fillTheTable(model, Transaction.searchTransactions(jTextField19.getText()));
-        } else {
-            MessageUtils.showMessage("Operation Canceled...", jLabel74, true);
-        }
+        
     }//GEN-LAST:event_jTable3MouseClicked
 
     private void jTextField5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField5MouseClicked
-        jTextField5.setText("");
+        
     }//GEN-LAST:event_jTextField5MouseClicked
 
     private void jTextField6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField6MouseClicked
-        jTextField6.setText("");
+        
     }//GEN-LAST:event_jTextField6MouseClicked
 
     private void jButton5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton5MouseClicked
-        boolean validAmount, validMemberID, validTotal;
-        validAmount = false;
-        validTotal = false;
-        validMemberID = !jTextField5.getText().equals("Type Here") && !jTextField5.getText().equals("") && Member.isValidMember(jTextField5.getText());
-        try {
-            validAmount = Double.parseDouble(jTextField6.getText()) >= Double.parseDouble(Member.getTotalUnpaidLateFees(jTextField5.getText())) ? true : false;
-            validTotal = Double.parseDouble(Member.getTotalUnpaidLateFees(jTextField5.getText())) > 0.0d ? true : false;
-        } catch (Exception e) {
-            //e.printStackTrace();
-        }
-        if (Validations.isAllInt(jTextField6.getText(), 6) && validAmount && validMemberID && validTotal) {
-            jLabel58.setText("Rs. " + jTextField6.getText());
-            jLabel54.setText("Rs. " + String.format("%.2f", (Double.parseDouble(jTextField6.getText()) - Double.parseDouble(Member.getTotalUnpaidLateFees(jTextField5.getText())))));
-            MessageUtils.makeReceipt(jLabel48.getText(), jLabel43.getText(), jLabel50.getText(), jLabel52.getText(), jLabel44.getText(), jLabel56.getText(), jLabel58.getText(), jLabel54.getText(), SystemVariables.getAdminUsername());
-            Transaction.payLateFee(jLabel48.getText(), true);
-        } else {
-            if (!validMemberID) {
-                MessageUtils.showMessage("Invalid Member...", jLabel74, true);
-            } else if (!validTotal) {
-                MessageUtils.showMessage("Invalid Latefee Amount...", jLabel74, true);
-            } else {
-                MessageUtils.showMessage("Invalid Value for Payment amount.", jLabel74, true);
-            }
-        }
 
     }//GEN-LAST:event_jButton5MouseClicked
 
     private void jTextField5CaretUpdate(javax.swing.event.CaretEvent evt) {//GEN-FIRST:event_jTextField5CaretUpdate
-        if (Member.isValidMember(jTextField5.getText()) && !jTextField5.getText().equals("Type Here")) {
-            String[] memberDetails = Member.getMemberDetails(jTextField5.getText());
-
-            jLabel43.setText(memberDetails[1]);
-            jLabel48.setText(memberDetails[0]);
-            jLabel50.setText(memberDetails[7]);
-            jLabel52.setText(memberDetails[6]);
-            jLabel44.setText(memberDetails[4]);
-
-            jLabel56.setText("Rs. " + String.format("%.2f", Double.parseDouble(Member.getTotalUnpaidLateFees(jTextField5.getText()))));
-            jLabel58.setText("Rs .___");
-            jLabel54.setText("Rs .___");
-
-            DefaultTableModel model = (DefaultTableModel) jTable4.getModel();
-            MessageUtils.fillTheTable(model, Transaction.getMemberLatefeeReport(jTextField5.getText()));
-        } else {
-            jLabel43.setText("");
-            jLabel48.setText("");
-            jLabel50.setText("");
-            jLabel52.setText("");
-            jLabel44.setText("");
-
-            jLabel56.setText("Rs . ");
-            jLabel58.setText("Rs . ");
-            jLabel54.setText("Rs . ");
-
-            DefaultTableModel model = (DefaultTableModel) jTable4.getModel();
-            model.setRowCount(0);
-        }
+        
     }//GEN-LAST:event_jTextField5CaretUpdate
 
     private void jTextField23MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField23MouseClicked
-        if (jTextField23.getText().equals("Type Here") && jTextField23.isEditable()) {
-            jTextField23.setText("");
-        }
+        
     }//GEN-LAST:event_jTextField23MouseClicked
 
     private void jTextField17MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField17MouseClicked
-        if (jTextField17.getText().equals("Type Here") && jTextField17.isEditable()) {
-            jTextField17.setText("");
-        }
+        
     }//GEN-LAST:event_jTextField17MouseClicked
 
     private void jPasswordField2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPasswordField2MouseClicked
-        jPasswordField2.setText("");
+        
     }//GEN-LAST:event_jPasswordField2MouseClicked
 
     private void jPasswordField1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPasswordField1MouseClicked
-        jPasswordField1.setText("");
+        
     }//GEN-LAST:event_jPasswordField1MouseClicked
 
     private void jTextField20MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField20MouseClicked
-        if (jTextField20.getText().equals("Type Here") && jTextField20.isEditable()) {
-            jTextField20.setText("");
-        }
+        
     }//GEN-LAST:event_jTextField20MouseClicked
 
     private void jTextField21MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField21MouseClicked
-        if (jTextField21.getText().equals("Type Here") && jTextField21.isEditable()) {
-            jTextField21.setText("");
-        }
+        
     }//GEN-LAST:event_jTextField21MouseClicked
 
     private void jTextField22MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField22MouseClicked
-        if (jTextField22.getText().equals("Type Here") && jTextField22.isEditable()) {
-            jTextField22.setText("");
-        }
+        
     }//GEN-LAST:event_jTextField22MouseClicked
 
     private void jTextField24MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField24MouseClicked
-        if (jTextField24.getText().equals("Type Here") && jTextField24.isEditable()) {
-            jTextField24.setText("");
-        }
+        
     }//GEN-LAST:event_jTextField24MouseClicked
 
     private void jButton9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton9MouseClicked
@@ -2721,7 +2446,7 @@ public class AdminUserGUI extends MainJFrameProperties {
     }//GEN-LAST:event_jTextField25MouseClicked
 
     private void formComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_formComponentShown
-        jLabel21.setText(SystemVariables.getAdminUsername());
+        
     }//GEN-LAST:event_formComponentShown
 
     private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
@@ -2826,9 +2551,7 @@ public class AdminUserGUI extends MainJFrameProperties {
     }//GEN-LAST:event_jPanel11MouseExited
 
     private void jTextField35MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField35MouseClicked
-        if( jTextField17.getText().equals("Type Here") ){
-            jTextField17.setText("");
-        }
+        
     }//GEN-LAST:event_jTextField35MouseClicked
 
     private void jTextField35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField35ActionPerformed

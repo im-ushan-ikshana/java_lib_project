@@ -58,7 +58,6 @@ public class LoginPage extends MainJFrameProperties {
         jLabel5 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jPasswordField1 = new javax.swing.JPasswordField();
@@ -99,11 +98,6 @@ public class LoginPage extends MainJFrameProperties {
         jLabel4.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 330, 380, -1));
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 40)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 153, 0));
-        jLabel2.setText("Login Account");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 270, -1, -1));
-
         jLabel8.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(0, 102, 255));
         jLabel8.setText("forgot password?");
@@ -112,7 +106,7 @@ public class LoginPage extends MainJFrameProperties {
                 jLabel8MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 560, -1, -1));
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 520, -1, -1));
 
         jButton1.setBackground(new java.awt.Color(0, 153, 0));
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -123,7 +117,7 @@ public class LoginPage extends MainJFrameProperties {
                 jButton1MouseClicked(evt);
             }
         });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 590, 140, 50));
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 560, 140, 50));
 
         jPasswordField1.setForeground(new java.awt.Color(102, 102, 102));
         jPasswordField1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -132,7 +126,7 @@ public class LoginPage extends MainJFrameProperties {
                 jPasswordField1MouseClicked(evt);
             }
         });
-        jPanel1.add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 500, 360, 50));
+        jPanel1.add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 460, 360, 50));
 
         jTextField1.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
         jTextField1.setForeground(new java.awt.Color(102, 102, 102));
@@ -143,7 +137,7 @@ public class LoginPage extends MainJFrameProperties {
                 jTextField1MouseClicked(evt);
             }
         });
-        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 440, 360, 50));
+        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 400, 360, 50));
 
         jLabel7.setFont(new java.awt.Font("Rockwell", 0, 12)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 153, 0));
@@ -159,24 +153,16 @@ public class LoginPage extends MainJFrameProperties {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jTextField1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField1MouseClicked
-        jTextField1.setText("");
+
     }//GEN-LAST:event_jTextField1MouseClicked
 
     private void jPasswordField1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPasswordField1MouseClicked
-        jPasswordField1.setText("");
-        if (jTextField1.getText().isEmpty()) {
-            jTextField1.setText("username");
-        }
+       
     }//GEN-LAST:event_jPasswordField1MouseClicked
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
 
-        if (Admin.userLogIn(jTextField1.getText(), jPasswordField1.getText())) {
-            SystemVariables.setAdminUsername(jTextField1.getText());
-            this.dispose();
-            new UserGUI(true);
-
-        }
+        
     }//GEN-LAST:event_jButton1MouseClicked
 
     private void jLabel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseClicked
@@ -223,7 +209,6 @@ public class LoginPage extends MainJFrameProperties {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
