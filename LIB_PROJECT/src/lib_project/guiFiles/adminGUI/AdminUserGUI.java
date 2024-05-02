@@ -89,12 +89,20 @@ public class AdminUserGUI extends MainJFrameProperties {
         jLabel20 = new javax.swing.JLabel();
         jLabel21 = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
+        jPanel11 = new javax.swing.JPanel();
+        jLabel93 = new javax.swing.JLabel();
         jLabel74 = new javax.swing.JLabel();
         parentPanel = new javax.swing.JPanel();
         MemberManage = new javax.swing.JPanel();
         jSeparator1 = new javax.swing.JSeparator();
         jLabel1 = new javax.swing.JLabel();
         jSeparator2 = new javax.swing.JSeparator();
+        jTextField2 = new javax.swing.JTextField();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
+        jLabel30 = new javax.swing.JLabel();
+        jTabbedPane1 = new javax.swing.JTabbedPane();
+        jPanel12 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
@@ -104,25 +112,55 @@ public class AdminUserGUI extends MainJFrameProperties {
         jLabel14 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
         jTextField3 = new javax.swing.JTextField();
         jTextField4 = new javax.swing.JTextField();
         jTextField7 = new javax.swing.JTextField();
         jTextField8 = new javax.swing.JTextField();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
-        jLabel29 = new javax.swing.JLabel();
         jTextField9 = new javax.swing.JTextField();
-        jLabel30 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
         jComboBox2 = new javax.swing.JComboBox<>();
         jComboBox3 = new javax.swing.JComboBox<>();
+        jButton2 = new javax.swing.JButton();
+        jPanel13 = new javax.swing.JPanel();
+        jButton1 = new javax.swing.JButton();
+        jLabel18 = new javax.swing.JLabel();
+        jPanel25 = new javax.swing.JPanel();
+        jLabel164 = new javax.swing.JLabel();
+        jLabel165 = new javax.swing.JLabel();
+        jLabel166 = new javax.swing.JLabel();
+        jLabel167 = new javax.swing.JLabel();
+        jLabel168 = new javax.swing.JLabel();
+        jLabel169 = new javax.swing.JLabel();
+        jLabel170 = new javax.swing.JLabel();
+        jLabel171 = new javax.swing.JLabel();
+        jLabel172 = new javax.swing.JLabel();
+        jLabel173 = new javax.swing.JLabel();
+        jLabel174 = new javax.swing.JLabel();
+        jLabel175 = new javax.swing.JLabel();
+        jLabel205 = new javax.swing.JLabel();
+        jLabel206 = new javax.swing.JLabel();
+        jLabel207 = new javax.swing.JLabel();
+        jScrollPane6 = new javax.swing.JScrollPane();
+        jTable5 = new javax.swing.JTable();
+        jLabel19 = new javax.swing.JLabel();
+        jPanel14 = new javax.swing.JPanel();
+        jLabel29 = new javax.swing.JLabel();
         jLabel80 = new javax.swing.JLabel();
+        jScrollPane7 = new javax.swing.JScrollPane();
+        jTextArea2 = new javax.swing.JTextArea();
+        jButton6 = new javax.swing.JButton();
+        jLabel81 = new javax.swing.JLabel();
         BookManage = new javax.swing.JPanel();
         jSeparator3 = new javax.swing.JSeparator();
         jLabel4 = new javax.swing.JLabel();
         jSeparator4 = new javax.swing.JSeparator();
+        jTextField11 = new javax.swing.JTextField();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTable2 = new javax.swing.JTable();
+        jLabel40 = new javax.swing.JLabel();
+        jLabel78 = new javax.swing.JLabel();
+        jLabel79 = new javax.swing.JLabel();
+        jTabbedPane2 = new javax.swing.JTabbedPane();
+        jPanel15 = new javax.swing.JPanel();
         jLabel31 = new javax.swing.JLabel();
         jLabel32 = new javax.swing.JLabel();
         jLabel33 = new javax.swing.JLabel();
@@ -131,27 +169,44 @@ public class AdminUserGUI extends MainJFrameProperties {
         jLabel36 = new javax.swing.JLabel();
         jLabel37 = new javax.swing.JLabel();
         jLabel38 = new javax.swing.JLabel();
-        jTextField11 = new javax.swing.JTextField();
         jTextField12 = new javax.swing.JTextField();
         jTextField13 = new javax.swing.JTextField();
         jTextField14 = new javax.swing.JTextField();
         jTextField15 = new javax.swing.JTextField();
         jTextField16 = new javax.swing.JTextField();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        jTable2 = new javax.swing.JTable();
-        jLabel39 = new javax.swing.JLabel();
         jTextField18 = new javax.swing.JTextField();
-        jLabel40 = new javax.swing.JLabel();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
         jComboBox4 = new javax.swing.JComboBox<>();
         jComboBox1 = new javax.swing.JComboBox<>();
         jComboBox5 = new javax.swing.JComboBox<>();
         jLabel75 = new javax.swing.JLabel();
         jScrollPane4 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
-        jLabel78 = new javax.swing.JLabel();
-        jLabel79 = new javax.swing.JLabel();
+        jButton4 = new javax.swing.JButton();
+        jPanel16 = new javax.swing.JPanel();
+        jPanel26 = new javax.swing.JPanel();
+        jLabel176 = new javax.swing.JLabel();
+        jLabel177 = new javax.swing.JLabel();
+        jLabel178 = new javax.swing.JLabel();
+        jLabel179 = new javax.swing.JLabel();
+        jLabel180 = new javax.swing.JLabel();
+        jLabel181 = new javax.swing.JLabel();
+        jLabel182 = new javax.swing.JLabel();
+        jLabel183 = new javax.swing.JLabel();
+        jLabel184 = new javax.swing.JLabel();
+        jLabel185 = new javax.swing.JLabel();
+        jLabel186 = new javax.swing.JLabel();
+        jLabel187 = new javax.swing.JLabel();
+        jLabel188 = new javax.swing.JLabel();
+        jLabel189 = new javax.swing.JLabel();
+        jCheckBox1 = new javax.swing.JCheckBox();
+        jLabel208 = new javax.swing.JLabel();
+        jLabel209 = new javax.swing.JLabel();
+        jLabel210 = new javax.swing.JLabel();
+        jLabel211 = new javax.swing.JLabel();
+        jLabel212 = new javax.swing.JLabel();
+        jLabel82 = new javax.swing.JLabel();
+        jButton3 = new javax.swing.JButton();
+        jLabel39 = new javax.swing.JLabel();
         PayLatefee = new javax.swing.JPanel();
         jSeparator5 = new javax.swing.JSeparator();
         jLabel7 = new javax.swing.JLabel();
@@ -186,10 +241,13 @@ public class AdminUserGUI extends MainJFrameProperties {
         jScrollPane5 = new javax.swing.JScrollPane();
         jTable4 = new javax.swing.JTable();
         jLabel16 = new javax.swing.JLabel();
+        jLabel83 = new javax.swing.JLabel();
         Administrator = new javax.swing.JPanel();
         jSeparator7 = new javax.swing.JSeparator();
         jLabel10 = new javax.swing.JLabel();
         jSeparator8 = new javax.swing.JSeparator();
+        jTabbedPane3 = new javax.swing.JTabbedPane();
+        currentAdmin = new javax.swing.JPanel();
         jLabel61 = new javax.swing.JLabel();
         jLabel62 = new javax.swing.JLabel();
         jLabel63 = new javax.swing.JLabel();
@@ -209,18 +267,38 @@ public class AdminUserGUI extends MainJFrameProperties {
         jPasswordField1 = new javax.swing.JPasswordField();
         jPasswordField2 = new javax.swing.JPasswordField();
         jLabel69 = new javax.swing.JLabel();
-        jPanel11 = new javax.swing.JPanel();
-        jLabel70 = new javax.swing.JLabel();
-        jLabel71 = new javax.swing.JLabel();
-        jLabel72 = new javax.swing.JLabel();
-        jTextField10 = new javax.swing.JTextField();
-        jLabel73 = new javax.swing.JLabel();
+        otherAdminPanel = new javax.swing.JPanel();
+        otherAdminLoginPanel = new javax.swing.JPanel();
+        jPanel20 = new javax.swing.JPanel();
+        jTextField26 = new javax.swing.JTextField();
         jPasswordField3 = new javax.swing.JPasswordField();
+        jLabel70 = new javax.swing.JLabel();
+        jLabel72 = new javax.swing.JLabel();
         jButton10 = new javax.swing.JButton();
-        jRadioButton1 = new javax.swing.JRadioButton();
-        jRadioButton2 = new javax.swing.JRadioButton();
-        jRadioButton3 = new javax.swing.JRadioButton();
         jLabel17 = new javax.swing.JLabel();
+        otherAdminUpdatePanel = new javax.swing.JPanel();
+        jLabel73 = new javax.swing.JLabel();
+        jLabel84 = new javax.swing.JLabel();
+        jLabel85 = new javax.swing.JLabel();
+        jLabel86 = new javax.swing.JLabel();
+        jLabel87 = new javax.swing.JLabel();
+        jLabel88 = new javax.swing.JLabel();
+        jTextField27 = new javax.swing.JTextField();
+        jTextField28 = new javax.swing.JTextField();
+        jTextField29 = new javax.swing.JTextField();
+        jTextField30 = new javax.swing.JTextField();
+        jTextField31 = new javax.swing.JTextField();
+        jLabel89 = new javax.swing.JLabel();
+        jTextField32 = new javax.swing.JTextField();
+        jLabel90 = new javax.swing.JLabel();
+        jTextField33 = new javax.swing.JTextField();
+        jButton11 = new javax.swing.JButton();
+        jPasswordField4 = new javax.swing.JPasswordField();
+        jPasswordField5 = new javax.swing.JPasswordField();
+        jLabel91 = new javax.swing.JLabel();
+        jButton12 = new javax.swing.JButton();
+        jLabel71 = new javax.swing.JLabel();
+        jLabel98 = new javax.swing.JLabel();
         LendingOperations = new javax.swing.JPanel();
         jSeparator9 = new javax.swing.JSeparator();
         jLabel13 = new javax.swing.JLabel();
@@ -228,8 +306,62 @@ public class AdminUserGUI extends MainJFrameProperties {
         jTextField19 = new javax.swing.JTextField();
         jScrollPane3 = new javax.swing.JScrollPane();
         jTable3 = new javax.swing.JTable();
-        jLabel76 = new javax.swing.JLabel();
         jLabel77 = new javax.swing.JLabel();
+        jLabel76 = new javax.swing.JLabel();
+        Settings = new javax.swing.JPanel();
+        jSeparator11 = new javax.swing.JSeparator();
+        jSeparator12 = new javax.swing.JSeparator();
+        jLabel94 = new javax.swing.JLabel();
+        jLabel126 = new javax.swing.JLabel();
+        jTextField35 = new javax.swing.JTextField();
+        jLabel125 = new javax.swing.JLabel();
+        jLabel127 = new javax.swing.JLabel();
+        jSpinner1 = new javax.swing.JSpinner();
+        jLabel128 = new javax.swing.JLabel();
+        jLabel129 = new javax.swing.JLabel();
+        jTextField36 = new javax.swing.JTextField();
+        jLabel131 = new javax.swing.JLabel();
+        jSpinner2 = new javax.swing.JSpinner();
+        jLabel132 = new javax.swing.JLabel();
+        jLabel133 = new javax.swing.JLabel();
+        jSpinner3 = new javax.swing.JSpinner();
+        jLabel134 = new javax.swing.JLabel();
+        jLabel135 = new javax.swing.JLabel();
+        jLabel136 = new javax.swing.JLabel();
+        jLabel137 = new javax.swing.JLabel();
+        jLabel138 = new javax.swing.JLabel();
+        jLabel139 = new javax.swing.JLabel();
+        jLabel140 = new javax.swing.JLabel();
+        jLabel141 = new javax.swing.JLabel();
+        jLabel142 = new javax.swing.JLabel();
+        jLabel143 = new javax.swing.JLabel();
+        jLabel144 = new javax.swing.JLabel();
+        jSeparator16 = new javax.swing.JSeparator();
+        jSeparator18 = new javax.swing.JSeparator();
+        jPanel17 = new javax.swing.JPanel();
+        jLabel97 = new javax.swing.JLabel();
+        jSeparator17 = new javax.swing.JSeparator();
+        jLabel96 = new javax.swing.JLabel();
+        jSeparator20 = new javax.swing.JSeparator();
+        jLabel156 = new javax.swing.JLabel();
+        jSeparator21 = new javax.swing.JSeparator();
+        jLabel155 = new javax.swing.JLabel();
+        jLabel154 = new javax.swing.JLabel();
+        jLabel153 = new javax.swing.JLabel();
+        jLabel152 = new javax.swing.JLabel();
+        jLabel151 = new javax.swing.JLabel();
+        jLabel150 = new javax.swing.JLabel();
+        jLabel149 = new javax.swing.JLabel();
+        jLabel148 = new javax.swing.JLabel();
+        jLabel147 = new javax.swing.JLabel();
+        jLabel146 = new javax.swing.JLabel();
+        jLabel130 = new javax.swing.JLabel();
+        jLabel95 = new javax.swing.JLabel();
+        jLabel145 = new javax.swing.JLabel();
+        jSeparator19 = new javax.swing.JSeparator();
+        jButton7 = new javax.swing.JButton();
+        jButton8 = new javax.swing.JButton();
+        jLabel157 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setLocationByPlatform(true);
@@ -304,10 +436,10 @@ public class AdminUserGUI extends MainJFrameProperties {
 
         MainPanel.add(upperPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 50));
 
-        leftPanel.setBackground(new java.awt.Color(0, 51, 153));
+        leftPanel.setBackground(new java.awt.Color(51, 51, 51));
         leftPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(30, 81, 182));
+        jPanel1.setBackground(new java.awt.Color(64, 60, 60));
         jPanel1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jPanel1MouseClicked(evt);
@@ -341,7 +473,7 @@ public class AdminUserGUI extends MainJFrameProperties {
 
         leftPanel.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 220, 300, 50));
 
-        jPanel2.setBackground(new java.awt.Color(30, 81, 182));
+        jPanel2.setBackground(new java.awt.Color(64, 60, 60));
         jPanel2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jPanel2MouseClicked(evt);
@@ -375,7 +507,7 @@ public class AdminUserGUI extends MainJFrameProperties {
 
         leftPanel.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 280, 300, 50));
 
-        jPanel3.setBackground(new java.awt.Color(30, 81, 182));
+        jPanel3.setBackground(new java.awt.Color(64, 60, 60));
         jPanel3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jPanel3MouseClicked(evt);
@@ -409,7 +541,7 @@ public class AdminUserGUI extends MainJFrameProperties {
 
         leftPanel.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 340, 300, 50));
 
-        jPanel4.setBackground(new java.awt.Color(30, 81, 182));
+        jPanel4.setBackground(new java.awt.Color(64, 60, 60));
         jPanel4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jPanel4MouseClicked(evt);
@@ -443,7 +575,7 @@ public class AdminUserGUI extends MainJFrameProperties {
 
         leftPanel.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 400, 300, 50));
 
-        jPanel5.setBackground(new java.awt.Color(30, 81, 182));
+        jPanel5.setBackground(new java.awt.Color(64, 60, 60));
         jPanel5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jPanel5MouseClicked(evt);
@@ -477,7 +609,7 @@ public class AdminUserGUI extends MainJFrameProperties {
 
         leftPanel.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 460, 300, 50));
 
-        jPanel7.setBackground(new java.awt.Color(30, 81, 182));
+        jPanel7.setBackground(new java.awt.Color(64, 60, 60));
         jPanel7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jPanel7MouseClicked(evt);
@@ -511,7 +643,7 @@ public class AdminUserGUI extends MainJFrameProperties {
 
         leftPanel.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 640, 260, 50));
 
-        jPanel9.setBackground(new java.awt.Color(30, 81, 182));
+        jPanel9.setBackground(new java.awt.Color(64, 60, 60));
         jPanel9.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jPanel9MouseClicked(evt);
@@ -528,11 +660,45 @@ public class AdminUserGUI extends MainJFrameProperties {
         jPanel9.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 20, -1, -1));
 
         jLabel22.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
-        jLabel22.setForeground(new java.awt.Color(255, 153, 0));
+        jLabel22.setForeground(new java.awt.Color(0, 204, 51));
         jLabel22.setText("ADMIN");
         jPanel9.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 40, -1, -1));
 
         leftPanel.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, 280, 80));
+
+        jPanel11.setBackground(new java.awt.Color(64, 60, 60));
+        jPanel11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jPanel11MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jPanel11MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jPanel11MouseExited(evt);
+            }
+        });
+
+        jLabel93.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 14)); // NOI18N
+        jLabel93.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel93.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel93.setText("System Settings");
+
+        javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
+        jPanel11.setLayout(jPanel11Layout);
+        jPanel11Layout.setHorizontalGroup(
+            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel11Layout.createSequentialGroup()
+                .addGap(81, 81, 81)
+                .addComponent(jLabel93, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(84, Short.MAX_VALUE))
+        );
+        jPanel11Layout.setVerticalGroup(
+            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel93, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
+        );
+
+        leftPanel.add(jPanel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 520, 300, 50));
 
         MainPanel.add(leftPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 320, 720));
 
@@ -544,7 +710,7 @@ public class AdminUserGUI extends MainJFrameProperties {
         parentPanel.setBackground(new java.awt.Color(0, 51, 51));
         parentPanel.setLayout(new java.awt.CardLayout());
 
-        MemberManage.setBackground(new java.awt.Color(234, 241, 234));
+        MemberManage.setBackground(new java.awt.Color(255, 255, 255));
         MemberManage.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         MemberManage.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 620, 940, 10));
 
@@ -552,47 +718,6 @@ public class AdminUserGUI extends MainJFrameProperties {
         jLabel1.setText("Members Management");
         MemberManage.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, -1, -1));
         MemberManage.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 63, 940, 10));
-
-        jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel5.setText("Telephone :");
-        MemberManage.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 460, -1, -1));
-
-        jLabel6.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel6.setText("Member ID :");
-        MemberManage.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 150, -1, 30));
-
-        jLabel8.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel8.setText("Name :");
-        MemberManage.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 200, -1, 30));
-
-        jLabel9.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel9.setText("Address :");
-        MemberManage.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 250, -1, 40));
-
-        jLabel11.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel11.setText("Grade :");
-        MemberManage.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 300, -1, 40));
-
-        jLabel12.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel12.setText("Class :");
-        MemberManage.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 350, -1, 30));
-
-        jLabel14.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel14.setText("NIC :");
-        MemberManage.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 400, -1, 30));
-
-        jLabel15.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel15.setText("Email :");
-        MemberManage.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 510, -1, -1));
-
-        jTextField1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField1.setText("Type Here");
-        jTextField1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jTextField1MouseClicked(evt);
-            }
-        });
-        MemberManage.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 500, 240, 40));
 
         jTextField2.setBackground(new java.awt.Color(255, 255, 153));
         jTextField2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -613,45 +738,7 @@ public class AdminUserGUI extends MainJFrameProperties {
                 jTextField2ActionPerformed(evt);
             }
         });
-        MemberManage.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 80, 240, 40));
-
-        jTextField3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField3.setText("Type Here");
-        jTextField3.setToolTipText("");
-        jTextField3.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jTextField3MouseClicked(evt);
-            }
-        });
-        MemberManage.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 200, 240, 40));
-
-        jTextField4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField4.setText("Type Here");
-        jTextField4.setToolTipText("");
-        jTextField4.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jTextField4MouseClicked(evt);
-            }
-        });
-        MemberManage.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 250, 240, 40));
-
-        jTextField7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField7.setText("Type Here");
-        jTextField7.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jTextField7MouseClicked(evt);
-            }
-        });
-        MemberManage.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 400, 240, 40));
-
-        jTextField8.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField8.setText("Type Here");
-        jTextField8.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jTextField8MouseClicked(evt);
-            }
-        });
-        MemberManage.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 450, 240, 40));
+        MemberManage.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, 340, 40));
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -671,11 +758,95 @@ public class AdminUserGUI extends MainJFrameProperties {
         });
         jScrollPane1.setViewportView(jTable1);
 
-        MemberManage.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 120, 530, 430));
+        MemberManage.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, 420, 420));
 
-        jLabel29.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel29.setText("Search :");
-        MemberManage.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 75, -1, 40));
+        jLabel30.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel30.setText("Search and Select Member to Update or Delete.");
+        MemberManage.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, 430, 20));
+
+        jTabbedPane1.setBackground(new java.awt.Color(204, 255, 204));
+
+        jPanel12.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel12.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel5.setText("Telephone :");
+        jPanel12.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 330, -1, -1));
+
+        jLabel6.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel6.setText("Member ID :");
+        jPanel12.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, 30));
+
+        jLabel8.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel8.setText("Name :");
+        jPanel12.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, -1, 30));
+
+        jLabel9.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel9.setText("Address :");
+        jPanel12.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, -1, 40));
+
+        jLabel11.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel11.setText("Grade :");
+        jPanel12.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, -1, 40));
+
+        jLabel12.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel12.setText("Class :");
+        jPanel12.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, -1, 30));
+
+        jLabel14.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel14.setText("NIC :");
+        jPanel12.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 270, -1, 30));
+
+        jLabel15.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel15.setText("Email :");
+        jPanel12.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 380, -1, -1));
+
+        jTextField1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField1.setText("Type Here");
+        jTextField1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTextField1MouseClicked(evt);
+            }
+        });
+        jPanel12.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 370, 340, 40));
+
+        jTextField3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField3.setText("Type Here");
+        jTextField3.setToolTipText("");
+        jTextField3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTextField3MouseClicked(evt);
+            }
+        });
+        jPanel12.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 70, 340, 40));
+
+        jTextField4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField4.setText("Type Here");
+        jTextField4.setToolTipText("");
+        jTextField4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTextField4MouseClicked(evt);
+            }
+        });
+        jPanel12.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 120, 340, 40));
+
+        jTextField7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField7.setText("Type Here");
+        jTextField7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTextField7MouseClicked(evt);
+            }
+        });
+        jPanel12.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 270, 340, 40));
+
+        jTextField8.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField8.setText("Type Here");
+        jTextField8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTextField8MouseClicked(evt);
+            }
+        });
+        jPanel12.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 320, 340, 40));
 
         jTextField9.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextField9.setText("Disabled");
@@ -685,23 +856,13 @@ public class AdminUserGUI extends MainJFrameProperties {
                 jTextField9ActionPerformed(evt);
             }
         });
-        MemberManage.add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 150, 240, 40));
+        jPanel12.add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 20, 340, 40));
 
-        jLabel30.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel30.setText("Search and Select Member to Update or Delete.");
-        MemberManage.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(416, 96, 440, 20));
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "A", "B", "C", "D", "E", "STAFF", "Other" }));
+        jPanel12.add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 220, 180, 40));
 
-        jButton1.setBackground(new java.awt.Color(102, 0, 102));
-        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Delete");
-        jButton1.setToolTipText("remove member from database");
-        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton1MouseClicked(evt);
-            }
-        });
-        MemberManage.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 560, 120, -1));
+        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Grade 6", "Grade 7", "Grade 8", "Grade 9", "Grade 10", "Grade 11", "Grade 12", "Grade 13", "STAFF" }));
+        jPanel12.add(jComboBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 170, 180, 40));
 
         jButton2.setBackground(new java.awt.Color(0, 153, 153));
         jButton2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -713,20 +874,165 @@ public class AdminUserGUI extends MainJFrameProperties {
                 jButton2MouseClicked(evt);
             }
         });
-        MemberManage.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 560, 120, -1));
+        jPanel12.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 440, 130, -1));
 
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "A", "B", "C", "D", "E", "STAFF", "Other" }));
-        MemberManage.add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 350, 220, 40));
+        jTabbedPane1.addTab("Update Member Details", jPanel12);
 
-        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Grade 6", "Grade 7", "Grade 8", "Grade 9", "Grade 10", "Grade 11", "Grade 12", "Grade 13", "STAFF" }));
-        MemberManage.add(jComboBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 300, 220, 40));
+        jPanel13.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel13.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel80.setText("# Delete a member will affect previous transactions and latefees.");
-        MemberManage.add(jLabel80, new org.netbeans.lib.awtextra.AbsoluteConstraints(412, 560, -1, -1));
+        jButton1.setBackground(new java.awt.Color(102, 0, 102));
+        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setText("Delete");
+        jButton1.setToolTipText("remove member from database");
+        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton1MouseClicked(evt);
+            }
+        });
+        jPanel13.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 440, 130, -1));
+
+        jLabel18.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel18.setForeground(new java.awt.Color(204, 0, 51));
+        jLabel18.setText("** Please consider Latefees and Fines.");
+        jPanel13.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, -1, -1));
+
+        jPanel25.setBackground(new java.awt.Color(250, 249, 249));
+        jPanel25.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel164.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel164.setText("Alawwa, Sri Lanaka");
+        jPanel25.add(jLabel164, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 150, 300, 20));
+
+        jLabel165.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel165.setText("Member Details");
+        jPanel25.add(jLabel165, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, -1));
+
+        jLabel166.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel166.setText("( STU_23261 )");
+        jPanel25.add(jLabel166, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 20, 140, -1));
+
+        jLabel167.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel167.setText("STU_23261");
+        jPanel25.add(jLabel167, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 80, 290, 30));
+
+        jLabel168.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel168.setText("Grade 13 - A");
+        jPanel25.add(jLabel168, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 110, 300, -1));
+
+        jLabel169.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel169.setText("Name :");
+        jPanel25.add(jLabel169, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, -1, -1));
+
+        jLabel170.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel170.setText("Member ID :");
+        jPanel25.add(jLabel170, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, -1, 30));
+
+        jLabel171.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel171.setText("Grade :");
+        jPanel25.add(jLabel171, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, -1, -1));
+
+        jLabel172.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel172.setText("Address :");
+        jPanel25.add(jLabel172, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 150, -1, 20));
+
+        jLabel173.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel173.setText("Ushan Ikshana");
+        jPanel25.add(jLabel173, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 60, 300, -1));
+
+        jLabel174.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel174.setText("Latefees :");
+        jPanel25.add(jLabel174, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 130, -1, -1));
+
+        jLabel175.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel175.setText("200.00");
+        jPanel25.add(jLabel175, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 130, 300, -1));
+
+        jLabel205.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel205.setText("Telephone :");
+        jPanel25.add(jLabel205, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, -1, -1));
+
+        jLabel206.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel206.setText("Requested Books :");
+        jPanel25.add(jLabel206, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, -1, -1));
+
+        jLabel207.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel207.setText("+94764493566");
+        jPanel25.add(jLabel207, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 170, 290, 20));
+
+        jTable5.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null}
+            },
+            new String [] {
+                "Book ID", "Title", "Date"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane6.setViewportView(jTable5);
+
+        jPanel25.add(jScrollPane6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, 440, 140));
+
+        jPanel13.add(jPanel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, 470, 370));
+
+        jLabel19.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel19.setForeground(new java.awt.Color(204, 0, 51));
+        jLabel19.setText("** Remove a memeber will affect his or her other records as well.");
+        jPanel13.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
+
+        jTabbedPane1.addTab("Remove Memeber", jPanel13);
+
+        jPanel14.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel14.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel29.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel29.setForeground(new java.awt.Color(204, 0, 51));
+        jLabel29.setText("** Range ( Grade 6 - Grade 12 )     |   Grade 13 Should Follow Remove.");
+        jPanel14.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, -1, -1));
+
+        jLabel80.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel80.setForeground(new java.awt.Color(204, 0, 51));
+        jLabel80.setText("** Note : Can Advance All Students by One year. ( advance the Grade)");
+        jPanel14.add(jLabel80, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
+
+        jTextArea2.setBackground(new java.awt.Color(249, 248, 248));
+        jTextArea2.setColumns(20);
+        jTextArea2.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
+        jTextArea2.setForeground(new java.awt.Color(0, 153, 51));
+        jTextArea2.setRows(5);
+        jTextArea2.setText("grade 12 to grade 13 advanced sccuessfully.\ngrade 11 to grade 12 advanced sccuessfully.\ngrade 10 to grade 11 advanced sccuessfully.\ngrade 9 to grade 10 advanced sccuessfully.\ngrade 8 to grade 9 advanced sccuessfully.\ngrade 7 to grade 9 advanced sccuessfully.\ngrade 6 to grade 7 advanced sccuessfully.\n--- Program finished Sccuessfully ---");
+        jScrollPane7.setViewportView(jTextArea2);
+
+        jPanel14.add(jScrollPane7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, 470, 170));
+
+        jButton6.setBackground(new java.awt.Color(0, 51, 51));
+        jButton6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jButton6.setForeground(new java.awt.Color(255, 255, 255));
+        jButton6.setText("Start Process");
+        jPanel14.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, -1, 40));
+
+        jTabbedPane1.addTab("Advanced", jPanel14);
+
+        MemberManage.add(jTabbedPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 80, 490, 520));
+
+        jLabel81.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lib_project/guiFiles/img/black_ptrn_4.jpg"))); // NOI18N
+        jLabel81.setText("jLabel81");
+        MemberManage.add(jLabel81, new org.netbeans.lib.awtextra.AbsoluteConstraints(-40, 0, -1, -1));
 
         parentPanel.add(MemberManage, "card2");
 
-        BookManage.setBackground(new java.awt.Color(234, 241, 234));
+        BookManage.setBackground(new java.awt.Color(255, 255, 255));
         BookManage.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         BookManage.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 620, 940, 10));
 
@@ -734,38 +1040,6 @@ public class AdminUserGUI extends MainJFrameProperties {
         jLabel4.setText("Book Management");
         BookManage.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, -1, -1));
         BookManage.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 63, 940, 10));
-
-        jLabel31.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel31.setText("Gerne :");
-        BookManage.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 440, -1, -1));
-
-        jLabel32.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel32.setText("Book_ID :");
-        BookManage.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, -1, 30));
-
-        jLabel33.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel33.setText("Title :");
-        BookManage.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 180, -1, 30));
-
-        jLabel34.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel34.setText("Author :");
-        BookManage.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 230, -1, 40));
-
-        jLabel35.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel35.setText("ISBN :");
-        BookManage.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 280, -1, 40));
-
-        jLabel36.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel36.setText("Barcode :");
-        BookManage.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 330, -1, 30));
-
-        jLabel37.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel37.setText("Price :");
-        BookManage.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 380, -1, 30));
-
-        jLabel38.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel38.setText("Book Condition : ");
-        BookManage.add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 540, -1, 30));
 
         jTextField11.setBackground(new java.awt.Color(255, 255, 153));
         jTextField11.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -781,52 +1055,7 @@ public class AdminUserGUI extends MainJFrameProperties {
                 jTextField11MouseClicked(evt);
             }
         });
-        BookManage.add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 80, 240, 40));
-
-        jTextField12.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField12.setText("Type Here");
-        jTextField12.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jTextField12MouseClicked(evt);
-            }
-        });
-        BookManage.add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 180, 240, 40));
-
-        jTextField13.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField13.setText("Type Here");
-        jTextField13.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jTextField13MouseClicked(evt);
-            }
-        });
-        BookManage.add(jTextField13, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 230, 240, 40));
-
-        jTextField14.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField14.setText("Type Here");
-        jTextField14.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jTextField14MouseClicked(evt);
-            }
-        });
-        BookManage.add(jTextField14, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 280, 240, 40));
-
-        jTextField15.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField15.setText("Type Here(Optinal)");
-        jTextField15.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jTextField15MouseClicked(evt);
-            }
-        });
-        BookManage.add(jTextField15, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 330, 240, 40));
-
-        jTextField16.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField16.setText("Type Here");
-        jTextField16.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jTextField16MouseClicked(evt);
-            }
-        });
-        BookManage.add(jTextField16, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 380, 240, 40));
+        BookManage.add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, 300, 40));
 
         jTable2.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -846,11 +1075,99 @@ public class AdminUserGUI extends MainJFrameProperties {
         });
         jScrollPane2.setViewportView(jTable2);
 
-        BookManage.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 100, 480, 410));
+        BookManage.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 470, 350));
 
-        jLabel39.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel39.setText("Search :");
-        BookManage.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 75, -1, 40));
+        jLabel40.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel40.setText("Search and Select the Book to Update or Delete.");
+        BookManage.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, 410, 30));
+
+        jLabel78.setText(" # Location and Book Condition will unique for a Book Copy");
+        BookManage.add(jLabel78, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 550, 470, -1));
+
+        jLabel79.setText("# If you update Title , Author , ISBN , Barcode , Gerne , All the Book Copies will be affected.");
+        BookManage.add(jLabel79, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 530, -1, -1));
+
+        jTabbedPane2.setBackground(new java.awt.Color(204, 255, 204));
+
+        jPanel15.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel15.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel31.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel31.setText("Category :");
+        jPanel15.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 270, -1, 40));
+
+        jLabel32.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel32.setText("Book_ID :");
+        jPanel15.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, 30));
+
+        jLabel33.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel33.setText("Title :");
+        jPanel15.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, -1, 30));
+
+        jLabel34.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel34.setText("Author :");
+        jPanel15.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, -1, 40));
+
+        jLabel35.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel35.setText("ISBN :");
+        jPanel15.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, -1, 30));
+
+        jLabel36.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel36.setText("Barcode :");
+        jPanel15.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 180, -1, 30));
+
+        jLabel37.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel37.setText("Price :");
+        jPanel15.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, -1, 40));
+
+        jLabel38.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel38.setText("Book Condition : ");
+        jPanel15.add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 380, -1, 30));
+
+        jTextField12.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField12.setText("Type Here");
+        jTextField12.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTextField12MouseClicked(evt);
+            }
+        });
+        jPanel15.add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 50, 280, 40));
+
+        jTextField13.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField13.setText("Type Here");
+        jTextField13.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTextField13MouseClicked(evt);
+            }
+        });
+        jPanel15.add(jTextField13, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 100, 280, 30));
+
+        jTextField14.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField14.setText("Type Here");
+        jTextField14.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTextField14MouseClicked(evt);
+            }
+        });
+        jPanel15.add(jTextField14, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 140, 280, 30));
+
+        jTextField15.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField15.setText("Type Here(Optinal)");
+        jTextField15.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTextField15MouseClicked(evt);
+            }
+        });
+        jPanel15.add(jTextField15, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 180, 280, 30));
+
+        jTextField16.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField16.setText("Type Here");
+        jTextField16.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTextField16MouseClicked(evt);
+            }
+        });
+        jPanel15.add(jTextField16, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 220, 280, 40));
 
         jTextField18.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextField18.setText("Disabled");
@@ -862,23 +1179,41 @@ public class AdminUserGUI extends MainJFrameProperties {
                 jTextField18MouseClicked(evt);
             }
         });
-        BookManage.add(jTextField18, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 130, 240, 40));
+        jPanel15.add(jTextField18, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 10, 240, 30));
 
-        jLabel40.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel40.setText("Search and Select the Book to Update or Delete.");
-        BookManage.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 70, 410, 30));
+        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Fantasy", "Science Fiction", "Historical", "Financial", "Thriller", "Romance", "Poetry", "Humor/Comedy", "Religion and Spirituality", "Philosophy", "Psychology", "Children's Literature", "Autobiography", "Biography", "Home & Garden", "Fairy Tale", "Travel", "Cookbooks", "Action Adventure", "Sports", "History", "Art", "Health & Wellness", "Other" }));
+        jPanel15.add(jComboBox4, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 270, 240, 40));
 
-        jButton3.setBackground(new java.awt.Color(102, 0, 102));
-        jButton3.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(255, 255, 255));
-        jButton3.setText("Delete");
-        jButton3.setToolTipText("remove member from database");
-        jButton3.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton3MouseClicked(evt);
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4", "5", "6", "7", "8" }));
+        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox1ActionPerformed(evt);
             }
         });
-        BookManage.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 570, 120, -1));
+        jPanel15.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 320, 80, 40));
+
+        jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "A", "B", "C", "D" }));
+        jComboBox5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox5ActionPerformed(evt);
+            }
+        });
+        jPanel15.add(jComboBox5, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 320, 80, 40));
+
+        jLabel75.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel75.setText("Location :");
+        jPanel15.add(jLabel75, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 320, -1, 40));
+
+        jTextArea1.setColumns(20);
+        jTextArea1.setRows(5);
+        jTextArea1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTextArea1MouseClicked(evt);
+            }
+        });
+        jScrollPane4.setViewportView(jTextArea1);
+
+        jPanel15.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 370, 280, 80));
 
         jButton4.setBackground(new java.awt.Color(0, 153, 153));
         jButton4.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -890,62 +1225,141 @@ public class AdminUserGUI extends MainJFrameProperties {
                 jButton4MouseClicked(evt);
             }
         });
-        BookManage.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 570, 120, -1));
+        jPanel15.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 460, 120, -1));
 
-        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Fantasy", "Science Fiction", "Historical", "Financial", "Thriller", "Romance", "Poetry", "Humor/Comedy", "Religion and Spirituality", "Philosophy", "Psychology", "Children's Literature", "Autobiography", "Biography", "Home & Garden", "Fairy Tale", "Travel", "Cookbooks", "Action Adventure", "Sports", "History", "Art", "Health & Wellness", "Other" }));
-        BookManage.add(jComboBox4, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 430, 240, 40));
+        jTabbedPane2.addTab("Update Book", jPanel15);
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4", "5", "6", "7", "8" }));
-        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+        jPanel16.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel16.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel26.setBackground(new java.awt.Color(250, 249, 249));
+        jPanel26.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel176.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel176.setText("Good Condtion. Page 15 is Lost");
+        jPanel26.add(jLabel176, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 150, 300, 30));
+
+        jLabel177.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel177.setText("Book Details");
+        jPanel26.add(jLabel177, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, -1));
+
+        jLabel178.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel178.setText("( PS_002 )");
+        jPanel26.add(jLabel178, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 20, 140, -1));
+
+        jLabel179.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel179.setText("Ikshana K.A.A.U");
+        jPanel26.add(jLabel179, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 80, 290, 30));
+
+        jLabel180.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel180.setText("Security and Tech");
+        jPanel26.add(jLabel180, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 110, 300, -1));
+
+        jLabel181.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel181.setText("Title :");
+        jPanel26.add(jLabel181, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, -1, -1));
+
+        jLabel182.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel182.setText("Author:");
+        jPanel26.add(jLabel182, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, -1, 30));
+
+        jLabel183.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel183.setText("Gerne :");
+        jPanel26.add(jLabel183, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, -1, -1));
+
+        jLabel184.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel184.setText("ISBN :");
+        jPanel26.add(jLabel184, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 150, -1, 30));
+
+        jLabel185.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel185.setText("Introdcution to Cyber Crimes");
+        jPanel26.add(jLabel185, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 60, 300, -1));
+
+        jLabel186.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel186.setText("Price :");
+        jPanel26.add(jLabel186, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 130, -1, -1));
+
+        jLabel187.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel187.setText("156655.00");
+        jPanel26.add(jLabel187, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 130, 300, -1));
+
+        jLabel188.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel188.setText("2024-12-01");
+        jPanel26.add(jLabel188, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 250, 290, 40));
+
+        jLabel189.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel189.setText("Request Date :");
+        jPanel26.add(jLabel189, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 260, -1, -1));
+
+        jCheckBox1.setToolTipText("");
+        jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox1ActionPerformed(evt);
+                jCheckBox1ActionPerformed(evt);
             }
         });
-        BookManage.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 480, 80, 40));
+        jPanel26.add(jCheckBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 220, 30, 20));
 
-        jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "A", "B", "C", "D" }));
-        jComboBox5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox5ActionPerformed(evt);
-            }
-        });
-        BookManage.add(jComboBox5, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 480, 80, 40));
+        jLabel208.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel208.setText("Location :");
+        jPanel26.add(jLabel208, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 180, -1, -1));
 
-        jLabel75.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel75.setText("Location :");
-        BookManage.add(jLabel75, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 490, -1, 30));
+        jLabel209.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel209.setText("Request Status:");
+        jPanel26.add(jLabel209, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, -1, -1));
 
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jTextArea1.addMouseListener(new java.awt.event.MouseAdapter() {
+        jLabel210.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel210.setText("Cupboard 01");
+        jPanel26.add(jLabel210, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 170, 290, 40));
+
+        jLabel211.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel211.setText("Request By :");
+        jPanel26.add(jLabel211, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 240, -1, -1));
+
+        jLabel212.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel212.setText("Ushan Ikshana");
+        jPanel26.add(jLabel212, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 230, 290, 40));
+
+        jPanel16.add(jPanel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 430, 300));
+
+        jLabel82.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel82.setForeground(new java.awt.Color(204, 0, 0));
+        jLabel82.setText("** NOTE : Removing a Book will affect other records as well.");
+        jPanel16.add(jLabel82, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 330, 420, 20));
+
+        jButton3.setBackground(new java.awt.Color(102, 0, 102));
+        jButton3.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jButton3.setForeground(new java.awt.Color(255, 255, 255));
+        jButton3.setText("Remove the Book");
+        jButton3.setToolTipText("");
+        jButton3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jTextArea1MouseClicked(evt);
+                jButton3MouseClicked(evt);
             }
         });
-        jScrollPane4.setViewportView(jTextArea1);
+        jPanel16.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 360, 220, -1));
 
-        BookManage.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 530, 240, 80));
+        jTabbedPane2.addTab("Remove Book", jPanel16);
 
-        jLabel78.setText(" # Location and Book Condition will unique for a Book Copy");
-        BookManage.add(jLabel78, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 540, 470, -1));
+        BookManage.add(jTabbedPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 70, 450, 540));
 
-        jLabel79.setText("# If you update Title , Author , ISBN , Barcode , Gerne , All the Book Copies will be affected.");
-        BookManage.add(jLabel79, new org.netbeans.lib.awtextra.AbsoluteConstraints(465, 520, 490, -1));
+        jLabel39.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lib_project/guiFiles/img/black_ptrn_4.jpg"))); // NOI18N
+        jLabel39.setToolTipText("");
+        BookManage.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         parentPanel.add(BookManage, "card2");
 
-        PayLatefee.setBackground(new java.awt.Color(234, 241, 234));
+        PayLatefee.setBackground(new java.awt.Color(255, 255, 255));
         PayLatefee.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         PayLatefee.add(jSeparator5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 620, 940, 10));
 
         jLabel7.setFont(new java.awt.Font("Segoe UI Black", 1, 24)); // NOI18N
-        jLabel7.setText("LateFee Payment");
+        jLabel7.setText("Payment Potral");
         PayLatefee.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, -1, -1));
         PayLatefee.add(jSeparator6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 63, 940, 10));
 
         jLabel41.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel41.setText("Member ID :");
-        PayLatefee.add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 170, 120, 40));
+        PayLatefee.add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, 120, 40));
 
         jTextField5.setForeground(new java.awt.Color(51, 51, 51));
         jTextField5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -960,14 +1374,14 @@ public class AdminUserGUI extends MainJFrameProperties {
                 jTextField5MouseClicked(evt);
             }
         });
-        PayLatefee.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 170, 270, 40));
+        PayLatefee.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 120, 270, 40));
 
         jPanel10.setBackground(new java.awt.Color(255, 255, 255));
         jPanel10.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel42.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel42.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel42.setText("Latefee Payment Potral");
+        jLabel42.setText("Payment Potral");
         jPanel10.add(jLabel42, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 380, 40));
         jPanel10.add(jSeparator13, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 320, 380, 10));
 
@@ -1032,34 +1446,39 @@ public class AdminUserGUI extends MainJFrameProperties {
         jPanel10.add(jSeparator15, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 240, 380, 10));
 
         jLabel57.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel57.setText("Total Latefees :");
-        jPanel10.add(jLabel57, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 250, -1, 30));
+        jLabel57.setText("Total Amount :");
+        jPanel10.add(jLabel57, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 250, -1, 30));
 
         jLabel58.setFont(new java.awt.Font("Segoe UI", 2, 18)); // NOI18N
         jLabel58.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel58.setText("Rs. 100.00");
         jPanel10.add(jLabel58, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 290, 160, 30));
 
-        PayLatefee.add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 120, 400, 370));
+        PayLatefee.add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 120, 400, 420));
 
         jLabel59.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel59.setText("Search by Member ID.");
-        PayLatefee.add(jLabel59, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, 190, 30));
+        PayLatefee.add(jLabel59, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, 190, 30));
 
         jButton5.setBackground(new java.awt.Color(0, 204, 102));
         jButton5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton5.setText("$ Pay $");
+        jButton5.setText("Make Payement");
         jButton5.setToolTipText("make payment");
         jButton5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton5MouseClicked(evt);
             }
         });
-        PayLatefee.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 230, 100, 40));
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
+        PayLatefee.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 520, 140, 40));
 
         jLabel60.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel60.setText("Paid Amount:");
-        PayLatefee.add(jLabel60, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 230, 90, 40));
+        PayLatefee.add(jLabel60, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 480, 90, 40));
 
         jTextField6.setForeground(new java.awt.Color(51, 51, 51));
         jTextField6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -1069,7 +1488,7 @@ public class AdminUserGUI extends MainJFrameProperties {
                 jTextField6MouseClicked(evt);
             }
         });
-        PayLatefee.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 230, 270, 40));
+        PayLatefee.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 520, 270, 40));
 
         jTable4.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -1084,14 +1503,17 @@ public class AdminUserGUI extends MainJFrameProperties {
         ));
         jScrollPane5.setViewportView(jTable4);
 
-        PayLatefee.add(jScrollPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 290, 500, 300));
+        PayLatefee.add(jScrollPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 510, 300));
 
         jLabel16.setText("# Payment Receipt will be created automatically.");
-        PayLatefee.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 500, -1, -1));
+        PayLatefee.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 550, -1, -1));
+
+        jLabel83.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lib_project/guiFiles/img/back_partern_3.jpg"))); // NOI18N
+        PayLatefee.add(jLabel83, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         parentPanel.add(PayLatefee, "card2");
 
-        Administrator.setBackground(new java.awt.Color(234, 241, 234));
+        Administrator.setBackground(new java.awt.Color(255, 255, 255));
         Administrator.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         Administrator.add(jSeparator7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 620, 940, 10));
 
@@ -1100,29 +1522,34 @@ public class AdminUserGUI extends MainJFrameProperties {
         Administrator.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, -1, -1));
         Administrator.add(jSeparator8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 63, 940, 10));
 
-        jLabel61.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jTabbedPane3.setBackground(new java.awt.Color(204, 255, 204));
+
+        currentAdmin.setBackground(new java.awt.Color(255, 255, 255));
+        currentAdmin.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel61.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel61.setText("Admin ID :");
-        Administrator.add(jLabel61, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 110, -1, 30));
+        currentAdmin.add(jLabel61, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, -1, 30));
 
-        jLabel62.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel62.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel62.setText("Username :");
-        Administrator.add(jLabel62, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 160, -1, 30));
+        currentAdmin.add(jLabel62, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 50, -1, 30));
 
-        jLabel63.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel63.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel63.setText("Confirm Password :");
-        Administrator.add(jLabel63, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 260, -1, 40));
+        currentAdmin.add(jLabel63, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, -1, 40));
 
-        jLabel64.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel64.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel64.setText("First Name :");
-        Administrator.add(jLabel64, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 310, -1, 40));
+        currentAdmin.add(jLabel64, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 170, -1, 30));
 
-        jLabel65.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel65.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel65.setText("Last Name :");
-        Administrator.add(jLabel65, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 360, -1, 30));
+        currentAdmin.add(jLabel65, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 210, -1, 30));
 
-        jLabel66.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel66.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel66.setText("NIC :");
-        Administrator.add(jLabel66, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 410, -1, 40));
+        currentAdmin.add(jLabel66, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 240, -1, 30));
 
         jTextField17.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextField17.setText("Type Here");
@@ -1131,7 +1558,7 @@ public class AdminUserGUI extends MainJFrameProperties {
                 jTextField17MouseClicked(evt);
             }
         });
-        Administrator.add(jTextField17, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 160, 240, 40));
+        currentAdmin.add(jTextField17, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 50, 270, 30));
 
         jTextField20.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextField20.setText("Type Here");
@@ -1140,7 +1567,7 @@ public class AdminUserGUI extends MainJFrameProperties {
                 jTextField20MouseClicked(evt);
             }
         });
-        Administrator.add(jTextField20, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 310, 240, 40));
+        currentAdmin.add(jTextField20, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 170, 270, 30));
 
         jTextField21.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextField21.setText("Type Here");
@@ -1149,7 +1576,7 @@ public class AdminUserGUI extends MainJFrameProperties {
                 jTextField21MouseClicked(evt);
             }
         });
-        Administrator.add(jTextField21, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 360, 240, 40));
+        currentAdmin.add(jTextField21, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 210, 270, 30));
 
         jTextField22.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextField22.setText("Type Here");
@@ -1158,7 +1585,7 @@ public class AdminUserGUI extends MainJFrameProperties {
                 jTextField22MouseClicked(evt);
             }
         });
-        Administrator.add(jTextField22, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 410, 240, 40));
+        currentAdmin.add(jTextField22, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 250, 270, 30));
 
         jTextField23.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextField23.setText("Type Here");
@@ -1167,11 +1594,11 @@ public class AdminUserGUI extends MainJFrameProperties {
                 jTextField23MouseClicked(evt);
             }
         });
-        Administrator.add(jTextField23, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 110, 240, 40));
+        currentAdmin.add(jTextField23, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 10, 270, 30));
 
-        jLabel67.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel67.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel67.setText("Telephone No :");
-        Administrator.add(jLabel67, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 460, -1, 40));
+        currentAdmin.add(jLabel67, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 290, -1, 30));
 
         jTextField24.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextField24.setText("Type Here");
@@ -1180,11 +1607,11 @@ public class AdminUserGUI extends MainJFrameProperties {
                 jTextField24MouseClicked(evt);
             }
         });
-        Administrator.add(jTextField24, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 460, 240, 40));
+        currentAdmin.add(jTextField24, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 290, 270, 30));
 
-        jLabel68.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel68.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel68.setText("Joined Date :");
-        Administrator.add(jLabel68, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 510, -1, 30));
+        currentAdmin.add(jLabel68, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 340, -1, 30));
 
         jTextField25.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextField25.setText("Desaibled");
@@ -1194,19 +1621,24 @@ public class AdminUserGUI extends MainJFrameProperties {
                 jTextField25MouseClicked(evt);
             }
         });
-        Administrator.add(jTextField25, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 510, 240, 40));
+        currentAdmin.add(jTextField25, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 330, 240, 40));
 
         jButton9.setBackground(new java.awt.Color(0, 102, 204));
         jButton9.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jButton9.setForeground(new java.awt.Color(255, 255, 255));
-        jButton9.setText("Submit");
+        jButton9.setText("Update");
         jButton9.setToolTipText("");
         jButton9.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton9MouseClicked(evt);
             }
         });
-        Administrator.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 560, 110, 40));
+        jButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton9ActionPerformed(evt);
+            }
+        });
+        currentAdmin.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 390, 110, 40));
 
         jPasswordField1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jPasswordField1.setToolTipText("new password goes here");
@@ -1215,7 +1647,7 @@ public class AdminUserGUI extends MainJFrameProperties {
                 jPasswordField1MouseClicked(evt);
             }
         });
-        Administrator.add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 260, 240, 40));
+        currentAdmin.add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 130, 270, 30));
 
         jPasswordField2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jPasswordField2.setToolTipText("new password goes here");
@@ -1224,109 +1656,246 @@ public class AdminUserGUI extends MainJFrameProperties {
                 jPasswordField2MouseClicked(evt);
             }
         });
-        Administrator.add(jPasswordField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 210, 240, 40));
+        currentAdmin.add(jPasswordField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 90, 270, 30));
 
-        jLabel69.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel69.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel69.setText("User Password :");
-        Administrator.add(jLabel69, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 210, -1, 40));
+        currentAdmin.add(jLabel69, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 90, -1, 30));
 
-        jPanel11.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel11.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jTabbedPane3.addTab("For Current Admin", currentAdmin);
 
-        jLabel70.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel70.setText("# Therefore to update other admins info. Verify first.");
-        jPanel11.add(jLabel70, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, -1, 30));
+        otherAdminPanel.setLayout(new java.awt.CardLayout());
 
-        jLabel71.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel71.setText("# Fro Security Concers There is Limited Access.");
-        jPanel11.add(jLabel71, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, -1));
+        otherAdminLoginPanel.setBackground(new java.awt.Color(255, 255, 255));
+        otherAdminLoginPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel72.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
-        jLabel72.setText("Admin ID or Username :");
-        jPanel11.add(jLabel72, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, -1, -1));
+        jPanel20.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel20.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jTextField10.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jTextField10.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField10.setText("Type Here");
-        jTextField10.setToolTipText("");
-        jTextField10.addMouseListener(new java.awt.event.MouseAdapter() {
+        jTextField26.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField26.setText("Type Here");
+        jTextField26.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jTextField10MouseClicked(evt);
+                jTextField26MouseClicked(evt);
             }
         });
-        jPanel11.add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 150, 320, 40));
+        jPanel20.add(jTextField26, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 30, 270, 40));
 
-        jLabel73.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
-        jLabel73.setText("Admin Password or NIC :");
-        jPanel11.add(jLabel73, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 210, -1, -1));
-
-        jPasswordField3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jPasswordField3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jPasswordField3.setToolTipText("password or NIC");
+        jPasswordField3.setToolTipText("new password goes here");
         jPasswordField3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jPasswordField3MouseClicked(evt);
             }
         });
-        jPanel11.add(jPasswordField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 250, 320, 40));
+        jPanel20.add(jPasswordField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 80, 270, 40));
 
-        jButton10.setBackground(new java.awt.Color(255, 102, 0));
+        jLabel70.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel70.setText("User Name :");
+        jPanel20.add(jLabel70, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, -1, 40));
+
+        jLabel72.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel72.setText("User Password :");
+        jPanel20.add(jLabel72, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 80, -1, 40));
+
+        jButton10.setBackground(new java.awt.Color(0, 102, 204));
         jButton10.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jButton10.setForeground(new java.awt.Color(255, 255, 255));
-        jButton10.setText("Verify");
+        jButton10.setText("Log In");
         jButton10.setToolTipText("");
         jButton10.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton10MouseClicked(evt);
             }
         });
-        jPanel11.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 310, 110, 40));
-
-        Administrator.add(jPanel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, 440, 380));
-
-        buttonGroup1.add(jRadioButton1);
-        jRadioButton1.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
-        jRadioButton1.setText("Remove");
-        jRadioButton1.setToolTipText("");
-        jRadioButton1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jRadioButton1MouseClicked(evt);
-            }
-        });
-        Administrator.add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 120, -1, -1));
-
-        buttonGroup1.add(jRadioButton2);
-        jRadioButton2.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
-        jRadioButton2.setText("Add New Admin");
-        jRadioButton2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jRadioButton2MouseClicked(evt);
-            }
-        });
-        jRadioButton2.addActionListener(new java.awt.event.ActionListener() {
+        jButton10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton2ActionPerformed(evt);
+                jButton10ActionPerformed(evt);
             }
         });
-        Administrator.add(jRadioButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 120, -1, -1));
+        jPanel20.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 130, 110, 40));
 
-        buttonGroup1.add(jRadioButton3);
-        jRadioButton3.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
-        jRadioButton3.setText("Update");
-        jRadioButton3.addMouseListener(new java.awt.event.MouseAdapter() {
+        otherAdminLoginPanel.add(jPanel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, 430, 200));
+
+        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lib_project/guiFiles/img/pattern.jpg"))); // NOI18N
+        jLabel17.setText("jLabel17");
+        otherAdminLoginPanel.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        otherAdminPanel.add(otherAdminLoginPanel, "card3");
+
+        otherAdminUpdatePanel.setBackground(new java.awt.Color(255, 255, 255));
+        otherAdminUpdatePanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel73.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel73.setText("Admin ID :");
+        otherAdminUpdatePanel.add(jLabel73, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, -1, 30));
+
+        jLabel84.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel84.setText("Username :");
+        otherAdminUpdatePanel.add(jLabel84, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, -1, 30));
+
+        jLabel85.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel85.setText("Confirm Password :");
+        otherAdminUpdatePanel.add(jLabel85, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, -1, 40));
+
+        jLabel86.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel86.setText("First Name :");
+        otherAdminUpdatePanel.add(jLabel86, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, -1, 30));
+
+        jLabel87.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel87.setText("Last Name :");
+        otherAdminUpdatePanel.add(jLabel87, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 240, -1, 30));
+
+        jLabel88.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel88.setText("NIC :");
+        otherAdminUpdatePanel.add(jLabel88, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 270, -1, 30));
+
+        jTextField27.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField27.setText("Type Here");
+        jTextField27.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jRadioButton3MouseClicked(evt);
+                jTextField27MouseClicked(evt);
             }
         });
-        Administrator.add(jRadioButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 120, -1, -1));
+        otherAdminUpdatePanel.add(jTextField27, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 80, 270, 30));
 
-        jLabel17.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel17.setText("# Please Select Process type from here.");
-        Administrator.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, -1, -1));
+        jTextField28.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField28.setText("Type Here");
+        jTextField28.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTextField28MouseClicked(evt);
+            }
+        });
+        otherAdminUpdatePanel.add(jTextField28, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 200, 270, 30));
+
+        jTextField29.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField29.setText("Type Here");
+        jTextField29.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTextField29MouseClicked(evt);
+            }
+        });
+        otherAdminUpdatePanel.add(jTextField29, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 240, 270, 30));
+
+        jTextField30.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField30.setText("Type Here");
+        jTextField30.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTextField30MouseClicked(evt);
+            }
+        });
+        otherAdminUpdatePanel.add(jTextField30, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 280, 270, 30));
+
+        jTextField31.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField31.setText("Type Here");
+        jTextField31.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTextField31MouseClicked(evt);
+            }
+        });
+        otherAdminUpdatePanel.add(jTextField31, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 40, 270, 30));
+
+        jLabel89.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel89.setText("Telephone No :");
+        otherAdminUpdatePanel.add(jLabel89, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 320, -1, 30));
+
+        jTextField32.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField32.setText("Type Here");
+        jTextField32.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTextField32MouseClicked(evt);
+            }
+        });
+        otherAdminUpdatePanel.add(jTextField32, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 320, 270, 30));
+
+        jLabel90.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel90.setText("Joined Date :");
+        otherAdminUpdatePanel.add(jLabel90, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 370, -1, 30));
+
+        jTextField33.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField33.setText("Desaibled");
+        jTextField33.setEnabled(false);
+        jTextField33.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTextField33MouseClicked(evt);
+            }
+        });
+        otherAdminUpdatePanel.add(jTextField33, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 360, 240, 40));
+
+        jButton11.setBackground(new java.awt.Color(0, 153, 0));
+        jButton11.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jButton11.setForeground(new java.awt.Color(255, 255, 255));
+        jButton11.setText("Back");
+        jButton11.setToolTipText("");
+        jButton11.setActionCommand("Back");
+        jButton11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton11MouseClicked(evt);
+            }
+        });
+        jButton11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton11ActionPerformed(evt);
+            }
+        });
+        otherAdminUpdatePanel.add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 420, 110, 40));
+
+        jPasswordField4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jPasswordField4.setToolTipText("new password goes here");
+        jPasswordField4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jPasswordField4MouseClicked(evt);
+            }
+        });
+        otherAdminUpdatePanel.add(jPasswordField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 160, 270, 30));
+
+        jPasswordField5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jPasswordField5.setToolTipText("new password goes here");
+        jPasswordField5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jPasswordField5MouseClicked(evt);
+            }
+        });
+        otherAdminUpdatePanel.add(jPasswordField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 120, 270, 30));
+
+        jLabel91.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel91.setText("User Password :");
+        otherAdminUpdatePanel.add(jLabel91, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, -1, 30));
+
+        jButton12.setBackground(new java.awt.Color(0, 102, 204));
+        jButton12.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jButton12.setForeground(new java.awt.Color(255, 255, 255));
+        jButton12.setText("Update");
+        jButton12.setToolTipText("");
+        jButton12.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton12MouseClicked(evt);
+            }
+        });
+        jButton12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton12ActionPerformed(evt);
+            }
+        });
+        otherAdminUpdatePanel.add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 420, 110, 40));
+
+        otherAdminPanel.add(otherAdminUpdatePanel, "card2");
+
+        jTabbedPane3.addTab("Other Admins", otherAdminPanel);
+
+        Administrator.add(jTabbedPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 70, 470, 540));
+
+        jLabel71.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lib_project/guiFiles/img/book_pile.jpg"))); // NOI18N
+        jLabel71.setToolTipText("");
+        Administrator.add(jLabel71, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 120, -1, -1));
+
+        jLabel98.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lib_project/guiFiles/img/back_patern.jpg"))); // NOI18N
+        jLabel98.setText("jLabel98");
+        Administrator.add(jLabel98, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         parentPanel.add(Administrator, "card2");
 
-        LendingOperations.setBackground(new java.awt.Color(234, 241, 234));
+        LendingOperations.setBackground(new java.awt.Color(255, 255, 255));
         LendingOperations.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         LendingOperations.add(jSeparator9, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 620, 940, 10));
 
@@ -1349,7 +1918,7 @@ public class AdminUserGUI extends MainJFrameProperties {
                 jTextField19MouseClicked(evt);
             }
         });
-        LendingOperations.add(jTextField19, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 80, 240, 40));
+        LendingOperations.add(jTextField19, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, 240, 40));
 
         jTable3.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -1369,17 +1938,227 @@ public class AdminUserGUI extends MainJFrameProperties {
         });
         jScrollPane3.setViewportView(jTable3);
 
-        LendingOperations.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, 900, 440));
-
-        jLabel76.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel76.setText("Search :");
-        LendingOperations.add(jLabel76, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 75, -1, 40));
+        LendingOperations.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, 900, 440));
 
         jLabel77.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel77.setText("Search and Select transaction to Remove.");
-        LendingOperations.add(jLabel77, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, -1, 30));
+        LendingOperations.add(jLabel77, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 70, -1, 30));
+
+        jLabel76.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lib_project/guiFiles/img/black_ptrn_4.jpg"))); // NOI18N
+        jLabel76.setText("jLabel76");
+        LendingOperations.add(jLabel76, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         parentPanel.add(LendingOperations, "card2");
+
+        Settings.setBackground(new java.awt.Color(255, 255, 255));
+        Settings.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        Settings.add(jSeparator11, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 620, 940, 10));
+        Settings.add(jSeparator12, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 63, 940, 10));
+
+        jLabel94.setFont(new java.awt.Font("Segoe UI Black", 1, 24)); // NOI18N
+        jLabel94.setText("System Settings");
+        Settings.add(jLabel94, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, -1, -1));
+
+        jLabel126.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel126.setText("Latefee rate for 1 Day :");
+        Settings.add(jLabel126, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, 150, 30));
+
+        jTextField35.setForeground(new java.awt.Color(102, 102, 102));
+        jTextField35.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField35.setText("Type Here");
+        jTextField35.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTextField35MouseClicked(evt);
+            }
+        });
+        jTextField35.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField35ActionPerformed(evt);
+            }
+        });
+        Settings.add(jTextField35, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 370, 290, 30));
+
+        jLabel125.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel125.setText("%");
+        Settings.add(jLabel125, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 170, -1, 30));
+
+        jLabel127.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel127.setText("Records per Table :");
+        Settings.add(jLabel127, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 210, -1, 30));
+        Settings.add(jSpinner1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 210, 150, 30));
+
+        jLabel128.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel128.setText("Records");
+        Settings.add(jLabel128, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 210, -1, 30));
+
+        jLabel129.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel129.setText("Lost Book Fine :");
+        Settings.add(jLabel129, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 170, -1, 30));
+
+        jTextField36.setForeground(new java.awt.Color(102, 102, 102));
+        jTextField36.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField36.setText("Type Here");
+        jTextField36.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTextField36MouseClicked(evt);
+            }
+        });
+        jTextField36.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField36ActionPerformed(evt);
+            }
+        });
+        Settings.add(jTextField36, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 330, 290, 30));
+
+        jLabel131.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel131.setText("Repeat Master Password :");
+        Settings.add(jLabel131, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 370, -1, 30));
+        Settings.add(jSpinner2, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 130, 150, 30));
+
+        jLabel132.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel132.setText("Rs .");
+        Settings.add(jLabel132, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 130, -1, 30));
+
+        jLabel133.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel133.setText("Books Price    +");
+        Settings.add(jLabel133, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 170, -1, 30));
+        Settings.add(jSpinner3, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 170, 150, 30));
+
+        jLabel134.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel134.setText("** Chnage using config file");
+        Settings.add(jLabel134, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 590, -1, 30));
+
+        jLabel135.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel135.setText("Database Details **");
+        Settings.add(jLabel135, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 430, -1, 30));
+
+        jLabel136.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel136.setText("Security ");
+        Settings.add(jLabel136, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 280, -1, 30));
+
+        jLabel137.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel137.setText("Master Password :");
+        Settings.add(jLabel137, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 330, -1, 30));
+
+        jLabel138.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel138.setText("********************");
+        Settings.add(jLabel138, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 560, -1, 30));
+
+        jLabel139.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel139.setText("Database Name :");
+        Settings.add(jLabel139, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 500, -1, 30));
+
+        jLabel140.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel140.setText("Database username :");
+        Settings.add(jLabel140, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 530, -1, 30));
+
+        jLabel141.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel141.setText("Database Connection url :");
+        Settings.add(jLabel141, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 470, -1, 30));
+
+        jLabel142.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel142.setText("https://mysql.loclahost:3306/ushan");
+        Settings.add(jLabel142, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 470, -1, 30));
+
+        jLabel143.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel143.setText("LibDB");
+        Settings.add(jLabel143, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 500, -1, 30));
+
+        jLabel144.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel144.setText("root");
+        Settings.add(jLabel144, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 530, -1, 30));
+        Settings.add(jSeparator16, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 460, 530, 10));
+        Settings.add(jSeparator18, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 310, 530, 10));
+
+        jPanel17.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel97.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lib_project/guiFiles/img/telegram.png"))); // NOI18N
+        jLabel97.setText(" Telegram : @im-ushan-ikshana");
+        jLabel97.setToolTipText("");
+        jPanel17.add(jLabel97, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 420, -1, -1));
+        jPanel17.add(jSeparator17, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 290, 340, 10));
+
+        jLabel96.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lib_project/guiFiles/img/github.png"))); // NOI18N
+        jLabel96.setText(" Github : @im-ushan-ikshana");
+        jLabel96.setToolTipText("");
+        jPanel17.add(jLabel96, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 380, -1, -1));
+        jPanel17.add(jSeparator20, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 340, 10));
+
+        jLabel156.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel156.setText("Contact");
+        jPanel17.add(jLabel156, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 260, -1, 30));
+        jPanel17.add(jSeparator21, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 200, 340, 10));
+
+        jLabel155.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel155.setText("to contact me.");
+        jPanel17.add(jLabel155, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 340, -1, 30));
+
+        jLabel154.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel154.setText("issues while using the application, please don't hesitate ");
+        jPanel17.add(jLabel154, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 320, -1, 30));
+
+        jLabel153.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel153.setText("If you have any feedback, suggestions, or encounter any");
+        jPanel17.add(jLabel153, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 300, -1, 30));
+
+        jLabel152.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel152.setText("version 1.3 ( 2024-05-02)");
+        jPanel17.add(jLabel152, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 200, -1, 30));
+
+        jLabel151.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel151.setText("Version");
+        jPanel17.add(jLabel151, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 170, -1, 30));
+
+        jLabel150.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel150.setText("Continously adding new features and Improvements.");
+        jPanel17.add(jLabel150, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, -1, 30));
+
+        jLabel149.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel149.setText("enhancing your experience with the system by ");
+        jPanel17.add(jLabel149, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 100, -1, 30));
+
+        jLabel148.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel148.setText("Ushan Ikshana. As the Developer , I'm dedicated to  ");
+        jPanel17.add(jLabel148, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, -1, 30));
+
+        jLabel147.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel147.setText("page. This Application is developed and Maintained by");
+        jPanel17.add(jLabel147, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, -1, 30));
+
+        jLabel146.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel146.setText("Welcome to the Library Management System Settings ");
+        jPanel17.add(jLabel146, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, -1, 30));
+
+        jLabel130.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel130.setText("About the System");
+        jPanel17.add(jLabel130, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, 30));
+
+        jLabel95.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lib_project/guiFiles/img/black_ptrn_4.jpg"))); // NOI18N
+        jLabel95.setToolTipText("");
+        jPanel17.add(jLabel95, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        Settings.add(jPanel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 80, 360, 510));
+
+        jLabel145.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel145.setText("System");
+        Settings.add(jLabel145, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 80, -1, 30));
+        Settings.add(jSeparator19, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, 530, 10));
+
+        jButton7.setBackground(new java.awt.Color(204, 204, 255));
+        jButton7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jButton7.setText("Update");
+        Settings.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 420, 120, 30));
+
+        jButton8.setBackground(new java.awt.Color(204, 204, 255));
+        jButton8.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jButton8.setText("Update");
+        Settings.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 250, 120, 30));
+
+        jLabel157.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel157.setText("Password :");
+        Settings.add(jLabel157, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 560, -1, 30));
+
+        parentPanel.add(Settings, "card7");
 
         MainPanel.add(parentPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 50, 960, 670));
 
@@ -1451,24 +2230,6 @@ public class AdminUserGUI extends MainJFrameProperties {
         parentPanel.repaint();
         parentPanel.revalidate();
 
-        //admin-pass-pannel
-        jTextField10.setText("Type Here");
-        jPasswordField3.setText("");
-
-        //set Text Fields to Normal
-        jTextField23.setText("Type Here");
-        jTextField17.setText("Type Here");
-        jTextField20.setText("Type Here");
-        jTextField21.setText("Type Here");
-        jTextField22.setText("Type Here");
-        jTextField24.setText("Type Here");
-        jTextField25.setText("Disabled");
-        jTextField25.setEditable(false);
-
-        //set-radio-btns-enabled
-        jRadioButton1.setEnabled(true);
-        jRadioButton2.setEnabled(true);
-        jRadioButton3.setEnabled(true);
     }//GEN-LAST:event_jPanel4MouseClicked
 
     private void jPanel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel5MouseClicked
@@ -1907,16 +2668,6 @@ public class AdminUserGUI extends MainJFrameProperties {
         }
     }//GEN-LAST:event_jTextField5CaretUpdate
 
-    private void jTextField10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField10MouseClicked
-        if (jTextField10.getText().equals("Type Here")) {
-            jTextField10.setText("");
-        }
-    }//GEN-LAST:event_jTextField10MouseClicked
-
-    private void jPasswordField3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPasswordField3MouseClicked
-        jPasswordField3.setText("");
-    }//GEN-LAST:event_jPasswordField3MouseClicked
-
     private void jTextField23MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField23MouseClicked
         if (jTextField23.getText().equals("Type Here") && jTextField23.isEditable()) {
             jTextField23.setText("");
@@ -1961,223 +2712,9 @@ public class AdminUserGUI extends MainJFrameProperties {
         }
     }//GEN-LAST:event_jTextField24MouseClicked
 
-    private void jButton10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton10MouseClicked
-
-        if (jButton10.isEnabled()) {
-            boolean validAdmin = !jTextField10.getText().equals("Type Here") && !jTextField10.getText().equals("") ? Admin.searchAdmin(jTextField10.getText(), jPasswordField3.getText()) : false;
-            if (validAdmin && (jRadioButton1.isSelected() || jRadioButton2.isSelected() || jRadioButton3.isSelected())) {
-                String[] adminInfoArray = Admin.getAllAdminInfo(jTextField10.getText());
-                MessageUtils.showMessage("Access granted.", jLabel74, false);
-                jTextField23.setText(adminInfoArray[0]);
-                jTextField17.setText(adminInfoArray[1]);
-                jTextField20.setText(adminInfoArray[3]);
-                jTextField21.setText(adminInfoArray[4]);
-                jTextField22.setText(adminInfoArray[5]);
-                jTextField24.setText(adminInfoArray[6]);
-                jTextField25.setText(adminInfoArray[7]);
-
-                jRadioButton1.setEnabled(false);
-                jRadioButton2.setEnabled(false);
-                jRadioButton3.setEnabled(false);
-            } else if (!(jRadioButton1.isSelected() || jRadioButton2.isSelected() || jRadioButton3.isSelected())) {
-                MessageUtils.showMessage("Select Operation please...", jLabel74, true);
-            } else {
-                MessageUtils.showMessage("Can not proceed.. Access denied...", jLabel74, true);
-            }
-        } else {
-            MessageUtils.showMessage("Please Choose Another Operation...", jLabel74, true);
-        }
-    }//GEN-LAST:event_jButton10MouseClicked
-
-    private void jRadioButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton2ActionPerformed
-
     private void jButton9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton9MouseClicked
-        if (jRadioButton1.isSelected()) {
-            //remove admin
-            boolean validAdmin = Admin.isUsernameExists(jTextField17.getText());
-            if (validAdmin) {
-                Admin.removeAdmin(jTextField23.getText(), jTextField17.getText());
-
-                //set Text Fields to Normal
-                jTextField23.setText("Type Here");
-                jTextField17.setText("Type Here");
-                jTextField20.setText("Type Here");
-                jTextField21.setText("Type Here");
-                jTextField22.setText("Type Here");
-                jTextField24.setText("Type Here");
-                jTextField25.setText("Disabled");
-                jTextField25.setEditable(false);
-                jPasswordField1.setText("");
-                jPasswordField2.setText("");
-
-                //enable disabled Radio Buttons
-                jRadioButton1.setEnabled(true);
-                jRadioButton2.setEnabled(true);
-                jRadioButton3.setEnabled(true);
-
-            } else {
-                MessageUtils.showMessage("user already removed.. or user dosent exsits...", jLabel74, true);
-            }
-        }
-        if (jRadioButton2.isSelected()) {
-            boolean validPassword, validAdminID, validUserName, validFname, validLname, validNIC, validTel;
-            validAdminID = Validations.isValidFormattedAdminID(jTextField23.getText()) && !jTextField23.getText().equals("Type Here");
-            validUserName = Validations.isAllString(jTextField17.getText(), 50) && !Admin.isUsernameExists(jTextField17.getText());
-            validFname = Validations.isValidName(jTextField20.getText()) && Validations.isAllString(jTextField20.getText(), 30);
-            validLname = Validations.isValidName(jTextField21.getText()) && Validations.isAllString(jTextField21.getText(), 30);
-            validNIC = Validations.isValidNIC(jTextField22.getText());
-            validTel = Validations.isValidTele(jTextField24.getText());
-            validPassword = (jPasswordField2.getText().equals(jPasswordField1.getText())) && Validations.isAllString(jPasswordField1.getText(), 20) ? true : false;
-            //add new admin
-            boolean condition = validPassword && validAdminID && validUserName && validFname && validLname && validNIC && validTel;
-            if (condition) {
-
-                Admin.addNewAdmin(jTextField23.getText(), jTextField17.getText(), jPasswordField1.getText(), jTextField20.getText(), jTextField21.getText(), jTextField22.getText(), jTextField24.getText());
-
-                //set Text Fields to Normal
-                jTextField23.setText("Type Here");
-                jTextField17.setText("Type Here");
-                jTextField20.setText("Type Here");
-                jTextField21.setText("Type Here");
-                jTextField22.setText("Type Here");
-                jTextField24.setText("Type Here");
-                jTextField25.setText("Disabled");
-                jTextField25.setEditable(false);
-                jPasswordField1.setText("");
-                jPasswordField2.setText("");
-
-                //enable disabled Radio Buttons
-                jRadioButton1.setEnabled(true);
-                jRadioButton2.setEnabled(true);
-                jRadioButton3.setEnabled(true);
-
-                MessageUtils.showMessage("New Admin added scuessfully...", jLabel74, false);
-
-            } else {
-                if (!validPassword) {
-                    MessageUtils.showMessage("Password Confirmantion doesnt match...", jLabel74, true);
-                    jPasswordField1.setText("");
-                    jPasswordField2.setText("");
-                }
-                if (!validAdminID) {
-                    MessageUtils.showMessage("Invalid Admin ID.", jTextField23, true);
-                }
-                if (!validUserName) {
-                    MessageUtils.showMessage("Invalid User Name.", jTextField17, true);
-                }
-                if (!validFname) {
-                    MessageUtils.showMessage("Invalid Frist Name.", jTextField20, true);
-                }
-                if (!validLname) {
-                    MessageUtils.showMessage("Invalid Last Name.", jTextField21, true);
-                }
-                if (!validNIC) {
-                    MessageUtils.showMessage("Invalid NIC number.", jTextField22, true);
-                }
-                if (!validTel) {
-                    MessageUtils.showMessage("Invalid Telephone number.", jTextField24, true);
-                }
-            }
-        }
-        if (jRadioButton3.isSelected()) {
-            //update
-            boolean validFname, validLname, validTele, validPass;
-            validFname = Validations.isValidName(jTextField20.getText()) && Validations.isAllString(jTextField20.getText(), 30);
-            validLname = Validations.isValidName(jTextField21.getText()) && Validations.isAllString(jTextField21.getText(), 30);
-            validTele = Validations.isValidTele(jTextField24.getText());
-            validPass = jPasswordField2.getText().equals(jPasswordField1.getText()) && Validations.isAllString(jPasswordField1.getText(), 20);
-
-            if (validFname && validLname && validTele && validPass) {
-                Admin.updateAdmin(jTextField23.getText(), jTextField17.getText(), jPasswordField1.getText(), jTextField20.getText(), jTextField21.getText(), jTextField22.getText(), jTextField24.getText());
-                MessageUtils.showMessage("Admin data has been updated...", jLabel74, false);
-
-                //set Text Fields to Normal
-                jTextField23.setText("Type Here");
-                jTextField17.setText("Type Here");
-                jTextField20.setText("Type Here");
-                jTextField21.setText("Type Here");
-                jTextField22.setText("Type Here");
-                jTextField24.setText("Type Here");
-                jTextField25.setText("Disabled");
-                jTextField25.setEditable(false);
-                jPasswordField1.setText("");
-                jPasswordField2.setText("");
-
-                //enable disabled Radio Buttons
-                jRadioButton1.setEnabled(true);
-                jRadioButton2.setEnabled(true);
-                jRadioButton3.setEnabled(true);
-            } else {
-                if (!validFname) {
-                    MessageUtils.showMessage("Invalid first name.", jTextField20, true);
-                }
-                if (!validLname) {
-                    MessageUtils.showMessage("Invalid last name.", jTextField21, true);
-                }
-                if (validTele) {
-                    MessageUtils.showMessage("Invalid telephone number.", jTextField20, true);
-                }
-                if (!validPass) {
-                    MessageUtils.showMessage("Password doesnt match...", jLabel74, true);
-                    jPasswordField1.setText("");
-                    jPasswordField1.setText("");
-                }
-            }
-        }
-        if (!jRadioButton1.isSelected() && !jRadioButton2.isSelected() && !jRadioButton3.isSelected()) {
-            MessageUtils.showMessage("Select Process from above operations...", jLabel74, true);
-        }
+        
     }//GEN-LAST:event_jButton9MouseClicked
-
-    private void jRadioButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jRadioButton2MouseClicked
-        jTextField23.setEditable(true);
-        jTextField17.setEditable(true);
-        jTextField20.setEditable(true);
-        jTextField21.setEditable(true);
-        jTextField22.setEditable(true);
-        jTextField24.setEditable(true);
-        jTextField25.setEditable(true);
-
-        jTextField10.setEditable(false);
-        jTextField10.setText("Disabled");
-        jPasswordField3.setEditable(false);
-
-        jButton10.setEnabled(false);
-    }//GEN-LAST:event_jRadioButton2MouseClicked
-
-    private void jRadioButton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jRadioButton3MouseClicked
-        jTextField23.setEditable(false);
-        jTextField17.setEditable(false);
-        jTextField20.setEditable(true);
-        jTextField21.setEditable(true);
-        jTextField22.setEditable(false);
-        jTextField24.setEditable(true);
-        jTextField25.setEditable(false);
-
-        jTextField10.setEditable(true);
-        jTextField10.setText("Type Here");
-        jPasswordField3.setEditable(true);
-
-        jButton10.setEnabled(true);
-    }//GEN-LAST:event_jRadioButton3MouseClicked
-
-    private void jRadioButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jRadioButton1MouseClicked
-        jTextField23.setEditable(false);
-        jTextField17.setEditable(false);
-        jTextField20.setEditable(false);
-        jTextField21.setEditable(false);
-        jTextField22.setEditable(false);
-        jTextField24.setEditable(false);
-        jTextField25.setEditable(false);
-
-        jTextField10.setEditable(true);
-        jTextField10.setText("Type Here");
-        jPasswordField3.setEditable(true);
-
-        jButton10.setEnabled(true);
-    }//GEN-LAST:event_jRadioButton1MouseClicked
 
     private void jTextField25MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField25MouseClicked
         // TODO add your handling code here:
@@ -2186,6 +2723,125 @@ public class AdminUserGUI extends MainJFrameProperties {
     private void formComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_formComponentShown
         jLabel21.setText(SystemVariables.getAdminUsername());
     }//GEN-LAST:event_formComponentShown
+
+    private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox1ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton9ActionPerformed
+
+    private void jTextField26MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField26MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField26MouseClicked
+
+    private void jPasswordField3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPasswordField3MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPasswordField3MouseClicked
+
+    private void jButton10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton10MouseClicked
+        otherAdminPanel.removeAll();
+        otherAdminPanel.add(otherAdminUpdatePanel);
+        otherAdminPanel.repaint();
+        otherAdminPanel.revalidate();
+    }//GEN-LAST:event_jButton10MouseClicked
+
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton10ActionPerformed
+
+    private void jTextField27MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField27MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField27MouseClicked
+
+    private void jTextField28MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField28MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField28MouseClicked
+
+    private void jTextField29MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField29MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField29MouseClicked
+
+    private void jTextField30MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField30MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField30MouseClicked
+
+    private void jTextField31MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField31MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField31MouseClicked
+
+    private void jTextField32MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField32MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField32MouseClicked
+
+    private void jTextField33MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField33MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField33MouseClicked
+
+    private void jButton11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton11MouseClicked
+        otherAdminPanel.removeAll();
+        otherAdminPanel.add(otherAdminLoginPanel);
+        otherAdminPanel.repaint();
+        otherAdminPanel.revalidate();
+    }//GEN-LAST:event_jButton11MouseClicked
+
+    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton11ActionPerformed
+
+    private void jPasswordField4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPasswordField4MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPasswordField4MouseClicked
+
+    private void jPasswordField5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPasswordField5MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPasswordField5MouseClicked
+
+    private void jButton12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton12MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton12MouseClicked
+
+    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton12ActionPerformed
+
+    private void jPanel11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel11MouseClicked
+        parentPanel.removeAll();
+        parentPanel.add(Settings);
+        parentPanel.repaint();
+        parentPanel.revalidate();
+    }//GEN-LAST:event_jPanel11MouseClicked
+
+    private void jPanel11MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel11MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanel11MouseEntered
+
+    private void jPanel11MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel11MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanel11MouseExited
+
+    private void jTextField35MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField35MouseClicked
+        if( jTextField17.getText().equals("Type Here") ){
+            jTextField17.setText("");
+        }
+    }//GEN-LAST:event_jTextField35MouseClicked
+
+    private void jTextField35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField35ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField35ActionPerformed
+
+    private void jTextField36MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField36MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField36MouseClicked
+
+    private void jTextField36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField36ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField36ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -2232,14 +2888,22 @@ public class AdminUserGUI extends MainJFrameProperties {
     private javax.swing.JPanel MainPanel;
     private javax.swing.JPanel MemberManage;
     private javax.swing.JPanel PayLatefee;
+    private javax.swing.JPanel Settings;
     private javax.swing.ButtonGroup buttonGroup1;
+    private javax.swing.JPanel currentAdmin;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
+    private javax.swing.JButton jButton11;
+    private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
+    private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JComboBox<String> jComboBox3;
@@ -2249,14 +2913,83 @@ public class AdminUserGUI extends MainJFrameProperties {
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel125;
+    private javax.swing.JLabel jLabel126;
+    private javax.swing.JLabel jLabel127;
+    private javax.swing.JLabel jLabel128;
+    private javax.swing.JLabel jLabel129;
     private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel130;
+    private javax.swing.JLabel jLabel131;
+    private javax.swing.JLabel jLabel132;
+    private javax.swing.JLabel jLabel133;
+    private javax.swing.JLabel jLabel134;
+    private javax.swing.JLabel jLabel135;
+    private javax.swing.JLabel jLabel136;
+    private javax.swing.JLabel jLabel137;
+    private javax.swing.JLabel jLabel138;
+    private javax.swing.JLabel jLabel139;
     private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel140;
+    private javax.swing.JLabel jLabel141;
+    private javax.swing.JLabel jLabel142;
+    private javax.swing.JLabel jLabel143;
+    private javax.swing.JLabel jLabel144;
+    private javax.swing.JLabel jLabel145;
+    private javax.swing.JLabel jLabel146;
+    private javax.swing.JLabel jLabel147;
+    private javax.swing.JLabel jLabel148;
+    private javax.swing.JLabel jLabel149;
     private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel150;
+    private javax.swing.JLabel jLabel151;
+    private javax.swing.JLabel jLabel152;
+    private javax.swing.JLabel jLabel153;
+    private javax.swing.JLabel jLabel154;
+    private javax.swing.JLabel jLabel155;
+    private javax.swing.JLabel jLabel156;
+    private javax.swing.JLabel jLabel157;
     private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel164;
+    private javax.swing.JLabel jLabel165;
+    private javax.swing.JLabel jLabel166;
+    private javax.swing.JLabel jLabel167;
+    private javax.swing.JLabel jLabel168;
+    private javax.swing.JLabel jLabel169;
     private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel170;
+    private javax.swing.JLabel jLabel171;
+    private javax.swing.JLabel jLabel172;
+    private javax.swing.JLabel jLabel173;
+    private javax.swing.JLabel jLabel174;
+    private javax.swing.JLabel jLabel175;
+    private javax.swing.JLabel jLabel176;
+    private javax.swing.JLabel jLabel177;
+    private javax.swing.JLabel jLabel178;
+    private javax.swing.JLabel jLabel179;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel180;
+    private javax.swing.JLabel jLabel181;
+    private javax.swing.JLabel jLabel182;
+    private javax.swing.JLabel jLabel183;
+    private javax.swing.JLabel jLabel184;
+    private javax.swing.JLabel jLabel185;
+    private javax.swing.JLabel jLabel186;
+    private javax.swing.JLabel jLabel187;
+    private javax.swing.JLabel jLabel188;
+    private javax.swing.JLabel jLabel189;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel205;
+    private javax.swing.JLabel jLabel206;
+    private javax.swing.JLabel jLabel207;
+    private javax.swing.JLabel jLabel208;
+    private javax.swing.JLabel jLabel209;
     private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel210;
+    private javax.swing.JLabel jLabel211;
+    private javax.swing.JLabel jLabel212;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
@@ -2322,11 +3055,37 @@ public class AdminUserGUI extends MainJFrameProperties {
     private javax.swing.JLabel jLabel79;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel80;
+    private javax.swing.JLabel jLabel81;
+    private javax.swing.JLabel jLabel82;
+    private javax.swing.JLabel jLabel83;
+    private javax.swing.JLabel jLabel84;
+    private javax.swing.JLabel jLabel85;
+    private javax.swing.JLabel jLabel86;
+    private javax.swing.JLabel jLabel87;
+    private javax.swing.JLabel jLabel88;
+    private javax.swing.JLabel jLabel89;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel jLabel90;
+    private javax.swing.JLabel jLabel91;
+    private javax.swing.JLabel jLabel93;
+    private javax.swing.JLabel jLabel94;
+    private javax.swing.JLabel jLabel95;
+    private javax.swing.JLabel jLabel96;
+    private javax.swing.JLabel jLabel97;
+    private javax.swing.JLabel jLabel98;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
+    private javax.swing.JPanel jPanel12;
+    private javax.swing.JPanel jPanel13;
+    private javax.swing.JPanel jPanel14;
+    private javax.swing.JPanel jPanel15;
+    private javax.swing.JPanel jPanel16;
+    private javax.swing.JPanel jPanel17;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel20;
+    private javax.swing.JPanel jPanel25;
+    private javax.swing.JPanel jPanel26;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
@@ -2337,20 +3096,29 @@ public class AdminUserGUI extends MainJFrameProperties {
     private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JPasswordField jPasswordField2;
     private javax.swing.JPasswordField jPasswordField3;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButton jRadioButton2;
-    private javax.swing.JRadioButton jRadioButton3;
+    private javax.swing.JPasswordField jPasswordField4;
+    private javax.swing.JPasswordField jPasswordField5;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
+    private javax.swing.JScrollPane jScrollPane6;
+    private javax.swing.JScrollPane jScrollPane7;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator10;
+    private javax.swing.JSeparator jSeparator11;
+    private javax.swing.JSeparator jSeparator12;
     private javax.swing.JSeparator jSeparator13;
     private javax.swing.JSeparator jSeparator14;
     private javax.swing.JSeparator jSeparator15;
+    private javax.swing.JSeparator jSeparator16;
+    private javax.swing.JSeparator jSeparator17;
+    private javax.swing.JSeparator jSeparator18;
+    private javax.swing.JSeparator jSeparator19;
     private javax.swing.JSeparator jSeparator2;
+    private javax.swing.JSeparator jSeparator20;
+    private javax.swing.JSeparator jSeparator21;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator4;
     private javax.swing.JSeparator jSeparator5;
@@ -2358,13 +3126,20 @@ public class AdminUserGUI extends MainJFrameProperties {
     private javax.swing.JSeparator jSeparator7;
     private javax.swing.JSeparator jSeparator8;
     private javax.swing.JSeparator jSeparator9;
+    private javax.swing.JSpinner jSpinner1;
+    private javax.swing.JSpinner jSpinner2;
+    private javax.swing.JSpinner jSpinner3;
+    private javax.swing.JTabbedPane jTabbedPane1;
+    private javax.swing.JTabbedPane jTabbedPane2;
+    private javax.swing.JTabbedPane jTabbedPane3;
     private javax.swing.JTable jTable1;
     private javax.swing.JTable jTable2;
     private javax.swing.JTable jTable3;
     private javax.swing.JTable jTable4;
+    private javax.swing.JTable jTable5;
     private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextArea jTextArea2;
     private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField10;
     private javax.swing.JTextField jTextField11;
     private javax.swing.JTextField jTextField12;
     private javax.swing.JTextField jTextField13;
@@ -2381,7 +3156,17 @@ public class AdminUserGUI extends MainJFrameProperties {
     private javax.swing.JTextField jTextField23;
     private javax.swing.JTextField jTextField24;
     private javax.swing.JTextField jTextField25;
+    private javax.swing.JTextField jTextField26;
+    private javax.swing.JTextField jTextField27;
+    private javax.swing.JTextField jTextField28;
+    private javax.swing.JTextField jTextField29;
     private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField30;
+    private javax.swing.JTextField jTextField31;
+    private javax.swing.JTextField jTextField32;
+    private javax.swing.JTextField jTextField33;
+    private javax.swing.JTextField jTextField35;
+    private javax.swing.JTextField jTextField36;
     private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField jTextField5;
     private javax.swing.JTextField jTextField6;
@@ -2389,6 +3174,9 @@ public class AdminUserGUI extends MainJFrameProperties {
     private javax.swing.JTextField jTextField8;
     private javax.swing.JTextField jTextField9;
     private javax.swing.JPanel leftPanel;
+    private javax.swing.JPanel otherAdminLoginPanel;
+    private javax.swing.JPanel otherAdminPanel;
+    private javax.swing.JPanel otherAdminUpdatePanel;
     private javax.swing.JPanel parentPanel;
     private javax.swing.JPanel upperPanel;
     // End of variables declaration//GEN-END:variables

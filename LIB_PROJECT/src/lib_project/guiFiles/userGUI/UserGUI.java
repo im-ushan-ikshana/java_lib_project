@@ -98,27 +98,60 @@ public class UserGUI extends MainJFrameProperties {
         jSeparator1 = new javax.swing.JSeparator();
         jLabel1 = new javax.swing.JLabel();
         jSeparator2 = new javax.swing.JSeparator();
-        dash1 = new javax.swing.JPanel();
-        jLabel35 = new javax.swing.JLabel();
-        jLabel42 = new javax.swing.JLabel();
-        jLabel46 = new javax.swing.JLabel();
-        dash2 = new javax.swing.JPanel();
-        jLabel36 = new javax.swing.JLabel();
-        jLabel39 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jPanel35 = new javax.swing.JPanel();
         jLabel43 = new javax.swing.JLabel();
-        dash3 = new javax.swing.JPanel();
-        jLabel37 = new javax.swing.JLabel();
-        jLabel40 = new javax.swing.JLabel();
-        jLabel44 = new javax.swing.JLabel();
-        dash4 = new javax.swing.JPanel();
-        jLabel38 = new javax.swing.JLabel();
-        jLabel41 = new javax.swing.JLabel();
-        jLabel45 = new javax.swing.JLabel();
-        jPanel6 = new javax.swing.JPanel();
+        jSeparator11 = new javax.swing.JSeparator();
+        jLabel46 = new javax.swing.JLabel();
         jLabel47 = new javax.swing.JLabel();
+        jLabel50 = new javax.swing.JLabel();
+        jLabel51 = new javax.swing.JLabel();
+        jLabel52 = new javax.swing.JLabel();
+        jLabel53 = new javax.swing.JLabel();
+        jLabel54 = new javax.swing.JLabel();
+        jLabel55 = new javax.swing.JLabel();
+        jLabel56 = new javax.swing.JLabel();
+        jLabel57 = new javax.swing.JLabel();
+        jLabel58 = new javax.swing.JLabel();
+        jLabel59 = new javax.swing.JLabel();
+        jLabel60 = new javax.swing.JLabel();
+        jLabel61 = new javax.swing.JLabel();
+        jLabel80 = new javax.swing.JLabel();
+        jLabel81 = new javax.swing.JLabel();
+        jLabel82 = new javax.swing.JLabel();
+        jLabel83 = new javax.swing.JLabel();
+        jLabel84 = new javax.swing.JLabel();
+        jPanel37 = new javax.swing.JPanel();
+        jLabel45 = new javax.swing.JLabel();
+        jSeparator13 = new javax.swing.JSeparator();
+        jLabel86 = new javax.swing.JLabel();
+        jLabel92 = new javax.swing.JLabel();
+        jLabel93 = new javax.swing.JLabel();
+        jLabel261 = new javax.swing.JLabel();
+        jLabel262 = new javax.swing.JLabel();
+        jLabel263 = new javax.swing.JLabel();
+        jLabel264 = new javax.swing.JLabel();
+        jLabel265 = new javax.swing.JLabel();
+        jPanel36 = new javax.swing.JPanel();
+        jLabel44 = new javax.swing.JLabel();
+        jSeparator12 = new javax.swing.JSeparator();
+        jLabel85 = new javax.swing.JLabel();
+        jLabel87 = new javax.swing.JLabel();
+        jLabel88 = new javax.swing.JLabel();
+        jLabel89 = new javax.swing.JLabel();
+        jLabel90 = new javax.swing.JLabel();
+        jLabel91 = new javax.swing.JLabel();
+        jLabel266 = new javax.swing.JLabel();
+        jPanel6 = new javax.swing.JPanel();
+        jLabel268 = new javax.swing.JLabel();
+        jLabel274 = new javax.swing.JLabel();
+        jLabel275 = new javax.swing.JLabel();
+        jLabel276 = new javax.swing.JLabel();
+        jLabel277 = new javax.swing.JLabel();
+        jLabel278 = new javax.swing.JLabel();
+        jLabel273 = new javax.swing.JLabel();
         jPanel18 = new javax.swing.JPanel();
         jLabel11 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
         CheckIn = new javax.swing.JPanel();
         jSeparator3 = new javax.swing.JSeparator();
         jLabel4 = new javax.swing.JLabel();
@@ -161,6 +194,12 @@ public class UserGUI extends MainJFrameProperties {
         jLabel175 = new javax.swing.JLabel();
         jLabel176 = new javax.swing.JLabel();
         jLabel177 = new javax.swing.JLabel();
+        jCheckBox1 = new javax.swing.JCheckBox();
+        jLabel205 = new javax.swing.JLabel();
+        jLabel206 = new javax.swing.JLabel();
+        jLabel207 = new javax.swing.JLabel();
+        jLabel208 = new javax.swing.JLabel();
+        jLabel210 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         jPanel10 = new javax.swing.JPanel();
         jTextField16 = new javax.swing.JTextField();
@@ -230,36 +269,108 @@ public class UserGUI extends MainJFrameProperties {
         jLabel134 = new javax.swing.JLabel();
         jLabel135 = new javax.swing.JLabel();
         jLabel29 = new javax.swing.JLabel();
+        jPanel11 = new javax.swing.JPanel();
+        jPanel27 = new javax.swing.JPanel();
+        jLabel69 = new javax.swing.JLabel();
+        jLabel136 = new javax.swing.JLabel();
+        jLabel137 = new javax.swing.JLabel();
+        jLabel192 = new javax.swing.JLabel();
+        jLabel193 = new javax.swing.JLabel();
+        jLabel194 = new javax.swing.JLabel();
+        jLabel195 = new javax.swing.JLabel();
+        jLabel196 = new javax.swing.JLabel();
+        jLabel197 = new javax.swing.JLabel();
+        jLabel198 = new javax.swing.JLabel();
+        jLabel199 = new javax.swing.JLabel();
+        jLabel200 = new javax.swing.JLabel();
+        jLabel201 = new javax.swing.JLabel();
+        jLabel202 = new javax.swing.JLabel();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        jTable4 = new javax.swing.JTable();
+        jLabel30 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jLabel31 = new javax.swing.JLabel();
+        jLabel138 = new javax.swing.JLabel();
+        jTextField21 = new javax.swing.JTextField();
+        jButton9 = new javax.swing.JButton();
+        jPanel28 = new javax.swing.JPanel();
+        jLabel139 = new javax.swing.JLabel();
+        jLabel140 = new javax.swing.JLabel();
+        jLabel141 = new javax.swing.JLabel();
+        jLabel151 = new javax.swing.JLabel();
+        jLabel203 = new javax.swing.JLabel();
+        jLabel204 = new javax.swing.JLabel();
+        jPanel29 = new javax.swing.JPanel();
+        jPanel30 = new javax.swing.JPanel();
+        jLabel209 = new javax.swing.JLabel();
+        jLabel211 = new javax.swing.JLabel();
+        jLabel212 = new javax.swing.JLabel();
+        jLabel213 = new javax.swing.JLabel();
+        jLabel214 = new javax.swing.JLabel();
+        jLabel215 = new javax.swing.JLabel();
+        jLabel216 = new javax.swing.JLabel();
+        jLabel217 = new javax.swing.JLabel();
+        jLabel218 = new javax.swing.JLabel();
+        jLabel219 = new javax.swing.JLabel();
+        jLabel220 = new javax.swing.JLabel();
+        jLabel221 = new javax.swing.JLabel();
+        jLabel222 = new javax.swing.JLabel();
+        jLabel223 = new javax.swing.JLabel();
+        jScrollPane5 = new javax.swing.JScrollPane();
+        jTable5 = new javax.swing.JTable();
+        jLabel32 = new javax.swing.JLabel();
+        jTextField2 = new javax.swing.JTextField();
+        jLabel33 = new javax.swing.JLabel();
+        jButton10 = new javax.swing.JButton();
+        jPanel31 = new javax.swing.JPanel();
+        jLabel225 = new javax.swing.JLabel();
+        jLabel226 = new javax.swing.JLabel();
+        jLabel227 = new javax.swing.JLabel();
+        jLabel228 = new javax.swing.JLabel();
+        jLabel229 = new javax.swing.JLabel();
+        jLabel230 = new javax.swing.JLabel();
+        jLabel231 = new javax.swing.JLabel();
+        jLabel232 = new javax.swing.JLabel();
         searchBook = new javax.swing.JPanel();
         jSeparator5 = new javax.swing.JSeparator();
         jLabel7 = new javax.swing.JLabel();
         jSeparator6 = new javax.swing.JSeparator();
         jTextField3 = new javax.swing.JTextField();
         jLabel72 = new javax.swing.JLabel();
-        jPanel15 = new javax.swing.JPanel();
-        jLabel80 = new javax.swing.JLabel();
-        jLabel81 = new javax.swing.JLabel();
-        jLabel82 = new javax.swing.JLabel();
-        jLabel83 = new javax.swing.JLabel();
-        jLabel84 = new javax.swing.JLabel();
-        jLabel85 = new javax.swing.JLabel();
-        jLabel86 = new javax.swing.JLabel();
-        jLabel87 = new javax.swing.JLabel();
-        jLabel88 = new javax.swing.JLabel();
-        jLabel89 = new javax.swing.JLabel();
-        jLabel90 = new javax.swing.JLabel();
-        jLabel91 = new javax.swing.JLabel();
-        jLabel92 = new javax.swing.JLabel();
-        jLabel93 = new javax.swing.JLabel();
         jLabel73 = new javax.swing.JLabel();
         jLabel94 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTable2 = new javax.swing.JTable();
         jLabel122 = new javax.swing.JLabel();
+        jPanel32 = new javax.swing.JPanel();
+        jLabel224 = new javax.swing.JLabel();
+        jLabel233 = new javax.swing.JLabel();
+        jLabel234 = new javax.swing.JLabel();
+        jLabel235 = new javax.swing.JLabel();
+        jLabel236 = new javax.swing.JLabel();
+        jLabel237 = new javax.swing.JLabel();
+        jLabel238 = new javax.swing.JLabel();
+        jLabel239 = new javax.swing.JLabel();
+        jLabel240 = new javax.swing.JLabel();
+        jLabel241 = new javax.swing.JLabel();
+        jLabel242 = new javax.swing.JLabel();
+        jLabel243 = new javax.swing.JLabel();
+        jLabel244 = new javax.swing.JLabel();
+        jLabel245 = new javax.swing.JLabel();
+        jCheckBox2 = new javax.swing.JCheckBox();
+        jLabel246 = new javax.swing.JLabel();
+        jLabel247 = new javax.swing.JLabel();
+        jLabel248 = new javax.swing.JLabel();
+        jLabel249 = new javax.swing.JLabel();
+        jLabel250 = new javax.swing.JLabel();
+        jPanel15 = new javax.swing.JPanel();
         NewBook = new javax.swing.JPanel();
         jSeparator7 = new javax.swing.JSeparator();
         jLabel10 = new javax.swing.JLabel();
         jSeparator8 = new javax.swing.JSeparator();
+        jLabel123 = new javax.swing.JLabel();
+        jTabbedPane2 = new javax.swing.JTabbedPane();
+        jPanel33 = new javax.swing.JPanel();
         jTextField4 = new javax.swing.JTextField();
         jButton4 = new javax.swing.JButton();
         jLabel97 = new javax.swing.JLabel();
@@ -279,7 +390,6 @@ public class UserGUI extends MainJFrameProperties {
         jSpinner1 = new javax.swing.JSpinner();
         jLabel105 = new javax.swing.JLabel();
         jButton5 = new javax.swing.JButton();
-        jLabel106 = new javax.swing.JLabel();
         jPanel17 = new javax.swing.JPanel();
         jLabel12 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
@@ -289,7 +399,26 @@ public class UserGUI extends MainJFrameProperties {
         jLabel119 = new javax.swing.JLabel();
         jComboBox4 = new javax.swing.JComboBox<>();
         jComboBox5 = new javax.swing.JComboBox<>();
-        jLabel123 = new javax.swing.JLabel();
+        jLabel49 = new javax.swing.JLabel();
+        jPanel34 = new javax.swing.JPanel();
+        jTextField22 = new javax.swing.JTextField();
+        jLabel106 = new javax.swing.JLabel();
+        jLabel251 = new javax.swing.JLabel();
+        jScrollPane6 = new javax.swing.JScrollPane();
+        jTable6 = new javax.swing.JTable();
+        jLabel252 = new javax.swing.JLabel();
+        jComboBox7 = new javax.swing.JComboBox<>();
+        jComboBox8 = new javax.swing.JComboBox<>();
+        jLabel253 = new javax.swing.JLabel();
+        jLabel254 = new javax.swing.JLabel();
+        jLabel255 = new javax.swing.JLabel();
+        jLabel256 = new javax.swing.JLabel();
+        jLabel257 = new javax.swing.JLabel();
+        jLabel258 = new javax.swing.JLabel();
+        jLabel259 = new javax.swing.JLabel();
+        jLabel260 = new javax.swing.JLabel();
+        jButton11 = new javax.swing.JButton();
+        jLabel48 = new javax.swing.JLabel();
         NewMember = new javax.swing.JPanel();
         jSeparator9 = new javax.swing.JSeparator();
         jLabel13 = new javax.swing.JLabel();
@@ -495,16 +624,16 @@ public class UserGUI extends MainJFrameProperties {
         jLabel26.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 14)); // NOI18N
         jLabel26.setForeground(new java.awt.Color(255, 255, 255));
         jLabel26.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel26.setText("New Book");
+        jLabel26.setText("Books Management");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGap(88, 88, 88)
-                .addComponent(jLabel26, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(96, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                .addContainerGap(69, Short.MAX_VALUE)
+                .addComponent(jLabel26, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(61, 61, 61))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -623,90 +752,214 @@ public class UserGUI extends MainJFrameProperties {
         DashBoard.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, -1, -1));
         DashBoard.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 63, 940, 10));
 
-        dash1.setBackground(new java.awt.Color(255, 255, 153));
-        dash1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lib_project/guiFiles/img/money.png"))); // NOI18N
-        dash1.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 10, 70, -1));
-
-        jLabel42.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel42.setText("Latefee ");
-        dash1.add(jLabel42, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
-
-        jLabel46.setFont(new java.awt.Font("Segoe UI Black", 0, 24)); // NOI18N
-        jLabel46.setText("6515");
-        dash1.add(jLabel46, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, -1, -1));
-
-        DashBoard.add(dash1, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 150, 210, 160));
-
-        dash2.setBackground(new java.awt.Color(255, 204, 255));
-        dash2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lib_project/guiFiles/img/books-stack.png"))); // NOI18N
-        dash2.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 10, -1, -1));
-
-        jLabel39.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel39.setText("Books");
-        dash2.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
-
-        jLabel43.setFont(new java.awt.Font("Segoe UI Black", 0, 36)); // NOI18N
-        jLabel43.setText("1257");
-        dash2.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 100, -1, -1));
-
-        DashBoard.add(dash2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, 210, 160));
-
-        dash3.setBackground(new java.awt.Color(153, 204, 255));
-        dash3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lib_project/guiFiles/img/group.png"))); // NOI18N
-        dash3.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 10, -1, -1));
-
-        jLabel40.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel40.setText("Members");
-        dash3.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
-
-        jLabel44.setFont(new java.awt.Font("Segoe UI Black", 0, 36)); // NOI18N
-        jLabel44.setText("154");
-        dash3.add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 100, -1, -1));
-
-        DashBoard.add(dash3, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 150, 210, 160));
-
-        dash4.setBackground(new java.awt.Color(153, 255, 153));
-        dash4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel38.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lib_project/guiFiles/img/exclamation.png"))); // NOI18N
-        dash4.add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 10, 70, -1));
-
-        jLabel41.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel41.setText("Issues");
-        dash4.add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
-
-        jLabel45.setFont(new java.awt.Font("Segoe UI Black", 0, 36)); // NOI18N
-        jLabel45.setText("2574");
-        dash4.add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 100, -1, -1));
-
-        DashBoard.add(dash4, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 150, 210, 160));
-
-        jPanel6.setBackground(new java.awt.Color(0, 0, 0));
-        jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel47.setFont(new java.awt.Font("Segoe UI Black", 0, 18)); // NOI18N
-        jLabel47.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel47.setText("Welcome to Sri Premananda Collage, Library Management System !!!");
-        jPanel6.add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
-
-        DashBoard.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 80, 900, 50));
-
-        jPanel18.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel11.setText("Help & Support");
-        jPanel18.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 0, -1, 30));
-
-        DashBoard.add(jPanel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 580, 150, 30));
-
         jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lib_project/guiFiles/img/bell.png"))); // NOI18N
         jLabel14.setToolTipText("icon");
         DashBoard.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 620, 40, 50));
+
+        jPanel35.setBackground(new java.awt.Color(255, 255, 204));
+        jPanel35.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel43.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel43.setText("Today ( Check Ins) :");
+        jPanel35.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 200, 140, -1));
+        jPanel35.add(jSeparator11, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 33, 400, 10));
+
+        jLabel46.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel46.setText("Books ");
+        jPanel35.add(jLabel46, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 210, -1));
+
+        jLabel47.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel47.setText("Total Books : ");
+        jPanel35.add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, 90, -1));
+
+        jLabel50.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel50.setText("Total Different Books :");
+        jPanel35.add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, 140, -1));
+
+        jLabel51.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel51.setText("Total Book Categories :");
+        jPanel35.add(jLabel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, 150, -1));
+
+        jLabel52.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel52.setText("Total Values of the Books :");
+        jPanel35.add(jLabel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, 190, -1));
+
+        jLabel53.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel53.setText("Books outside the Library :");
+        jPanel35.add(jLabel53, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 130, 190, -1));
+
+        jLabel54.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel54.setText("Latefee Rate per day :");
+        jPanel35.add(jLabel54, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 250, 140, -1));
+
+        jLabel55.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel55.setText("Today ( Check Outs) :");
+        jPanel35.add(jLabel55, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 180, 140, -1));
+
+        jLabel56.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel56.setText("Transactions :");
+        jPanel35.add(jLabel56, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, 120, -1));
+
+        jLabel57.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel57.setText("Lost Books :");
+        jPanel35.add(jLabel57, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 230, 120, -1));
+
+        jLabel58.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel58.setText("224");
+        jPanel35.add(jLabel58, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 50, 90, -1));
+
+        jLabel59.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel59.setText("154");
+        jPanel35.add(jLabel59, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 70, 140, -1));
+
+        jLabel60.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel60.setText("42");
+        jPanel35.add(jLabel60, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 90, 150, -1));
+
+        jLabel61.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel61.setText("Rs. 275 847 000.00");
+        jPanel35.add(jLabel61, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 110, 190, -1));
+
+        jLabel80.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel80.setText("12");
+        jPanel35.add(jLabel80, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 130, 190, -1));
+
+        jLabel81.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel81.setText("15");
+        jPanel35.add(jLabel81, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 180, 140, -1));
+
+        jLabel82.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel82.setText("18");
+        jPanel35.add(jLabel82, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 200, 140, -1));
+
+        jLabel83.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel83.setText("2");
+        jPanel35.add(jLabel83, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 230, 120, -1));
+
+        jLabel84.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel84.setText("Rs. 5.00");
+        jPanel35.add(jLabel84, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 250, 140, -1));
+
+        DashBoard.add(jPanel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, 420, 330));
+
+        jPanel37.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel45.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel45.setText("System ");
+        jPanel37.add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 210, -1));
+        jPanel37.add(jSeparator13, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 33, 310, 10));
+
+        jLabel86.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel86.setText("Current Admin Login time :");
+        jPanel37.add(jLabel86, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 100, 170, -1));
+
+        jLabel92.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel92.setText("Total Latefees Collected :");
+        jPanel37.add(jLabel92, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 160, -1));
+
+        jLabel93.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel93.setText("Total Latefees to Collect :");
+        jPanel37.add(jLabel93, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, 160, -1));
+
+        jLabel261.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel261.setText("Current Admin ID :");
+        jPanel37.add(jLabel261, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 160, -1));
+
+        jLabel262.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel262.setText("2024-05-02 14:25");
+        jPanel37.add(jLabel262, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 100, 130, -1));
+
+        jLabel263.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel263.setText("Rs. 974.00");
+        jPanel37.add(jLabel263, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 40, 130, -1));
+
+        jLabel264.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel264.setText("Rs. 1055.00");
+        jPanel37.add(jLabel264, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 60, 130, -1));
+
+        jLabel265.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel265.setText("ADM_05");
+        jPanel37.add(jLabel265, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 80, 130, -1));
+
+        DashBoard.add(jPanel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 260, 330, 150));
+
+        jPanel36.setBackground(new java.awt.Color(204, 255, 204));
+        jPanel36.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel44.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel44.setText("Members ");
+        jPanel36.add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 210, -1));
+        jPanel36.add(jSeparator12, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 33, 310, 10));
+
+        jLabel85.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel85.setText("Total Memebers :");
+        jPanel36.add(jLabel85, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, 110, -1));
+
+        jLabel87.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel87.setText("158");
+        jPanel36.add(jLabel87, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 50, 130, -1));
+
+        jLabel88.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel88.setText("4");
+        jPanel36.add(jLabel88, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 90, 130, -1));
+
+        jLabel89.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel89.setText("Total Staff Members :");
+        jPanel36.add(jLabel89, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 140, -1));
+
+        jLabel90.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel90.setText("Total Admin Users :");
+        jPanel36.add(jLabel90, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, 140, -1));
+
+        jLabel91.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel91.setText("21");
+        jPanel36.add(jLabel91, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 70, 130, -1));
+
+        DashBoard.add(jPanel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 80, 330, 170));
+
+        jLabel266.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel266.setText("System Notifications :");
+        DashBoard.add(jLabel266, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 430, 400, 30));
+
+        jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel268.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
+        jLabel268.setText("2024-05-02 19:27 : Book Id ABC_00584 was broowed by STU_23261");
+        jPanel6.add(jLabel268, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, 890, -1));
+
+        jLabel274.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
+        jLabel274.setText("2024-05-02 19:27 : Book Id ABC_00584_C2 was browwed by STU_23261");
+        jPanel6.add(jLabel274, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 890, -1));
+
+        jLabel275.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
+        jLabel275.setText("2024-05-02 19:27 : Book Id KLN_00584_21 was recieved back from STU_23261");
+        jPanel6.add(jLabel275, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, 890, -1));
+
+        jLabel276.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
+        jLabel276.setText("2024-05-02 19:27 : Admin ID : ADM_05 Password has been chanaged.");
+        jPanel6.add(jLabel276, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, 890, -1));
+
+        jLabel277.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
+        jLabel277.setText("2024-05-02 19:27 : Book Id ABC_00584 was broowed by STU_23261");
+        jPanel6.add(jLabel277, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 890, -1));
+
+        jLabel278.setFont(new java.awt.Font("Monospaced", 0, 14)); // NOI18N
+        jLabel278.setText("2024-05-02 19:27 : Book Id KNG_75415 added with 10 Copies.");
+        jPanel6.add(jLabel278, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, 890, -1));
+
+        DashBoard.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 460, 910, 140));
+
+        jLabel273.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel273.setText("Welcome to Library Management System ...!!!");
+        DashBoard.add(jLabel273, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 20, 400, 30));
+
+        jPanel18.setBackground(new java.awt.Color(204, 204, 255));
+        jPanel18.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        DashBoard.add(jPanel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 80, 140, 330));
+
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lib_project/guiFiles/img/white_back.jpg"))); // NOI18N
+        jLabel11.setText("jLabel11");
+        DashBoard.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(-50, -70, -1, -1));
 
         parentPanel.add(DashBoard, "card2");
 
@@ -723,7 +976,7 @@ public class UserGUI extends MainJFrameProperties {
         jLabel121.setToolTipText("icon");
         CheckIn.add(jLabel121, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 620, 40, 50));
 
-        jTabbedPane1.setBackground(new java.awt.Color(255, 255, 255));
+        jTabbedPane1.setBackground(new java.awt.Color(204, 255, 204));
         jTabbedPane1.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
 
         jPanel19.setBackground(new java.awt.Color(255, 255, 255));
@@ -778,7 +1031,7 @@ public class UserGUI extends MainJFrameProperties {
         });
         jPanel19.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 100, 110, 30));
 
-        jPanel21.setBackground(new java.awt.Color(250, 249, 249));
+        jPanel21.setBackground(new java.awt.Color(252, 252, 231));
         jPanel21.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel142.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -823,7 +1076,7 @@ public class UserGUI extends MainJFrameProperties {
 
         jPanel19.add(jPanel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 160, 430, 250));
 
-        jPanel22.setBackground(new java.awt.Color(250, 249, 249));
+        jPanel22.setBackground(new java.awt.Color(252, 252, 231));
         jPanel22.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel148.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -844,7 +1097,7 @@ public class UserGUI extends MainJFrameProperties {
         jComboBox6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "7 Days", "14 Days", "2 Days", "5 Days", "1 Month" }));
         jPanel19.add(jComboBox6, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 100, 140, 30));
 
-        jPanel25.setBackground(new java.awt.Color(250, 249, 249));
+        jPanel25.setBackground(new java.awt.Color(252, 252, 231));
         jPanel25.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel164.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
@@ -896,12 +1149,40 @@ public class UserGUI extends MainJFrameProperties {
         jPanel25.add(jLabel175, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 130, 300, -1));
 
         jLabel176.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel176.setText("Cupboard 01");
-        jPanel25.add(jLabel176, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 170, 290, 40));
+        jLabel176.setText("2024-12-01");
+        jPanel25.add(jLabel176, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 250, 290, 40));
 
         jLabel177.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel177.setText("Location :");
-        jPanel25.add(jLabel177, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 180, -1, -1));
+        jLabel177.setText("Request Date :");
+        jPanel25.add(jLabel177, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 260, -1, -1));
+
+        jCheckBox1.setToolTipText("");
+        jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox1ActionPerformed(evt);
+            }
+        });
+        jPanel25.add(jCheckBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 220, 30, 20));
+
+        jLabel205.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel205.setText("Location :");
+        jPanel25.add(jLabel205, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 180, -1, -1));
+
+        jLabel206.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel206.setText("Request Status:");
+        jPanel25.add(jLabel206, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, -1, -1));
+
+        jLabel207.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel207.setText("Cupboard 01");
+        jPanel25.add(jLabel207, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 170, 290, 40));
+
+        jLabel208.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel208.setText("Request By :");
+        jPanel25.add(jLabel208, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 240, -1, -1));
+
+        jLabel210.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel210.setText("Ushan Ikshana");
+        jPanel25.add(jLabel210, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 230, 290, 40));
 
         jPanel19.add(jPanel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 160, 430, 300));
 
@@ -1000,7 +1281,7 @@ public class UserGUI extends MainJFrameProperties {
         jLabel71.setText("2023-12-24");
         jPanel12.add(jLabel71, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 60, 120, 20));
 
-        jPanel14.setBackground(new java.awt.Color(245, 242, 242));
+        jPanel14.setBackground(new java.awt.Color(252, 232, 252));
         jPanel14.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel62.setFont(new java.awt.Font("Segoe UI Black", 1, 20)); // NOI18N
@@ -1240,6 +1521,328 @@ public class UserGUI extends MainJFrameProperties {
 
         jTabbedPane1.addTab("Lost Book", jPanel23);
 
+        jPanel11.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel11.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel27.setBackground(new java.awt.Color(226, 248, 248));
+        jPanel27.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel69.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel69.setText("Good Condtion. Page 15 is Lost");
+        jPanel27.add(jLabel69, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 140, 300, 30));
+
+        jLabel136.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel136.setText("Book Details");
+        jPanel27.add(jLabel136, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, -1));
+
+        jLabel137.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel137.setText("( PS_002 )");
+        jPanel27.add(jLabel137, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 20, 140, -1));
+
+        jLabel192.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel192.setText("Ikshana K.A.A.U");
+        jPanel27.add(jLabel192, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 70, 290, 30));
+
+        jLabel193.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel193.setText("Security and Tech");
+        jPanel27.add(jLabel193, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 100, 300, -1));
+
+        jLabel194.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel194.setText("Title :");
+        jPanel27.add(jLabel194, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, -1, -1));
+
+        jLabel195.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel195.setText("Author:");
+        jPanel27.add(jLabel195, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, -1, 30));
+
+        jLabel196.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel196.setText("Gerne :");
+        jPanel27.add(jLabel196, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, -1, -1));
+
+        jLabel197.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel197.setText("ISBN :");
+        jPanel27.add(jLabel197, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, -1, 30));
+
+        jLabel198.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel198.setText("Introdcution to Cyber Crimes");
+        jPanel27.add(jLabel198, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 50, 300, -1));
+
+        jLabel199.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel199.setText("Price :");
+        jPanel27.add(jLabel199, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, -1, -1));
+
+        jLabel200.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel200.setText("156655.00");
+        jPanel27.add(jLabel200, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 120, 300, -1));
+
+        jLabel201.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel201.setText("Cupboard 01");
+        jPanel27.add(jLabel201, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 160, 290, 40));
+
+        jLabel202.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel202.setText("Location :");
+        jPanel27.add(jLabel202, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, -1, -1));
+
+        jPanel11.add(jPanel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 280, 430, 200));
+
+        jTable4.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null}
+            },
+            new String [] {
+                "Book ID", "Book Title", "Author", "Status", "Request Status"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane4.setViewportView(jTable4);
+        if (jTable4.getColumnModel().getColumnCount() > 0) {
+            jTable4.getColumnModel().getColumn(0).setPreferredWidth(15);
+            jTable4.getColumnModel().getColumn(3).setPreferredWidth(15);
+            jTable4.getColumnModel().getColumn(4).setResizable(false);
+            jTable4.getColumnModel().getColumn(4).setPreferredWidth(15);
+        }
+
+        jPanel11.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 70, 820, 200));
+
+        jLabel30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lib_project/guiFiles/img/select.png"))); // NOI18N
+        jPanel11.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 240, -1, -1));
+
+        jTextField1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField1.setText("keyword");
+        jTextField1.setToolTipText("");
+        jPanel11.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 30, 230, 30));
+
+        jLabel31.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel31.setText("Search using keyword :");
+        jPanel11.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, -1, 30));
+
+        jLabel138.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel138.setText("Member ID:");
+        jPanel11.add(jLabel138, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 280, -1, 30));
+
+        jTextField21.setForeground(new java.awt.Color(102, 102, 102));
+        jTextField21.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField21.setText("Type Here");
+        jTextField21.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTextField21MouseClicked(evt);
+            }
+        });
+        jTextField21.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField21ActionPerformed(evt);
+            }
+        });
+        jPanel11.add(jTextField21, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 310, 290, 30));
+
+        jButton9.setBackground(new java.awt.Color(0, 153, 153));
+        jButton9.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
+        jButton9.setForeground(new java.awt.Color(255, 255, 255));
+        jButton9.setText("Submit");
+        jButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton9ActionPerformed(evt);
+            }
+        });
+        jPanel11.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 450, 110, 30));
+
+        jPanel28.setBackground(new java.awt.Color(241, 238, 238));
+        jPanel28.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel139.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel139.setText("Member Details");
+        jPanel28.add(jLabel139, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, -1));
+
+        jLabel140.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel140.setText("( Stu_002 )");
+        jPanel28.add(jLabel140, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 20, 120, -1));
+
+        jLabel141.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel141.setText("0");
+        jPanel28.add(jLabel141, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 80, 150, 30));
+
+        jLabel151.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel151.setText("Name :");
+        jPanel28.add(jLabel151, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, -1, 30));
+
+        jLabel203.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel203.setText("Total LateFees:");
+        jPanel28.add(jLabel203, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, -1, 30));
+
+        jLabel204.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel204.setText("Ushan Ikshana");
+        jPanel28.add(jLabel204, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 50, 200, 30));
+
+        jPanel11.add(jPanel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 350, 290, 130));
+
+        jTabbedPane1.addTab("Request a Book", jPanel11);
+
+        jPanel29.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel29.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel30.setBackground(new java.awt.Color(226, 248, 248));
+        jPanel30.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel209.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel209.setText("Good Condtion. Page 15 is Lost");
+        jPanel30.add(jLabel209, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 140, 300, 30));
+
+        jLabel211.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel211.setText("Book Details");
+        jPanel30.add(jLabel211, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, -1));
+
+        jLabel212.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel212.setText("( PS_002 )");
+        jPanel30.add(jLabel212, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 20, 140, -1));
+
+        jLabel213.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel213.setText("Ikshana K.A.A.U");
+        jPanel30.add(jLabel213, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 70, 290, 30));
+
+        jLabel214.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel214.setText("Security and Tech");
+        jPanel30.add(jLabel214, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 100, 300, -1));
+
+        jLabel215.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel215.setText("Title :");
+        jPanel30.add(jLabel215, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, -1, -1));
+
+        jLabel216.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel216.setText("Author:");
+        jPanel30.add(jLabel216, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, -1, 30));
+
+        jLabel217.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel217.setText("Gerne :");
+        jPanel30.add(jLabel217, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, -1, -1));
+
+        jLabel218.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel218.setText("ISBN :");
+        jPanel30.add(jLabel218, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, -1, 30));
+
+        jLabel219.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel219.setText("Introdcution to Cyber Crimes");
+        jPanel30.add(jLabel219, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 50, 300, -1));
+
+        jLabel220.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel220.setText("Price :");
+        jPanel30.add(jLabel220, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, -1, -1));
+
+        jLabel221.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel221.setText("156655.00");
+        jPanel30.add(jLabel221, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 120, 300, -1));
+
+        jLabel222.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel222.setText("Cupboard 01");
+        jPanel30.add(jLabel222, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 160, 290, 40));
+
+        jLabel223.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel223.setText("Location :");
+        jPanel30.add(jLabel223, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, -1, -1));
+
+        jPanel29.add(jPanel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 280, 430, 200));
+
+        jTable5.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null}
+            },
+            new String [] {
+                "Book ID", "Book Title", "Author", "Status", "Request Status"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane5.setViewportView(jTable5);
+        if (jTable5.getColumnModel().getColumnCount() > 0) {
+            jTable5.getColumnModel().getColumn(0).setPreferredWidth(15);
+            jTable5.getColumnModel().getColumn(3).setPreferredWidth(15);
+            jTable5.getColumnModel().getColumn(4).setResizable(false);
+            jTable5.getColumnModel().getColumn(4).setPreferredWidth(15);
+        }
+
+        jPanel29.add(jScrollPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 70, 820, 200));
+
+        jLabel32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lib_project/guiFiles/img/select.png"))); // NOI18N
+        jPanel29.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 240, -1, -1));
+
+        jTextField2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField2.setText("keyword");
+        jTextField2.setToolTipText("");
+        jPanel29.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 30, 230, 30));
+
+        jLabel33.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel33.setText("Search using keyword :");
+        jPanel29.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, -1, 30));
+
+        jButton10.setBackground(new java.awt.Color(0, 153, 51));
+        jButton10.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
+        jButton10.setForeground(new java.awt.Color(255, 255, 255));
+        jButton10.setText("Remove");
+        jButton10.setToolTipText("");
+        jButton10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton10ActionPerformed(evt);
+            }
+        });
+        jPanel29.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 450, 110, 30));
+
+        jPanel31.setBackground(new java.awt.Color(241, 238, 238));
+        jPanel31.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel225.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel225.setText("Requester Details");
+        jPanel31.add(jLabel225, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, -1));
+
+        jLabel226.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel226.setText("( Stu_002 )");
+        jPanel31.add(jLabel226, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 20, 120, -1));
+
+        jLabel227.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel227.setText("0");
+        jPanel31.add(jLabel227, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 80, 160, 30));
+
+        jLabel228.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel228.setText("Name :");
+        jPanel31.add(jLabel228, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, -1, 30));
+
+        jLabel229.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel229.setText("Total LateFees:");
+        jPanel31.add(jLabel229, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, -1, 30));
+
+        jLabel230.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel230.setText("Ushan Ikshana");
+        jPanel31.add(jLabel230, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 50, 210, 30));
+
+        jLabel231.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel231.setText("Requested Date :");
+        jPanel31.add(jLabel231, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, -1, 30));
+
+        jLabel232.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel232.setText("2024-12-15");
+        jPanel31.add(jLabel232, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 110, 160, 30));
+
+        jPanel29.add(jPanel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 280, 300, 200));
+
+        jTabbedPane1.addTab("Cancel a Request", jPanel29);
+
         CheckIn.add(jTabbedPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 80, 900, 530));
 
         parentPanel.add(CheckIn, "card2");
@@ -1271,82 +1874,21 @@ public class UserGUI extends MainJFrameProperties {
                 jTextField3ActionPerformed(evt);
             }
         });
-        searchBook.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 170, 350, 40));
+        searchBook.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 110, 350, 40));
 
         jLabel72.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         jLabel72.setText("Select The Book from Below list.");
-        searchBook.add(jLabel72, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 310, -1, 30));
-
-        jPanel15.setBackground(new java.awt.Color(226, 248, 248));
-        jPanel15.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel80.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel80.setText("Good Condtion. Page 15 is Lost");
-        jPanel15.add(jLabel80, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 190, -1, -1));
-
-        jLabel81.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel81.setText("Book Details");
-        jPanel15.add(jLabel81, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, -1));
-
-        jLabel82.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel82.setText("( PS_002 )");
-        jPanel15.add(jLabel82, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 20, -1, -1));
-
-        jLabel83.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel83.setText("Ikshana K.A.A.U");
-        jPanel15.add(jLabel83, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 90, -1, -1));
-
-        jLabel84.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel84.setText("Security and Tech");
-        jPanel15.add(jLabel84, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 120, -1, -1));
-
-        jLabel85.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel85.setText("Title :");
-        jPanel15.add(jLabel85, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, -1, -1));
-
-        jLabel86.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel86.setText("Author:");
-        jPanel15.add(jLabel86, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, -1, -1));
-
-        jLabel87.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel87.setText("Gerne :");
-        jPanel15.add(jLabel87, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, -1, -1));
-
-        jLabel88.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel88.setText("ISBN :");
-        jPanel15.add(jLabel88, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 180, -1, 30));
-
-        jLabel89.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel89.setText("Introdcution to Cyber Crimes");
-        jPanel15.add(jLabel89, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 60, -1, -1));
-
-        jLabel90.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel90.setText("Price :");
-        jPanel15.add(jLabel90, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 150, -1, -1));
-
-        jLabel91.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel91.setText("156655.00");
-        jPanel15.add(jLabel91, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 150, -1, -1));
-
-        jLabel92.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel92.setText("Cupboard 01");
-        jPanel15.add(jLabel92, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 220, -1, 30));
-
-        jLabel93.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel93.setText("Location :");
-        jPanel15.add(jLabel93, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, -1, -1));
-
-        searchBook.add(jPanel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 80, 430, 260));
+        searchBook.add(jLabel72, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 70, -1, 30));
 
         jLabel73.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel73.setText("Keyword :");
-        searchBook.add(jLabel73, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 170, -1, 40));
+        searchBook.add(jLabel73, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, -1, 40));
 
         jLabel94.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         jLabel94.setText("Search by Author, Book Name or BookID.");
-        searchBook.add(jLabel94, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, -1, 30));
+        searchBook.add(jLabel94, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, -1, 30));
 
-        jTable2.setBackground(new java.awt.Color(242, 238, 238));
+        jTable2.setBackground(new java.awt.Color(249, 245, 245));
         jTable2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jTable2MouseClicked(evt);
@@ -1354,11 +1896,113 @@ public class UserGUI extends MainJFrameProperties {
         });
         jScrollPane2.setViewportView(jTable2);
 
-        searchBook.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 350, 910, 260));
+        searchBook.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, 920, 220));
 
         jLabel122.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lib_project/guiFiles/img/bell.png"))); // NOI18N
         jLabel122.setToolTipText("icon");
         searchBook.add(jLabel122, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 620, 40, 50));
+
+        jPanel32.setBackground(new java.awt.Color(250, 249, 249));
+        jPanel32.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel224.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel224.setText("Good Condtion. Page 15 is Lost");
+        jPanel32.add(jLabel224, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 150, 300, 30));
+
+        jLabel233.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel233.setText("Book Details");
+        jPanel32.add(jLabel233, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, -1));
+
+        jLabel234.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel234.setText("( PS_002 )");
+        jPanel32.add(jLabel234, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 20, 140, -1));
+
+        jLabel235.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel235.setText("Ikshana K.A.A.U");
+        jPanel32.add(jLabel235, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 80, 220, 30));
+
+        jLabel236.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel236.setText("Security and Tech");
+        jPanel32.add(jLabel236, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 110, 220, -1));
+
+        jLabel237.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel237.setText("Title :");
+        jPanel32.add(jLabel237, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, -1, -1));
+
+        jLabel238.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel238.setText("Author:");
+        jPanel32.add(jLabel238, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, -1, 30));
+
+        jLabel239.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel239.setText("Gerne :");
+        jPanel32.add(jLabel239, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, -1, -1));
+
+        jLabel240.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel240.setText("ISBN :");
+        jPanel32.add(jLabel240, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 150, -1, 30));
+
+        jLabel241.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel241.setText("Introdcution to Cyber Crimes");
+        jPanel32.add(jLabel241, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 60, 220, -1));
+
+        jLabel242.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel242.setText("Price :");
+        jPanel32.add(jLabel242, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 130, -1, -1));
+
+        jLabel243.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel243.setText("156655.00");
+        jPanel32.add(jLabel243, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 130, 300, -1));
+
+        jLabel244.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel244.setText("2024-12-01");
+        jPanel32.add(jLabel244, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 90, 140, 40));
+
+        jLabel245.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel245.setText("Request Date :");
+        jPanel32.add(jLabel245, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 100, -1, -1));
+
+        jCheckBox2.setToolTipText("");
+        jCheckBox2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox2ActionPerformed(evt);
+            }
+        });
+        jPanel32.add(jCheckBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 60, 30, 20));
+
+        jLabel246.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel246.setText("Location :");
+        jPanel32.add(jLabel246, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 180, -1, -1));
+
+        jLabel247.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel247.setText("Request Status:");
+        jPanel32.add(jLabel247, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 60, -1, -1));
+
+        jLabel248.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel248.setText("Cupboard 01");
+        jPanel32.add(jLabel248, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 170, 290, 40));
+
+        jLabel249.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel249.setText("Request By :");
+        jPanel32.add(jLabel249, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 80, -1, -1));
+
+        jLabel250.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel250.setText("Ushan Ikshana");
+        jPanel32.add(jLabel250, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 70, 140, 40));
+
+        searchBook.add(jPanel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 390, 640, 220));
+
+        javax.swing.GroupLayout jPanel15Layout = new javax.swing.GroupLayout(jPanel15);
+        jPanel15.setLayout(jPanel15Layout);
+        jPanel15Layout.setHorizontalGroup(
+            jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 270, Short.MAX_VALUE)
+        );
+        jPanel15Layout.setVerticalGroup(
+            jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 220, Short.MAX_VALUE)
+        );
+
+        searchBook.add(jPanel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 390, 270, 220));
 
         parentPanel.add(searchBook, "card2");
 
@@ -1370,6 +2014,15 @@ public class UserGUI extends MainJFrameProperties {
         jLabel10.setText("New Book");
         NewBook.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, -1, -1));
         NewBook.add(jSeparator8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 63, 940, 10));
+
+        jLabel123.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lib_project/guiFiles/img/bell.png"))); // NOI18N
+        jLabel123.setToolTipText("icon");
+        NewBook.add(jLabel123, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 620, 40, 50));
+
+        jTabbedPane2.setBackground(new java.awt.Color(204, 255, 204));
+
+        jPanel33.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel33.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jTextField4.setForeground(new java.awt.Color(102, 102, 102));
         jTextField4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -1384,7 +2037,7 @@ public class UserGUI extends MainJFrameProperties {
                 jTextField4ActionPerformed(evt);
             }
         });
-        NewBook.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 120, 350, 40));
+        jPanel33.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 50, 350, 40));
 
         jButton4.setBackground(new java.awt.Color(0, 153, 153));
         jButton4.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
@@ -1400,15 +2053,15 @@ public class UserGUI extends MainJFrameProperties {
                 jButton4ActionPerformed(evt);
             }
         });
-        NewBook.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 550, 240, 40));
+        jPanel33.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 460, 220, 40));
 
         jLabel97.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel97.setText("Book ID :");
-        NewBook.add(jLabel97, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 120, -1, 30));
+        jPanel33.add(jLabel97, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 50, -1, 30));
 
         jLabel98.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
         jLabel98.setText("Enter New Book Details Here.");
-        NewBook.add(jLabel98, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 80, -1, 30));
+        jPanel33.add(jLabel98, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, -1, 30));
 
         jTextField5.setForeground(new java.awt.Color(102, 102, 102));
         jTextField5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -1423,11 +2076,11 @@ public class UserGUI extends MainJFrameProperties {
                 jTextField5ActionPerformed(evt);
             }
         });
-        NewBook.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 170, 350, 40));
+        jPanel33.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 100, 350, 40));
 
         jLabel99.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel99.setText("Title  :");
-        NewBook.add(jLabel99, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 170, -1, 30));
+        jPanel33.add(jLabel99, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, -1, 30));
 
         jTextField6.setForeground(new java.awt.Color(102, 102, 102));
         jTextField6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -1442,11 +2095,11 @@ public class UserGUI extends MainJFrameProperties {
                 jTextField6ActionPerformed(evt);
             }
         });
-        NewBook.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 220, 350, 40));
+        jPanel33.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 150, 350, 40));
 
         jLabel100.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel100.setText("Author :");
-        NewBook.add(jLabel100, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 220, -1, 30));
+        jPanel33.add(jLabel100, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, -1, 30));
 
         jTextField7.setForeground(new java.awt.Color(102, 102, 102));
         jTextField7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -1461,11 +2114,11 @@ public class UserGUI extends MainJFrameProperties {
                 jTextField7ActionPerformed(evt);
             }
         });
-        NewBook.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 270, 350, 40));
+        jPanel33.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 200, 350, 40));
 
         jLabel101.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel101.setText("ISBN :");
-        NewBook.add(jLabel101, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 270, -1, 30));
+        jPanel33.add(jLabel101, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 200, -1, 30));
 
         jTextField8.setForeground(new java.awt.Color(102, 102, 102));
         jTextField8.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -1480,11 +2133,11 @@ public class UserGUI extends MainJFrameProperties {
                 jTextField8ActionPerformed(evt);
             }
         });
-        NewBook.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 320, 350, 40));
+        jPanel33.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 250, 350, 40));
 
         jLabel102.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel102.setText("Barcode :");
-        NewBook.add(jLabel102, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 320, -1, 30));
+        jPanel33.add(jLabel102, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 250, -1, 30));
 
         jTextField9.setForeground(new java.awt.Color(102, 102, 102));
         jTextField9.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -1499,15 +2152,15 @@ public class UserGUI extends MainJFrameProperties {
                 jTextField9ActionPerformed(evt);
             }
         });
-        NewBook.add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 370, 350, 40));
+        jPanel33.add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 300, 350, 40));
 
         jLabel103.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel103.setText("Location :");
-        NewBook.add(jLabel103, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 490, -1, 30));
+        jPanel33.add(jLabel103, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 410, -1, 30));
 
         jLabel104.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel104.setText("Price :");
-        NewBook.add(jLabel104, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 380, -1, 30));
+        jPanel33.add(jLabel104, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 310, -1, 30));
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4", "5", "6", "7", "8" }));
         jComboBox1.addActionListener(new java.awt.event.ActionListener() {
@@ -1515,18 +2168,18 @@ public class UserGUI extends MainJFrameProperties {
                 jComboBox1ActionPerformed(evt);
             }
         });
-        NewBook.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 490, 80, 40));
+        jPanel33.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 410, 80, 40));
 
         jSpinner1 = new javax.swing.JSpinner();
         jSpinner1.setModel(new javax.swing.SpinnerNumberModel(1, // initial value
             0,  // minimum value
             100, // maximum value
             1)); // step size
-    NewBook.add(jSpinner1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 490, 90, 40));
+    jPanel33.add(jSpinner1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 410, 90, 40));
 
     jLabel105.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
     jLabel105.setText("Gerne :");
-    NewBook.add(jLabel105, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 430, -1, 30));
+    jPanel33.add(jLabel105, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 360, -1, 30));
 
     jButton5.setBackground(new java.awt.Color(51, 51, 51));
     jButton5.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
@@ -1537,10 +2190,7 @@ public class UserGUI extends MainJFrameProperties {
             jButton5ActionPerformed(evt);
         }
     });
-    NewBook.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 550, 120, 40));
-
-    jLabel106.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lib_project/guiFiles/img/book_pile.jpg"))); // NOI18N
-    NewBook.add(jLabel106, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 70, -1, -1));
+    jPanel33.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 460, 120, 40));
 
     jPanel17.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -1564,14 +2214,14 @@ public class UserGUI extends MainJFrameProperties {
     jLabel120.setText("3. Include ISBN without ' - ' .");
     jPanel17.add(jLabel120, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, -1, -1));
 
-    NewBook.add(jPanel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 420, 370, 190));
+    jPanel33.add(jPanel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 50, 370, 190));
 
     jLabel119.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
     jLabel119.setText("No Of Books :");
-    NewBook.add(jLabel119, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 490, -1, 30));
+    jPanel33.add(jLabel119, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 410, -1, 30));
 
     jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Fantasy", "Science Fiction", "Historical", "Financial", "Thriller", "Romance", "Poetry", "Humor/Comedy", "Religion and Spirituality", "Philosophy", "Psychology", "Children's Literature", "Autobiography", "Biography", "Home & Garden", "Fairy Tale", "Travel", "Cookbooks", "Action Adventure", "Sports", "History", "Art", "Health & Wellness", "Other" }));
-    NewBook.add(jComboBox4, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 430, 240, 40));
+    jPanel33.add(jComboBox4, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 360, 240, 40));
 
     jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "A", "B", "C", "D" }));
     jComboBox5.addActionListener(new java.awt.event.ActionListener() {
@@ -1579,11 +2229,130 @@ public class UserGUI extends MainJFrameProperties {
             jComboBox5ActionPerformed(evt);
         }
     });
-    NewBook.add(jComboBox5, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 490, 80, 40));
+    jPanel33.add(jComboBox5, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 410, 80, 40));
 
-    jLabel123.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lib_project/guiFiles/img/bell.png"))); // NOI18N
-    jLabel123.setToolTipText("icon");
-    NewBook.add(jLabel123, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 620, 40, 50));
+    jLabel49.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lib_project/guiFiles/img/black_ptrn_4.jpg"))); // NOI18N
+    jLabel49.setText("jLabel48");
+    jPanel33.add(jLabel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+    jTabbedPane2.addTab("New Book", jPanel33);
+
+    jPanel34.setBackground(new java.awt.Color(255, 255, 255));
+    jPanel34.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+    jTextField22.setForeground(new java.awt.Color(102, 102, 102));
+    jTextField22.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+    jTextField22.setText("Type Here");
+    jTextField22.addMouseListener(new java.awt.event.MouseAdapter() {
+        public void mouseClicked(java.awt.event.MouseEvent evt) {
+            jTextField22MouseClicked(evt);
+        }
+    });
+    jTextField22.addActionListener(new java.awt.event.ActionListener() {
+        public void actionPerformed(java.awt.event.ActionEvent evt) {
+            jTextField22ActionPerformed(evt);
+        }
+    });
+    jPanel34.add(jTextField22, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 40, 350, 40));
+
+    jLabel106.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+    jLabel106.setText("Search using any Keyword :");
+    jPanel34.add(jLabel106, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, -1, 40));
+
+    jLabel251.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+    jLabel251.setText("Search for the Lost Book");
+    jPanel34.add(jLabel251, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, -1, 30));
+
+    jTable6.setModel(new javax.swing.table.DefaultTableModel(
+        new Object [][] {
+            {null, null, null, null},
+            {null, null, null, null},
+            {null, null, null, null},
+            {null, null, null, null}
+        },
+        new String [] {
+            "Title 1", "Title 2", "Title 3", "Title 4"
+        }
+    ));
+    jScrollPane6.setViewportView(jTable6);
+
+    jPanel34.add(jScrollPane6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, 880, 210));
+
+    jLabel252.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+    jLabel252.setText("ABC_1524_C2");
+    jPanel34.add(jLabel252, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 320, -1, 30));
+
+    jComboBox7.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "2", "3", "4", "5", "6", "7", "8" }));
+    jComboBox7.addActionListener(new java.awt.event.ActionListener() {
+        public void actionPerformed(java.awt.event.ActionEvent evt) {
+            jComboBox7ActionPerformed(evt);
+        }
+    });
+    jPanel34.add(jComboBox7, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 400, 80, 40));
+
+    jComboBox8.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "A", "B", "C", "D" }));
+    jComboBox8.addActionListener(new java.awt.event.ActionListener() {
+        public void actionPerformed(java.awt.event.ActionEvent evt) {
+            jComboBox8ActionPerformed(evt);
+        }
+    });
+    jPanel34.add(jComboBox8, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 400, 80, 40));
+
+    jLabel253.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+    jLabel253.setText("Location :");
+    jPanel34.add(jLabel253, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 400, -1, 30));
+
+    jLabel254.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+    jLabel254.setText("Book Id for Replaced Book :");
+    jPanel34.add(jLabel254, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 320, -1, 30));
+
+    jLabel255.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+    jLabel255.setText("Fine Assigend Member ID : ");
+    jPanel34.add(jLabel255, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 350, -1, 30));
+
+    jLabel256.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+    jLabel256.setText("Date  : ");
+    jPanel34.add(jLabel256, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 410, -1, 30));
+
+    jLabel257.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+    jLabel257.setText("2024-12-15");
+    jPanel34.add(jLabel257, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 410, -1, 30));
+
+    jLabel258.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+    jLabel258.setText("STU_23261");
+    jPanel34.add(jLabel258, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 350, -1, 30));
+
+    jLabel259.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+    jLabel259.setText("Total Fine Amount :");
+    jPanel34.add(jLabel259, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 380, -1, 30));
+
+    jLabel260.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+    jLabel260.setText("Rs. 2450.69");
+    jPanel34.add(jLabel260, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 380, -1, 30));
+
+    jButton11.setBackground(new java.awt.Color(0, 153, 153));
+    jButton11.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
+    jButton11.setForeground(new java.awt.Color(255, 255, 255));
+    jButton11.setText("Replace the Book");
+    jButton11.addMouseListener(new java.awt.event.MouseAdapter() {
+        public void mouseClicked(java.awt.event.MouseEvent evt) {
+            jButton11MouseClicked(evt);
+        }
+    });
+    jButton11.addActionListener(new java.awt.event.ActionListener() {
+        public void actionPerformed(java.awt.event.ActionEvent evt) {
+            jButton11ActionPerformed(evt);
+        }
+    });
+    jPanel34.add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 450, 220, 40));
+
+    jLabel48.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lib_project/guiFiles/img/black_ptrn_4.jpg"))); // NOI18N
+    jLabel48.setText("jLabel48");
+    jPanel34.add(jLabel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+    jTabbedPane2.addTab("Replace Lost Book", jPanel34);
+
+    NewBook.add(jTabbedPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, 920, 550));
 
     parentPanel.add(NewBook, "card2");
 
@@ -1839,15 +2608,6 @@ public class UserGUI extends MainJFrameProperties {
         parentPanel.add(searchBook);
         parentPanel.repaint();
         parentPanel.revalidate();
-
-        //clear the labes
-        jLabel82.setText("( id: N/A )");
-        jLabel89.setText("N/A");
-        jLabel83.setText("N/A");
-        jLabel84.setText("N/A");
-        jLabel91.setText("N/A");
-        jLabel80.setText("N/A");
-        jLabel92.setText("N/A");
     }//GEN-LAST:event_jPanel3MouseClicked
 
     private void jPanel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel4MouseClicked
@@ -2055,18 +2815,7 @@ public class UserGUI extends MainJFrameProperties {
     }//GEN-LAST:event_jTextField12MouseClicked
 
     private void jTable2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable2MouseClicked
-        String bookCopyID = MessageUtils.returnColomunValue("CopyID", jTable2, jLabel13);
-        String[] bookDetails = new String[10];
 
-        bookDetails = Book.getBookInfo(Book.getBookCopyInfo(bookCopyID)[1]);
-
-        jLabel82.setText("( id: " + bookDetails[0] + " )");
-        jLabel89.setText(bookDetails[1]);
-        jLabel83.setText(bookDetails[2]);
-        jLabel84.setText(bookDetails[6]);
-        jLabel91.setText(bookDetails[5]);
-        jLabel80.setText(bookDetails[3]);
-        jLabel92.setText(Book.getBookCopyInfo(bookCopyID)[3]);
     }//GEN-LAST:event_jTable2MouseClicked
 
     private void jTextField13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField13MouseClicked
@@ -2312,6 +3061,54 @@ public class UserGUI extends MainJFrameProperties {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField20ActionPerformed
 
+    private void jTextField21MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField21MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField21MouseClicked
+
+    private void jTextField21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField21ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField21ActionPerformed
+
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton9ActionPerformed
+
+    private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox1ActionPerformed
+
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton10ActionPerformed
+
+    private void jCheckBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox2ActionPerformed
+
+    private void jTextField22MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField22MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField22MouseClicked
+
+    private void jTextField22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField22ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField22ActionPerformed
+
+    private void jComboBox7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox7ActionPerformed
+
+    private void jComboBox8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox8ActionPerformed
+
+    private void jButton11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton11MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton11MouseClicked
+
+    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton11ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -2372,23 +3169,26 @@ public class UserGUI extends MainJFrameProperties {
     private javax.swing.JPanel NewBook;
     private javax.swing.JPanel NewMember;
     private javax.swing.ButtonGroup buttonGroup1;
-    private javax.swing.JPanel dash1;
-    private javax.swing.JPanel dash2;
-    private javax.swing.JPanel dash3;
-    private javax.swing.JPanel dash4;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton10;
+    private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton9;
+    private javax.swing.JCheckBox jCheckBox1;
+    private javax.swing.JCheckBox jCheckBox2;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JComboBox<String> jComboBox3;
     private javax.swing.JComboBox<String> jComboBox4;
     private javax.swing.JComboBox<String> jComboBox5;
     private javax.swing.JComboBox<String> jComboBox6;
+    private javax.swing.JComboBox<String> jComboBox7;
+    private javax.swing.JComboBox<String> jComboBox8;
     private com.toedter.calendar.JDateChooser jDateChooser1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
@@ -2431,7 +3231,13 @@ public class UserGUI extends MainJFrameProperties {
     private javax.swing.JLabel jLabel133;
     private javax.swing.JLabel jLabel134;
     private javax.swing.JLabel jLabel135;
+    private javax.swing.JLabel jLabel136;
+    private javax.swing.JLabel jLabel137;
+    private javax.swing.JLabel jLabel138;
+    private javax.swing.JLabel jLabel139;
     private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel140;
+    private javax.swing.JLabel jLabel141;
     private javax.swing.JLabel jLabel142;
     private javax.swing.JLabel jLabel143;
     private javax.swing.JLabel jLabel144;
@@ -2442,6 +3248,7 @@ public class UserGUI extends MainJFrameProperties {
     private javax.swing.JLabel jLabel149;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel150;
+    private javax.swing.JLabel jLabel151;
     private javax.swing.JLabel jLabel152;
     private javax.swing.JLabel jLabel153;
     private javax.swing.JLabel jLabel154;
@@ -2486,35 +3293,127 @@ public class UserGUI extends MainJFrameProperties {
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel190;
     private javax.swing.JLabel jLabel191;
+    private javax.swing.JLabel jLabel192;
+    private javax.swing.JLabel jLabel193;
+    private javax.swing.JLabel jLabel194;
+    private javax.swing.JLabel jLabel195;
+    private javax.swing.JLabel jLabel196;
+    private javax.swing.JLabel jLabel197;
+    private javax.swing.JLabel jLabel198;
+    private javax.swing.JLabel jLabel199;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel200;
+    private javax.swing.JLabel jLabel201;
+    private javax.swing.JLabel jLabel202;
+    private javax.swing.JLabel jLabel203;
+    private javax.swing.JLabel jLabel204;
+    private javax.swing.JLabel jLabel205;
+    private javax.swing.JLabel jLabel206;
+    private javax.swing.JLabel jLabel207;
+    private javax.swing.JLabel jLabel208;
+    private javax.swing.JLabel jLabel209;
     private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel210;
+    private javax.swing.JLabel jLabel211;
+    private javax.swing.JLabel jLabel212;
+    private javax.swing.JLabel jLabel213;
+    private javax.swing.JLabel jLabel214;
+    private javax.swing.JLabel jLabel215;
+    private javax.swing.JLabel jLabel216;
+    private javax.swing.JLabel jLabel217;
+    private javax.swing.JLabel jLabel218;
+    private javax.swing.JLabel jLabel219;
     private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel220;
+    private javax.swing.JLabel jLabel221;
+    private javax.swing.JLabel jLabel222;
+    private javax.swing.JLabel jLabel223;
+    private javax.swing.JLabel jLabel224;
+    private javax.swing.JLabel jLabel225;
+    private javax.swing.JLabel jLabel226;
+    private javax.swing.JLabel jLabel227;
+    private javax.swing.JLabel jLabel228;
+    private javax.swing.JLabel jLabel229;
     private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel230;
+    private javax.swing.JLabel jLabel231;
+    private javax.swing.JLabel jLabel232;
+    private javax.swing.JLabel jLabel233;
+    private javax.swing.JLabel jLabel234;
+    private javax.swing.JLabel jLabel235;
+    private javax.swing.JLabel jLabel236;
+    private javax.swing.JLabel jLabel237;
+    private javax.swing.JLabel jLabel238;
+    private javax.swing.JLabel jLabel239;
     private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel240;
+    private javax.swing.JLabel jLabel241;
+    private javax.swing.JLabel jLabel242;
+    private javax.swing.JLabel jLabel243;
+    private javax.swing.JLabel jLabel244;
+    private javax.swing.JLabel jLabel245;
+    private javax.swing.JLabel jLabel246;
+    private javax.swing.JLabel jLabel247;
+    private javax.swing.JLabel jLabel248;
+    private javax.swing.JLabel jLabel249;
     private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel250;
+    private javax.swing.JLabel jLabel251;
+    private javax.swing.JLabel jLabel252;
+    private javax.swing.JLabel jLabel253;
+    private javax.swing.JLabel jLabel254;
+    private javax.swing.JLabel jLabel255;
+    private javax.swing.JLabel jLabel256;
+    private javax.swing.JLabel jLabel257;
+    private javax.swing.JLabel jLabel258;
+    private javax.swing.JLabel jLabel259;
     private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel260;
+    private javax.swing.JLabel jLabel261;
+    private javax.swing.JLabel jLabel262;
+    private javax.swing.JLabel jLabel263;
+    private javax.swing.JLabel jLabel264;
+    private javax.swing.JLabel jLabel265;
+    private javax.swing.JLabel jLabel266;
+    private javax.swing.JLabel jLabel268;
     private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel273;
+    private javax.swing.JLabel jLabel274;
+    private javax.swing.JLabel jLabel275;
+    private javax.swing.JLabel jLabel276;
+    private javax.swing.JLabel jLabel277;
+    private javax.swing.JLabel jLabel278;
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
     private javax.swing.JLabel jLabel34;
-    private javax.swing.JLabel jLabel35;
-    private javax.swing.JLabel jLabel36;
-    private javax.swing.JLabel jLabel37;
-    private javax.swing.JLabel jLabel38;
-    private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel40;
-    private javax.swing.JLabel jLabel41;
-    private javax.swing.JLabel jLabel42;
     private javax.swing.JLabel jLabel43;
     private javax.swing.JLabel jLabel44;
     private javax.swing.JLabel jLabel45;
     private javax.swing.JLabel jLabel46;
     private javax.swing.JLabel jLabel47;
+    private javax.swing.JLabel jLabel48;
+    private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel50;
+    private javax.swing.JLabel jLabel51;
+    private javax.swing.JLabel jLabel52;
+    private javax.swing.JLabel jLabel53;
+    private javax.swing.JLabel jLabel54;
+    private javax.swing.JLabel jLabel55;
+    private javax.swing.JLabel jLabel56;
+    private javax.swing.JLabel jLabel57;
+    private javax.swing.JLabel jLabel58;
+    private javax.swing.JLabel jLabel59;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel60;
+    private javax.swing.JLabel jLabel61;
     private javax.swing.JLabel jLabel62;
     private javax.swing.JLabel jLabel63;
     private javax.swing.JLabel jLabel64;
@@ -2522,6 +3421,7 @@ public class UserGUI extends MainJFrameProperties {
     private javax.swing.JLabel jLabel66;
     private javax.swing.JLabel jLabel67;
     private javax.swing.JLabel jLabel68;
+    private javax.swing.JLabel jLabel69;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel70;
     private javax.swing.JLabel jLabel71;
@@ -2557,6 +3457,7 @@ public class UserGUI extends MainJFrameProperties {
     private javax.swing.JLabel jLabel99;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
+    private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel12;
     private javax.swing.JPanel jPanel13;
     private javax.swing.JPanel jPanel14;
@@ -2573,7 +3474,18 @@ public class UserGUI extends MainJFrameProperties {
     private javax.swing.JPanel jPanel24;
     private javax.swing.JPanel jPanel25;
     private javax.swing.JPanel jPanel26;
+    private javax.swing.JPanel jPanel27;
+    private javax.swing.JPanel jPanel28;
+    private javax.swing.JPanel jPanel29;
     private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel30;
+    private javax.swing.JPanel jPanel31;
+    private javax.swing.JPanel jPanel32;
+    private javax.swing.JPanel jPanel33;
+    private javax.swing.JPanel jPanel34;
+    private javax.swing.JPanel jPanel35;
+    private javax.swing.JPanel jPanel36;
+    private javax.swing.JPanel jPanel37;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
@@ -2583,8 +3495,14 @@ public class UserGUI extends MainJFrameProperties {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane4;
+    private javax.swing.JScrollPane jScrollPane5;
+    private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator10;
+    private javax.swing.JSeparator jSeparator11;
+    private javax.swing.JSeparator jSeparator12;
+    private javax.swing.JSeparator jSeparator13;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator4;
@@ -2595,9 +3513,14 @@ public class UserGUI extends MainJFrameProperties {
     private javax.swing.JSeparator jSeparator9;
     private javax.swing.JSpinner jSpinner1;
     private javax.swing.JTabbedPane jTabbedPane1;
+    private javax.swing.JTabbedPane jTabbedPane2;
     private javax.swing.JTable jTable1;
     private javax.swing.JTable jTable2;
     private javax.swing.JTable jTable3;
+    private javax.swing.JTable jTable4;
+    private javax.swing.JTable jTable5;
+    private javax.swing.JTable jTable6;
+    private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField10;
     private javax.swing.JTextField jTextField11;
     private javax.swing.JTextField jTextField12;
@@ -2608,7 +3531,10 @@ public class UserGUI extends MainJFrameProperties {
     private javax.swing.JTextField jTextField17;
     private javax.swing.JTextField jTextField18;
     private javax.swing.JTextField jTextField19;
+    private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField20;
+    private javax.swing.JTextField jTextField21;
+    private javax.swing.JTextField jTextField22;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField jTextField5;
