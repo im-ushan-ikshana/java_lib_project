@@ -2543,11 +2543,11 @@ public class AdminUserGUI extends MainJFrameProperties {
     }//GEN-LAST:event_jPanel11MouseClicked
 
     private void jPanel11MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel11MouseEntered
-        // TODO add your handling code here:
+        jPanel11.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 204, 0), 2, true));
     }//GEN-LAST:event_jPanel11MouseEntered
 
     private void jPanel11MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel11MouseExited
-        // TODO add your handling code here:
+        jPanel11.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 204, 0), 0, true));
     }//GEN-LAST:event_jPanel11MouseExited
 
     private void jTextField35MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField35MouseClicked

@@ -82,7 +82,7 @@ public class MessageUtils {
         timer.schedule(new TimerTask() {
             @Override
             public void run() {
-                clearMessage(component,msg);
+                clearMessage(component, msg);
                 timer.cancel(); // Terminate the timer thread
             }
         }, 5000);
@@ -93,9 +93,9 @@ public class MessageUtils {
      *
      * @param component The JTextField or JLabel to be cleared
      */
-    private static void clearMessage(JComponent component,String msg) {
+    private static void clearMessage(JComponent component, String msg) {
         if (component instanceof JTextField) {
-            if(((JTextField) component).getText().equals(msg)){
+            if (((JTextField) component).getText().equals(msg)) {
                 ((JTextField) component).setText("");
             }
             setDefaultBorder((JTextField) component);
@@ -169,7 +169,7 @@ public class MessageUtils {
         }
     }
 
-    public static String returnColomunValue(String columnName, JTable table , JLabel systemMsg) {
+    public static String returnColomunValue(String columnName, JTable table, JLabel systemMsg) {
         DefaultTableModel model = (DefaultTableModel) table.getModel();
 
         // Get the index of the selected row
@@ -195,9 +195,9 @@ public class MessageUtils {
         // Return an empty string if an issue occurs
         return "";
     }
-    
+
     public static void makeReceipt(String memberID, String memberName, String telephone,
-            String email, String memberClass,String totalLateFees,
+            String email, String memberClass, String totalLateFees,
             String paidAmount, String change, String adminName) {
         try {
             // Create a unique file name based on the current time and Member ID
@@ -227,10 +227,10 @@ public class MessageUtils {
             document.add(createParagraph("Email: " + email));
             document.add(createParagraph("Class: " + memberClass));
             String transactionIDs = returnMemberLatefeeIDString(memberID);
-            
+
             //custom font for transactions
             Font transFont = FontFactory.getFont(FontFactory.HELVETICA, 10);
-            document.add(createParagraph("Transaction IDs: \n" + transactionIDs + "\n-----------------------------------------------------",transFont));
+            document.add(createParagraph("Transaction IDs: \n" + transactionIDs + "\n-----------------------------------------------------", transFont));
 
             // Set font for bold text
             Font boldFont = FontFactory.getFont(FontFactory.HELVETICA_BOLD, 12);
@@ -241,8 +241,8 @@ public class MessageUtils {
 
             // Note: Auto-generated receipt from Library System (Font size: 8)
             Font noteFont = FontFactory.getFont(FontFactory.HELVETICA, 8);
-            document.add(createParagraph("Admin Name: " + adminName,noteFont));
-            document.add(createParagraph("Date and Time: " + new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date()),noteFont));
+            document.add(createParagraph("Admin Name: " + adminName, noteFont));
+            document.add(createParagraph("Date and Time: " + new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date()), noteFont));
 
             document.add(createParagraph("\nNote: Auto-generated receipt from Library System", noteFont));
             document.add(createParagraph("\n                                ***"));
@@ -280,8 +280,7 @@ public class MessageUtils {
             e.printStackTrace();
         }
     }
-    
-    
+
     /**
      * Returns concatenated MemberLatefeeIDs for a given MemberID.
      *
@@ -314,9 +313,43 @@ public class MessageUtils {
         // Return an empty String if there are no MemberLatefeeIDs or an error occurs
         return "";
     }
-    
+
     public static void main(String[] args) {
         System.out.println(returnMemberLatefeeIDString("ST00002"));
+    }
+
+    public static void setPlaceHolder(JComponent component, String placeString) {
+        if (component instanceof JTextField) {
+            JTextField textField = (JTextField) component;
+            textField.setText(placeString);
+            java.awt.Font font = textField.getFont().deriveFont(java.awt.Font.ITALIC);
+            textField.setFont(font);
+            textField.setForeground(Color.GRAY);
+        } else if (component instanceof JPasswordField) {
+            JPasswordField passwordField = (JPasswordField) component;
+            passwordField.setText(placeString);
+            passwordField.setEchoChar((char) 0); // Set echo char to zero to show plain text
+            java.awt.Font font = passwordField.getFont().deriveFont(java.awt.Font.ITALIC);
+            passwordField.setFont(font);
+            passwordField.setForeground(Color.GRAY);
+        }
+    }
+
+    public static void removePlaceHolder(JComponent component) {
+        if (component instanceof JTextField) {
+            JTextField textField = (JTextField) component;
+            textField.setText("");
+            java.awt.Font font = textField.getFont().deriveFont(java.awt.Font.PLAIN); // Restore font to plain
+            textField.setFont(font);
+            textField.setForeground(Color.BLACK); // Restore text color to black
+        } else if (component instanceof JPasswordField) {
+            JPasswordField passwordField = (JPasswordField) component;
+            passwordField.setText("");
+            passwordField.setEchoChar('\u2022'); // Restore echo char to default (bullet)
+            java.awt.Font font = passwordField.getFont().deriveFont(java.awt.Font.PLAIN); // Restore font to plain
+            passwordField.setFont(font);
+            passwordField.setForeground(Color.BLACK); // Restore text color to black
+        }
     }
 
 }

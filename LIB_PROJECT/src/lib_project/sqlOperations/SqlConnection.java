@@ -27,31 +27,30 @@ public class SqlConnection {
      * @return A Connection object representing the database connection.
      */
     public static Connection getSQLConnection() {
-        createDatabaseIfNotExists();  // Create the database if it doesn't exist
-        Properties properties = loadProperties();
+        Connection sqlConnection = null;
+        try {
+            createDatabaseIfNotExists();  // Create the database if it doesn't exist
+            Properties properties = loadProperties();
 
-        if (properties != null) {
-            try {
+            if (properties != null) {
                 // Load the MySQL JDBC driver
                 Class.forName("com.mysql.cj.jdbc.Driver");
 
                 // Establish the database connection using properties from the configuration file
-                Connection sqlConnection = DriverManager.getConnection(
+                sqlConnection = DriverManager.getConnection(
                         properties.getProperty("url"),
                         properties.getProperty("user"),
                         properties.getProperty("password")
                 );
-                return sqlConnection;
-            } catch (ClassNotFoundException | SQLException e) {
-                System.out.println("The connection could not be established.");
-                System.out.println("Please check the configuration details in the properties file.");
-                System.out.println("Make sure the MySQL server is running.");
-                // Print stack trace for debugging purposes
-                e.printStackTrace();
             }
+        } catch (ClassNotFoundException | SQLException e) {
+            System.out.println("The connection could not be established.");
+            System.out.println("Please check the configuration details in the properties file.");
+            System.out.println("Make sure the MySQL server is running.");
+            // Print stack trace for debugging purposes
+            e.printStackTrace();
         }
-
-        return null; // Return null if the connection could not be established
+        return sqlConnection;
     }
 
     private static void createDatabaseIfNotExists() {
@@ -63,36 +62,33 @@ public class SqlConnection {
                 Class.forName("com.mysql.cj.jdbc.Driver");
 
                 // Establish the database connection using root user (or any user with sufficient privileges)
-                Connection rootConnection = DriverManager.getConnection(
+                try (Connection rootConnection = DriverManager.getConnection(
                         properties.getProperty("rootUrl"),
                         properties.getProperty("rootUser"),
-                        properties.getProperty("rootPassword")
-                );
+                        properties.getProperty("rootPassword"))) {
 
-                // Check if the database exists
-                String dbName = properties.getProperty("dbName");
-                String checkDBQuery = "SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA WHERE SCHEMA_NAME = ?";
-                try (PreparedStatement statement = rootConnection.prepareStatement(checkDBQuery)) {
-                    statement.setString(1, dbName);
-                    ResultSet resultSet = statement.executeQuery();
-
-                    if (!resultSet.next()) {
-                        // Create the database if it doesn't exist
-                        String createDBQuery = "CREATE DATABASE " + dbName;
-                        try (PreparedStatement createStatement = rootConnection.prepareStatement(createDBQuery)) {
-                            createStatement.executeUpdate();
-                            DatabaseBuilder.buildDatabase();
+                    // Check if the database exists
+                    String dbName = properties.getProperty("dbName");
+                    String checkDBQuery = "SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA WHERE SCHEMA_NAME = ?";
+                    try (PreparedStatement statement = rootConnection.prepareStatement(checkDBQuery)) {
+                        statement.setString(1, dbName);
+                        try (ResultSet resultSet = statement.executeQuery()) {
+                            if (!resultSet.next()) {
+                                // Create the database if it doesn't exist
+                                String createDBQuery = "CREATE DATABASE " + dbName;
+                                try (PreparedStatement createStatement = rootConnection.prepareStatement(createDBQuery)) {
+                                    createStatement.executeUpdate();
+                                    DatabaseBuilder.buildDatabase();
+                                }
+                            }
                         }
                     }
                 }
-
-                // Close the root connection
-                rootConnection.close();
-            } catch (ClassNotFoundException | SQLException e) {
-                System.out.println("The database could not be created.");
-                System.out.println("Please check the configuration details in the properties file.");
-                System.out.println("Make sure the MySQL server is running.");
-                // Print stack trace for debugging purposes
+            } catch (ClassNotFoundException e) {
+                System.out.println("MySQL JDBC driver not found.");
+                e.printStackTrace();
+            } catch (SQLException e) {
+                System.out.println("SQL error while creating the database.");
                 e.printStackTrace();
             }
         }
@@ -111,4 +107,17 @@ public class SqlConnection {
         return properties;
     }
 
+    public static void closeConnection(Connection connection) {
+        if (connection != null) {
+            try {
+                connection.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+    
+    public static void main(String[] args) {
+        getSQLConnection();
+    }
 }

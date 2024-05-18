@@ -32,6 +32,8 @@ public class CRUD_Ops extends SqlConnection {
             statement.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
+        } finally {
+            closeConnection();
         }
     }
 
@@ -39,15 +41,18 @@ public class CRUD_Ops extends SqlConnection {
      * Executes an SQL query that returns a result set.
      *
      * @param sqlQuery The SQL query to be executed
-     * @return The result set obtained from the query
+     * @return The result set obtained from the query, or null if an error
+     * occurs
      */
     private static ResultSet executeSqlWithResult(String sqlQuery) {
         try {
             PreparedStatement statement = connection.prepareStatement(sqlQuery);
             return statement.executeQuery();
         } catch (SQLException e) {
-            e.printStackTrace();
+            System.err.println("Error executing SQL query: " + e.getMessage());
             return null;
+        } finally {
+            closeConnection();
         }
     }
 
@@ -96,6 +101,7 @@ public class CRUD_Ops extends SqlConnection {
         if (connection != null) {
             try {
                 connection.close();
+                System.out.println("Database connection closed.");
             } catch (SQLException e) {
                 e.printStackTrace();
             }
