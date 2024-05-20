@@ -9,16 +9,16 @@ import lib_project.MainJFrameProperties;
 import lib_project.guiFiles.userGUI.UserGUI;
 import lib_project.mainOps.Admin;
 import lib_project.SystemVariables;
+import lib_project.mainOps.systemOPS.librarySystemUtils;
 
 /**
  *
  * @author ikush
  */
 public class LoginPage extends MainJFrameProperties {
-
-    /**
-     * Creates new form LoginFrame
-     */
+    private String usernamePlaceHolder = "Username";
+    private String passwordPlaceHolder = "Password";
+    
     public LoginPage() {
         MainJFrameProperties.MainFrame(this);
         this.setSize(super.width, super.height);
@@ -28,21 +28,10 @@ public class LoginPage extends MainJFrameProperties {
         UIManager.put("Component.focusWidth", 3);
         initComponents();
         this.getContentPane().requestFocusInWindow();
+        librarySystemUtils.setPlaceHolder(jTextField1, usernamePlaceHolder);
+        librarySystemUtils.setPlaceHolder(jPasswordField1, passwordPlaceHolder);
     }
 
-    public LoginPage(boolean call) {
-        if (call) {
-            MainJFrameProperties.MainFrame(this);
-            this.setSize(super.width, super.height);
-            close_messege(this);
-            UIManager.put("Button.arc", 20);
-            UIManager.put("TextComponent.arc", 20);
-            UIManager.put("Component.focusWidth", 3);
-            initComponents();
-            this.setVisible(call);
-            this.getContentPane().requestFocusInWindow();
-        }
-    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -119,22 +108,35 @@ public class LoginPage extends MainJFrameProperties {
         });
         jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 560, 140, 50));
 
+        jPasswordField1.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         jPasswordField1.setForeground(new java.awt.Color(102, 102, 102));
         jPasswordField1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jPasswordField1.setEchoChar('\u0000');
         jPasswordField1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jPasswordField1MouseClicked(evt);
             }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jPasswordField1MouseExited(evt);
+            }
         });
         jPanel1.add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 460, 360, 50));
 
-        jTextField1.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
+        jTextField1.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         jTextField1.setForeground(new java.awt.Color(102, 102, 102));
         jTextField1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField1.setText("username");
+        jTextField1.setToolTipText("");
         jTextField1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jTextField1MouseClicked(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jTextField1MouseExited(evt);
+            }
+        });
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
             }
         });
         jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 400, 360, 50));
@@ -153,11 +155,11 @@ public class LoginPage extends MainJFrameProperties {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jTextField1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField1MouseClicked
-
+        librarySystemUtils.removePlaceHolder(jTextField1, usernamePlaceHolder);
     }//GEN-LAST:event_jTextField1MouseClicked
 
     private void jPasswordField1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPasswordField1MouseClicked
-       
+        librarySystemUtils.removePlaceHolder(jPasswordField1, passwordPlaceHolder);
     }//GEN-LAST:event_jPasswordField1MouseClicked
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
@@ -169,6 +171,24 @@ public class LoginPage extends MainJFrameProperties {
         this.dispose();
         new FrogotPasswordPage(true);
     }//GEN-LAST:event_jLabel8MouseClicked
+
+    private void jTextField1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField1MouseExited
+        if (jTextField1.getText().isEmpty()) {
+            librarySystemUtils.setPlaceHolder(jTextField1, usernamePlaceHolder);
+            this.requestFocus();
+        }
+    }//GEN-LAST:event_jTextField1MouseExited
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jPasswordField1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPasswordField1MouseExited
+        if (jPasswordField1.getText().isEmpty()) {
+            librarySystemUtils.setPlaceHolder(jPasswordField1, passwordPlaceHolder);
+            this.requestFocus();
+        }
+    }//GEN-LAST:event_jPasswordField1MouseExited
 
     /**
      * @param args the command line arguments

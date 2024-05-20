@@ -27,6 +27,6 @@ public class LIB_PROJECT {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        new LoginPage(true);
+        new LoginPage();
     }
 }

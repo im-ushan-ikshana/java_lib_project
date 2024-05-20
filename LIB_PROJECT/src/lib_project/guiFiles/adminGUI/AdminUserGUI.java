@@ -15,7 +15,7 @@ import lib_project.mainOps.Book;
 import lib_project.mainOps.LibrarySystem;
 import lib_project.mainOps.Member;
 import lib_project.mainOps.Transaction;
-import lib_project.mainOps.systemOPS.MessageUtils;
+import lib_project.mainOps.systemOPS.librarySystemUtils;
 import lib_project.mainOps.validateOps.Validations;
 import lib_project.SystemVariables;
 import java.sql.ResultSet;
@@ -2208,7 +2208,7 @@ public class AdminUserGUI extends MainJFrameProperties {
         // If it is yes, then the frame is disposed.
         if (result == JOptionPane.YES_OPTION) {
             this.dispose();
-            new UserGUI(true);
+            new UserGUI();
         }
 
     }//GEN-LAST:event_jPanel7MouseClicked

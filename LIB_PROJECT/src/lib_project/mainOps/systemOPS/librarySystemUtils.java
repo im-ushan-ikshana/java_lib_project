@@ -47,7 +47,7 @@ import java.nio.file.Paths;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class MessageUtils {
+public class librarySystemUtils {
 
     /**
      * Shows a message in a JTextField or JLabel with specified color and
@@ -328,27 +328,31 @@ public class MessageUtils {
         } else if (component instanceof JPasswordField) {
             JPasswordField passwordField = (JPasswordField) component;
             passwordField.setText(placeString);
-            passwordField.setEchoChar((char) 0); // Set echo char to zero to show plain text
+            passwordField.setEchoChar('\u0000'); // Set echo char to zero to show plain text
             java.awt.Font font = passwordField.getFont().deriveFont(java.awt.Font.ITALIC);
             passwordField.setFont(font);
             passwordField.setForeground(Color.GRAY);
         }
     }
 
-    public static void removePlaceHolder(JComponent component) {
+    public static void removePlaceHolder(JComponent component, String placeString) {
         if (component instanceof JTextField) {
             JTextField textField = (JTextField) component;
-            textField.setText("");
-            java.awt.Font font = textField.getFont().deriveFont(java.awt.Font.PLAIN); // Restore font to plain
-            textField.setFont(font);
-            textField.setForeground(Color.BLACK); // Restore text color to black
+            if (textField.getText().equals(placeString)) {
+                textField.setText("");
+                java.awt.Font font = textField.getFont().deriveFont(java.awt.Font.PLAIN); // Restore font to plain
+                textField.setFont(font);
+                textField.setForeground(Color.BLACK); // Restore text color to black
+            }
         } else if (component instanceof JPasswordField) {
             JPasswordField passwordField = (JPasswordField) component;
-            passwordField.setText("");
-            passwordField.setEchoChar('\u2022'); // Restore echo char to default (bullet)
-            java.awt.Font font = passwordField.getFont().deriveFont(java.awt.Font.PLAIN); // Restore font to plain
-            passwordField.setFont(font);
-            passwordField.setForeground(Color.BLACK); // Restore text color to black
+            if (passwordField.getText().equals(placeString)) {
+                passwordField.setText("");
+                passwordField.setEchoChar('*'); // Restore echo char to default (bullet)
+                java.awt.Font font = passwordField.getFont().deriveFont(java.awt.Font.PLAIN); // Restore font to plain
+                passwordField.setFont(font);
+                passwordField.setForeground(Color.BLACK); // Restore text color to black
+            }
         }
     }
 

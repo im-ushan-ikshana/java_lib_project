@@ -17,7 +17,7 @@ import lib_project.mainOps.Book;
 import lib_project.mainOps.LibrarySystem;
 import lib_project.mainOps.Member;
 import lib_project.mainOps.Transaction;
-import lib_project.mainOps.systemOPS.MessageUtils;
+import lib_project.mainOps.systemOPS.librarySystemUtils;
 import lib_project.mainOps.validateOps.Validations;
 import lib_project.SystemVariables;
 
@@ -29,11 +29,9 @@ import lib_project.SystemVariables;
  */
 public class UserGUI extends MainJFrameProperties {
 
-    private String whatIsTheLending;
+    private String textFieldPlaceHolder = "Type Here";
+    private String passFieldPlaceHolder = "Password";
 
-    /**
-     * Creates new form dashBoard
-     */
     public UserGUI() {
         MainJFrameProperties.MainFrame(this);
         this.setSize(super.width, super.height);
@@ -43,20 +41,6 @@ public class UserGUI extends MainJFrameProperties {
         close_messege(this);
         initComponents();
         jLabel18.setText("Date : " + SystemVariables.getToday());
-    }
-
-    public UserGUI(boolean call) {
-        if (call) {
-            MainJFrameProperties.MainFrame(this);
-            this.setSize(super.width, super.height);
-            UIManager.put("Button.arc", 10);
-            UIManager.put("TextComponent.arc", 10);
-            UIManager.put("Component.focusWidth", 3);
-            close_messege(this);
-            initComponents();
-            jLabel18.setText("Date : " + SystemVariables.getToday());
-            this.setVisible(call);
-        }
     }
 
     /**
@@ -2007,6 +1991,11 @@ public class UserGUI extends MainJFrameProperties {
         parentPanel.add(searchBook, "card2");
 
         NewBook.setBackground(new java.awt.Color(255, 255, 255));
+        NewBook.addComponentListener(new java.awt.event.ComponentAdapter() {
+            public void componentShown(java.awt.event.ComponentEvent evt) {
+                NewBookComponentShown(evt);
+            }
+        });
         NewBook.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         NewBook.add(jSeparator7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 620, 940, 10));
 
@@ -2024,12 +2013,13 @@ public class UserGUI extends MainJFrameProperties {
         jPanel33.setBackground(new java.awt.Color(255, 255, 255));
         jPanel33.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jTextField4.setForeground(new java.awt.Color(102, 102, 102));
         jTextField4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField4.setText("Type Here");
         jTextField4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jTextField4MouseClicked(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jTextField4MouseExited(evt);
             }
         });
         jTextField4.addActionListener(new java.awt.event.ActionListener() {
@@ -2063,12 +2053,13 @@ public class UserGUI extends MainJFrameProperties {
         jLabel98.setText("Enter New Book Details Here.");
         jPanel33.add(jLabel98, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, -1, 30));
 
-        jTextField5.setForeground(new java.awt.Color(102, 102, 102));
         jTextField5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField5.setText("Type Here");
         jTextField5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jTextField5MouseClicked(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jTextField5MouseExited(evt);
             }
         });
         jTextField5.addActionListener(new java.awt.event.ActionListener() {
@@ -2082,12 +2073,13 @@ public class UserGUI extends MainJFrameProperties {
         jLabel99.setText("Title  :");
         jPanel33.add(jLabel99, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, -1, 30));
 
-        jTextField6.setForeground(new java.awt.Color(102, 102, 102));
         jTextField6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField6.setText("Type Here");
         jTextField6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jTextField6MouseClicked(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jTextField6MouseExited(evt);
             }
         });
         jTextField6.addActionListener(new java.awt.event.ActionListener() {
@@ -2101,12 +2093,13 @@ public class UserGUI extends MainJFrameProperties {
         jLabel100.setText("Author :");
         jPanel33.add(jLabel100, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, -1, 30));
 
-        jTextField7.setForeground(new java.awt.Color(102, 102, 102));
         jTextField7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField7.setText("Type Here");
         jTextField7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jTextField7MouseClicked(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jTextField7MouseExited(evt);
             }
         });
         jTextField7.addActionListener(new java.awt.event.ActionListener() {
@@ -2120,12 +2113,13 @@ public class UserGUI extends MainJFrameProperties {
         jLabel101.setText("ISBN :");
         jPanel33.add(jLabel101, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 200, -1, 30));
 
-        jTextField8.setForeground(new java.awt.Color(102, 102, 102));
         jTextField8.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField8.setText("Type Here");
         jTextField8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jTextField8MouseClicked(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jTextField8MouseExited(evt);
             }
         });
         jTextField8.addActionListener(new java.awt.event.ActionListener() {
@@ -2139,12 +2133,13 @@ public class UserGUI extends MainJFrameProperties {
         jLabel102.setText("Barcode :");
         jPanel33.add(jLabel102, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 250, -1, 30));
 
-        jTextField9.setForeground(new java.awt.Color(102, 102, 102));
         jTextField9.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField9.setText("Type Here");
         jTextField9.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jTextField9MouseClicked(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jTextField9MouseExited(evt);
             }
         });
         jTextField9.addActionListener(new java.awt.event.ActionListener() {
@@ -2240,12 +2235,13 @@ public class UserGUI extends MainJFrameProperties {
     jPanel34.setBackground(new java.awt.Color(255, 255, 255));
     jPanel34.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-    jTextField22.setForeground(new java.awt.Color(102, 102, 102));
     jTextField22.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-    jTextField22.setText("Type Here");
     jTextField22.addMouseListener(new java.awt.event.MouseAdapter() {
         public void mouseClicked(java.awt.event.MouseEvent evt) {
             jTextField22MouseClicked(evt);
+        }
+        public void mouseExited(java.awt.event.MouseEvent evt) {
+            jTextField22MouseExited(evt);
         }
     });
     jTextField22.addActionListener(new java.awt.event.ActionListener() {
@@ -2357,6 +2353,11 @@ public class UserGUI extends MainJFrameProperties {
     parentPanel.add(NewBook, "card2");
 
     NewMember.setBackground(new java.awt.Color(255, 255, 255));
+    NewMember.addComponentListener(new java.awt.event.ComponentAdapter() {
+        public void componentShown(java.awt.event.ComponentEvent evt) {
+            NewMemberComponentShown(evt);
+        }
+    });
     NewMember.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
     NewMember.add(jSeparator9, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 620, 940, 10));
 
@@ -2365,12 +2366,13 @@ public class UserGUI extends MainJFrameProperties {
     NewMember.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, -1, -1));
     NewMember.add(jSeparator10, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 63, 940, 10));
 
-    jTextField10.setForeground(new java.awt.Color(102, 102, 102));
     jTextField10.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-    jTextField10.setText("Type Here");
     jTextField10.addMouseListener(new java.awt.event.MouseAdapter() {
         public void mouseClicked(java.awt.event.MouseEvent evt) {
             jTextField10MouseClicked(evt);
+        }
+        public void mouseExited(java.awt.event.MouseEvent evt) {
+            jTextField10MouseExited(evt);
         }
     });
     jTextField10.addActionListener(new java.awt.event.ActionListener() {
@@ -2404,12 +2406,13 @@ public class UserGUI extends MainJFrameProperties {
     jLabel108.setText("Insert Memeber Details here.");
     NewMember.add(jLabel108, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 90, -1, 30));
 
-    jTextField11.setForeground(new java.awt.Color(102, 102, 102));
     jTextField11.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-    jTextField11.setText("Type Here");
     jTextField11.addMouseListener(new java.awt.event.MouseAdapter() {
         public void mouseClicked(java.awt.event.MouseEvent evt) {
             jTextField11MouseClicked(evt);
+        }
+        public void mouseExited(java.awt.event.MouseEvent evt) {
+            jTextField11MouseExited(evt);
         }
     });
     jTextField11.addActionListener(new java.awt.event.ActionListener() {
@@ -2423,12 +2426,13 @@ public class UserGUI extends MainJFrameProperties {
     jLabel109.setText("Name :");
     NewMember.add(jLabel109, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 180, -1, 30));
 
-    jTextField12.setForeground(new java.awt.Color(102, 102, 102));
     jTextField12.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-    jTextField12.setText("Type Here (Optional)");
     jTextField12.addMouseListener(new java.awt.event.MouseAdapter() {
         public void mouseClicked(java.awt.event.MouseEvent evt) {
             jTextField12MouseClicked(evt);
+        }
+        public void mouseExited(java.awt.event.MouseEvent evt) {
+            jTextField12MouseExited(evt);
         }
     });
     jTextField12.addActionListener(new java.awt.event.ActionListener() {
@@ -2470,12 +2474,13 @@ public class UserGUI extends MainJFrameProperties {
     jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Grade 6", "Grade 7", "Grade 8", "Grade 9", "Grade 10", "Grade 11", "Grade 12", "Grade 13", "STAFF" }));
     NewMember.add(jComboBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 430, 220, 40));
 
-    jTextField13.setForeground(new java.awt.Color(102, 102, 102));
     jTextField13.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-    jTextField13.setText("Type Here");
     jTextField13.addMouseListener(new java.awt.event.MouseAdapter() {
         public void mouseClicked(java.awt.event.MouseEvent evt) {
             jTextField13MouseClicked(evt);
+        }
+        public void mouseExited(java.awt.event.MouseEvent evt) {
+            jTextField13MouseExited(evt);
         }
     });
     jTextField13.addActionListener(new java.awt.event.ActionListener() {
@@ -2485,12 +2490,13 @@ public class UserGUI extends MainJFrameProperties {
     });
     NewMember.add(jTextField13, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 280, 350, 40));
 
-    jTextField14.setForeground(new java.awt.Color(102, 102, 102));
     jTextField14.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-    jTextField14.setText("Type Here");
     jTextField14.addMouseListener(new java.awt.event.MouseAdapter() {
         public void mouseClicked(java.awt.event.MouseEvent evt) {
             jTextField14MouseClicked(evt);
+        }
+        public void mouseExited(java.awt.event.MouseEvent evt) {
+            jTextField14MouseExited(evt);
         }
     });
     jTextField14.addActionListener(new java.awt.event.ActionListener() {
@@ -2536,12 +2542,13 @@ public class UserGUI extends MainJFrameProperties {
 
     NewMember.add(jPanel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 390, 370, 190));
 
-    jTextField15.setForeground(new java.awt.Color(102, 102, 102));
     jTextField15.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-    jTextField15.setText("Type Here");
     jTextField15.addMouseListener(new java.awt.event.MouseAdapter() {
         public void mouseClicked(java.awt.event.MouseEvent evt) {
             jTextField15MouseClicked(evt);
+        }
+        public void mouseExited(java.awt.event.MouseEvent evt) {
+            jTextField15MouseExited(evt);
         }
     });
     jTextField15.addActionListener(new java.awt.event.ActionListener() {
@@ -2675,7 +2682,7 @@ public class UserGUI extends MainJFrameProperties {
         // If it is yes, then the frame is disposed.
         if (result == JOptionPane.YES_OPTION) {
             this.dispose();
-            new LoginPage(true);
+            new LoginPage();
         }
 
     }//GEN-LAST:event_jLabel34MouseClicked
@@ -2745,39 +2752,39 @@ public class UserGUI extends MainJFrameProperties {
     }//GEN-LAST:event_jTextField3MouseClicked
 
     private void jTextField4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField4MouseClicked
-
+        librarySystemUtils.removePlaceHolder(jTextField4, textFieldPlaceHolder);
     }//GEN-LAST:event_jTextField4MouseClicked
 
     private void jTextField5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField5MouseClicked
-
+        librarySystemUtils.removePlaceHolder(jTextField5, textFieldPlaceHolder);
     }//GEN-LAST:event_jTextField5MouseClicked
 
     private void jTextField6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField6MouseClicked
-
+        librarySystemUtils.removePlaceHolder(jTextField6, textFieldPlaceHolder);
     }//GEN-LAST:event_jTextField6MouseClicked
 
     private void jTextField7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField7MouseClicked
-
+        librarySystemUtils.removePlaceHolder(jTextField7, textFieldPlaceHolder);
     }//GEN-LAST:event_jTextField7MouseClicked
 
     private void jTextField8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField8MouseClicked
-
+        librarySystemUtils.removePlaceHolder(jTextField8, textFieldPlaceHolder);
     }//GEN-LAST:event_jTextField8MouseClicked
 
     private void jTextField9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField9MouseClicked
-
+        librarySystemUtils.removePlaceHolder(jTextField9, textFieldPlaceHolder);
     }//GEN-LAST:event_jTextField9MouseClicked
 
     private void jTextField10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField10MouseClicked
-
+        librarySystemUtils.removePlaceHolder(jTextField10, textFieldPlaceHolder);
     }//GEN-LAST:event_jTextField10MouseClicked
 
     private void jTextField11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField11MouseClicked
-
+        librarySystemUtils.removePlaceHolder(jTextField11, textFieldPlaceHolder);
     }//GEN-LAST:event_jTextField11MouseClicked
 
     private void jTextField12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField12MouseClicked
-
+        librarySystemUtils.removePlaceHolder(jTextField12, textFieldPlaceHolder);
     }//GEN-LAST:event_jTextField12MouseClicked
 
     private void jTable2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable2MouseClicked
@@ -2785,7 +2792,7 @@ public class UserGUI extends MainJFrameProperties {
     }//GEN-LAST:event_jTable2MouseClicked
 
     private void jTextField13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField13MouseClicked
-
+        librarySystemUtils.removePlaceHolder(jTextField13, textFieldPlaceHolder);
     }//GEN-LAST:event_jTextField13MouseClicked
 
     private void jTextField13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField13ActionPerformed
@@ -2793,7 +2800,7 @@ public class UserGUI extends MainJFrameProperties {
     }//GEN-LAST:event_jTextField13ActionPerformed
 
     private void jTextField14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField14MouseClicked
-
+        librarySystemUtils.removePlaceHolder(jTextField14, textFieldPlaceHolder);
     }//GEN-LAST:event_jTextField14MouseClicked
 
     private void jTextField14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField14ActionPerformed
@@ -2801,7 +2808,7 @@ public class UserGUI extends MainJFrameProperties {
     }//GEN-LAST:event_jTextField14ActionPerformed
 
     private void jTextField15MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField15MouseClicked
-
+        librarySystemUtils.removePlaceHolder(jTextField15, textFieldPlaceHolder);
     }//GEN-LAST:event_jTextField15MouseClicked
 
     private void jTextField15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField15ActionPerformed
@@ -2829,15 +2836,15 @@ public class UserGUI extends MainJFrameProperties {
     }//GEN-LAST:event_leftPanelComponentShown
 
     private void formComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_formComponentShown
-        
+
     }//GEN-LAST:event_formComponentShown
 
     private void jTextField3CaretUpdate(javax.swing.event.CaretEvent evt) {//GEN-FIRST:event_jTextField3CaretUpdate
-        
+
     }//GEN-LAST:event_jTextField3CaretUpdate
 
     private void jTextField16MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField16MouseClicked
-        
+
     }//GEN-LAST:event_jTextField16MouseClicked
 
     private void jTextField16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField16ActionPerformed
@@ -2845,7 +2852,7 @@ public class UserGUI extends MainJFrameProperties {
     }//GEN-LAST:event_jTextField16ActionPerformed
 
     private void jTextField17MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField17MouseClicked
-        
+
     }//GEN-LAST:event_jTextField17MouseClicked
 
     private void jTextField17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField17ActionPerformed
@@ -2853,7 +2860,7 @@ public class UserGUI extends MainJFrameProperties {
     }//GEN-LAST:event_jTextField17ActionPerformed
 
     private void jTextField18MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField18MouseClicked
-        
+
     }//GEN-LAST:event_jTextField18MouseClicked
 
     private void jTextField18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField18ActionPerformed
@@ -2869,8 +2876,8 @@ public class UserGUI extends MainJFrameProperties {
     }//GEN-LAST:event_jTextField19ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        String checkOutBookID,checkOutUserID;
-        
+        String checkOutBookID, checkOutUserID;
+
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
@@ -2910,7 +2917,7 @@ public class UserGUI extends MainJFrameProperties {
     }//GEN-LAST:event_jCheckBox2ActionPerformed
 
     private void jTextField22MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField22MouseClicked
-        // TODO add your handling code here:
+        librarySystemUtils.removePlaceHolder(jTextField22, textFieldPlaceHolder);
     }//GEN-LAST:event_jTextField22MouseClicked
 
     private void jTextField22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField22ActionPerformed
@@ -2932,6 +2939,118 @@ public class UserGUI extends MainJFrameProperties {
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton11ActionPerformed
+
+    private void NewMemberComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_NewMemberComponentShown
+        librarySystemUtils.setPlaceHolder(jTextField10, textFieldPlaceHolder);
+        librarySystemUtils.setPlaceHolder(jTextField11, textFieldPlaceHolder);
+        librarySystemUtils.setPlaceHolder(jTextField12, textFieldPlaceHolder);
+        librarySystemUtils.setPlaceHolder(jTextField13, textFieldPlaceHolder);
+        librarySystemUtils.setPlaceHolder(jTextField14, textFieldPlaceHolder);
+        librarySystemUtils.setPlaceHolder(jTextField15, textFieldPlaceHolder);
+
+    }//GEN-LAST:event_NewMemberComponentShown
+
+    private void jTextField10MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField10MouseExited
+        if (jTextField10.getText().isEmpty()) {
+            librarySystemUtils.setPlaceHolder(jTextField10, textFieldPlaceHolder);
+            this.requestFocus();
+        }
+    }//GEN-LAST:event_jTextField10MouseExited
+
+    private void jTextField11MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField11MouseExited
+        if (jTextField11.getText().isEmpty()) {
+            librarySystemUtils.setPlaceHolder(jTextField11, textFieldPlaceHolder);
+            this.requestFocus();
+        }
+    }//GEN-LAST:event_jTextField11MouseExited
+
+    private void jTextField15MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField15MouseExited
+        if (jTextField15.getText().isEmpty()) {
+            librarySystemUtils.setPlaceHolder(jTextField15, textFieldPlaceHolder);
+            this.requestFocus();
+        }
+    }//GEN-LAST:event_jTextField15MouseExited
+
+    private void jTextField13MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField13MouseExited
+        if (jTextField13.getText().isEmpty()) {
+            librarySystemUtils.setPlaceHolder(jTextField13, textFieldPlaceHolder);
+            this.requestFocus();
+        }
+    }//GEN-LAST:event_jTextField13MouseExited
+
+    private void jTextField14MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField14MouseExited
+        if (jTextField14.getText().isEmpty()) {
+            librarySystemUtils.setPlaceHolder(jTextField14, textFieldPlaceHolder);
+            this.requestFocus();
+        }
+    }//GEN-LAST:event_jTextField14MouseExited
+
+    private void jTextField12MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField12MouseExited
+        if (jTextField12.getText().isEmpty()) {
+            librarySystemUtils.setPlaceHolder(jTextField12, textFieldPlaceHolder);
+            this.requestFocus();
+        }
+    }//GEN-LAST:event_jTextField12MouseExited
+
+    private void NewBookComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_NewBookComponentShown
+        librarySystemUtils.setPlaceHolder(jTextField4, textFieldPlaceHolder);
+        librarySystemUtils.setPlaceHolder(jTextField5, textFieldPlaceHolder);
+        librarySystemUtils.setPlaceHolder(jTextField6, textFieldPlaceHolder);
+        librarySystemUtils.setPlaceHolder(jTextField7, textFieldPlaceHolder);
+        librarySystemUtils.setPlaceHolder(jTextField8, textFieldPlaceHolder);
+        librarySystemUtils.setPlaceHolder(jTextField9, textFieldPlaceHolder);
+        librarySystemUtils.setPlaceHolder(jTextField22, textFieldPlaceHolder);
+
+    }//GEN-LAST:event_NewBookComponentShown
+
+    private void jTextField4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField4MouseExited
+        if (jTextField4.getText().isEmpty()) {
+            librarySystemUtils.setPlaceHolder(jTextField4, textFieldPlaceHolder);
+            this.requestFocus();
+        }
+    }//GEN-LAST:event_jTextField4MouseExited
+
+    private void jTextField5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField5MouseExited
+        if (jTextField5.getText().isEmpty()) {
+            librarySystemUtils.setPlaceHolder(jTextField5, textFieldPlaceHolder);
+            this.requestFocus();
+        }
+    }//GEN-LAST:event_jTextField5MouseExited
+
+    private void jTextField6MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField6MouseExited
+        if (jTextField6.getText().isEmpty()) {
+            librarySystemUtils.setPlaceHolder(jTextField6, textFieldPlaceHolder);
+            this.requestFocus();
+        }
+    }//GEN-LAST:event_jTextField6MouseExited
+
+    private void jTextField7MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField7MouseExited
+        if (jTextField7.getText().isEmpty()) {
+            librarySystemUtils.setPlaceHolder(jTextField7, textFieldPlaceHolder);
+            this.requestFocus();
+        }
+    }//GEN-LAST:event_jTextField7MouseExited
+
+    private void jTextField8MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField8MouseExited
+        if (jTextField8.getText().isEmpty()) {
+            librarySystemUtils.setPlaceHolder(jTextField8, textFieldPlaceHolder);
+            this.requestFocus();
+        }
+    }//GEN-LAST:event_jTextField8MouseExited
+
+    private void jTextField9MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField9MouseExited
+        if (jTextField9.getText().isEmpty()) {
+            librarySystemUtils.setPlaceHolder(jTextField9, textFieldPlaceHolder);
+            this.requestFocus();
+        }
+    }//GEN-LAST:event_jTextField9MouseExited
+
+    private void jTextField22MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField22MouseExited
+        if (jTextField22.getText().isEmpty()) {
+            librarySystemUtils.setPlaceHolder(jTextField22, textFieldPlaceHolder);
+            this.requestFocus();
+        }
+    }//GEN-LAST:event_jTextField22MouseExited
 
     /**
      * @param args the command line arguments

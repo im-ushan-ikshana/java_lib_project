@@ -32,9 +32,7 @@ public class CRUD_Ops extends SqlConnection {
             statement.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
-        } finally {
-            closeConnection();
-        }
+        } 
     }
 
     /**
@@ -51,9 +49,7 @@ public class CRUD_Ops extends SqlConnection {
         } catch (SQLException e) {
             System.err.println("Error executing SQL query: " + e.getMessage());
             return null;
-        } finally {
-            closeConnection();
-        }
+        } 
     }
 
     /**

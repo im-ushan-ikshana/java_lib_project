@@ -4359,6 +4359,9 @@
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
               </Properties>
+              <Events>
+                <EventHandler event="componentShown" listener="java.awt.event.ComponentListener" parameters="java.awt.event.ComponentEvent" handler="NewBookComponentShown"/>
+              </Events>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
                   <CardConstraints cardName="card2"/>
@@ -4443,14 +4446,11 @@
                       <SubComponents>
                         <Component class="javax.swing.JTextField" name="jTextField4">
                           <Properties>
-                            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="66" green="66" red="66" type="rgb"/>
-                            </Property>
                             <Property name="horizontalAlignment" type="int" value="0"/>
-                            <Property name="text" type="java.lang.String" value="Type Here"/>
                           </Properties>
                           <Events>
                             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jTextField4MouseClicked"/>
+                            <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jTextField4MouseExited"/>
                             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField4ActionPerformed"/>
                           </Events>
                           <Constraints>
@@ -4510,14 +4510,11 @@
                         </Component>
                         <Component class="javax.swing.JTextField" name="jTextField5">
                           <Properties>
-                            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="66" green="66" red="66" type="rgb"/>
-                            </Property>
                             <Property name="horizontalAlignment" type="int" value="0"/>
-                            <Property name="text" type="java.lang.String" value="Type Here"/>
                           </Properties>
                           <Events>
                             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jTextField5MouseClicked"/>
+                            <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jTextField5MouseExited"/>
                             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField5ActionPerformed"/>
                           </Events>
                           <Constraints>
@@ -4541,14 +4538,11 @@
                         </Component>
                         <Component class="javax.swing.JTextField" name="jTextField6">
                           <Properties>
-                            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="66" green="66" red="66" type="rgb"/>
-                            </Property>
                             <Property name="horizontalAlignment" type="int" value="0"/>
-                            <Property name="text" type="java.lang.String" value="Type Here"/>
                           </Properties>
                           <Events>
                             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jTextField6MouseClicked"/>
+                            <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jTextField6MouseExited"/>
                             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField6ActionPerformed"/>
                           </Events>
                           <Constraints>
@@ -4572,14 +4566,11 @@
                         </Component>
                         <Component class="javax.swing.JTextField" name="jTextField7">
                           <Properties>
-                            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="66" green="66" red="66" type="rgb"/>
-                            </Property>
                             <Property name="horizontalAlignment" type="int" value="0"/>
-                            <Property name="text" type="java.lang.String" value="Type Here"/>
                           </Properties>
                           <Events>
                             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jTextField7MouseClicked"/>
+                            <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jTextField7MouseExited"/>
                             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField7ActionPerformed"/>
                           </Events>
                           <Constraints>
@@ -4603,14 +4594,11 @@
                         </Component>
                         <Component class="javax.swing.JTextField" name="jTextField8">
                           <Properties>
-                            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="66" green="66" red="66" type="rgb"/>
-                            </Property>
                             <Property name="horizontalAlignment" type="int" value="0"/>
-                            <Property name="text" type="java.lang.String" value="Type Here"/>
                           </Properties>
                           <Events>
                             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jTextField8MouseClicked"/>
+                            <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jTextField8MouseExited"/>
                             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField8ActionPerformed"/>
                           </Events>
                           <Constraints>
@@ -4634,14 +4622,11 @@
                         </Component>
                         <Component class="javax.swing.JTextField" name="jTextField9">
                           <Properties>
-                            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="66" green="66" red="66" type="rgb"/>
-                            </Property>
                             <Property name="horizontalAlignment" type="int" value="0"/>
-                            <Property name="text" type="java.lang.String" value="Type Here"/>
                           </Properties>
                           <Events>
                             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jTextField9MouseClicked"/>
+                            <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jTextField9MouseExited"/>
                             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField9ActionPerformed"/>
                           </Events>
                           <Constraints>
@@ -4938,14 +4923,11 @@
                       <SubComponents>
                         <Component class="javax.swing.JTextField" name="jTextField22">
                           <Properties>
-                            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="66" green="66" red="66" type="rgb"/>
-                            </Property>
                             <Property name="horizontalAlignment" type="int" value="0"/>
-                            <Property name="text" type="java.lang.String" value="Type Here"/>
                           </Properties>
                           <Events>
                             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jTextField22MouseClicked"/>
+                            <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jTextField22MouseExited"/>
                             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField22ActionPerformed"/>
                           </Events>
                           <Constraints>
@@ -5221,6 +5203,9 @@
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
               </Properties>
+              <Events>
+                <EventHandler event="componentShown" listener="java.awt.event.ComponentListener" parameters="java.awt.event.ComponentEvent" handler="NewMemberComponentShown"/>
+              </Events>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
                   <CardConstraints cardName="card2"/>
@@ -5260,14 +5245,11 @@
                 </Component>
                 <Component class="javax.swing.JTextField" name="jTextField10">
                   <Properties>
-                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="66" green="66" red="66" type="rgb"/>
-                    </Property>
                     <Property name="horizontalAlignment" type="int" value="0"/>
-                    <Property name="text" type="java.lang.String" value="Type Here"/>
                   </Properties>
                   <Events>
                     <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jTextField10MouseClicked"/>
+                    <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jTextField10MouseExited"/>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField10ActionPerformed"/>
                   </Events>
                   <Constraints>
@@ -5327,14 +5309,11 @@
                 </Component>
                 <Component class="javax.swing.JTextField" name="jTextField11">
                   <Properties>
-                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="66" green="66" red="66" type="rgb"/>
-                    </Property>
                     <Property name="horizontalAlignment" type="int" value="0"/>
-                    <Property name="text" type="java.lang.String" value="Type Here"/>
                   </Properties>
                   <Events>
                     <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jTextField11MouseClicked"/>
+                    <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jTextField11MouseExited"/>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField11ActionPerformed"/>
                   </Events>
                   <Constraints>
@@ -5358,14 +5337,11 @@
                 </Component>
                 <Component class="javax.swing.JTextField" name="jTextField12">
                   <Properties>
-                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="66" green="66" red="66" type="rgb"/>
-                    </Property>
                     <Property name="horizontalAlignment" type="int" value="0"/>
-                    <Property name="text" type="java.lang.String" value="Type Here (Optional)"/>
                   </Properties>
                   <Events>
                     <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jTextField12MouseClicked"/>
+                    <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jTextField12MouseExited"/>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField12ActionPerformed"/>
                   </Events>
                   <Constraints>
@@ -5497,14 +5473,11 @@
                 </Component>
                 <Component class="javax.swing.JTextField" name="jTextField13">
                   <Properties>
-                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="66" green="66" red="66" type="rgb"/>
-                    </Property>
                     <Property name="horizontalAlignment" type="int" value="0"/>
-                    <Property name="text" type="java.lang.String" value="Type Here"/>
                   </Properties>
                   <Events>
                     <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jTextField13MouseClicked"/>
+                    <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jTextField13MouseExited"/>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField13ActionPerformed"/>
                   </Events>
                   <Constraints>
@@ -5515,14 +5488,11 @@
                 </Component>
                 <Component class="javax.swing.JTextField" name="jTextField14">
                   <Properties>
-                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="66" green="66" red="66" type="rgb"/>
-                    </Property>
                     <Property name="horizontalAlignment" type="int" value="0"/>
-                    <Property name="text" type="java.lang.String" value="Type Here"/>
                   </Properties>
                   <Events>
                     <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jTextField14MouseClicked"/>
+                    <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jTextField14MouseExited"/>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField14ActionPerformed"/>
                   </Events>
                   <Constraints>
@@ -5650,14 +5620,11 @@
                 </Container>
                 <Component class="javax.swing.JTextField" name="jTextField15">
                   <Properties>
-                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="66" green="66" red="66" type="rgb"/>
-                    </Property>
                     <Property name="horizontalAlignment" type="int" value="0"/>
-                    <Property name="text" type="java.lang.String" value="Type Here"/>
                   </Properties>
                   <Events>
                     <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jTextField15MouseClicked"/>
+                    <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jTextField15MouseExited"/>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField15ActionPerformed"/>
                   </Events>
                   <Constraints>

@@ -272,13 +272,13 @@ public class FrogotPasswordPage extends MainJFrameProperties {
 
     private void jLabel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseClicked
         this.dispose();
-        new LoginPage(true);
+        new LoginPage();
     }//GEN-LAST:event_jLabel4MouseClicked
 
     private void jButton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseClicked
         if (Admin.changeAdminPass(jTextField2.getText(), jPasswordField3.getText(), jPasswordField4.getText())) {
             this.dispose();
-            new LoginPage(true);
+            new LoginPage();
         }
     }//GEN-LAST:event_jButton3MouseClicked
 
