@@ -348,7 +348,7 @@ public class librarySystemUtils {
             JPasswordField passwordField = (JPasswordField) component;
             if (passwordField.getText().equals(placeString)) {
                 passwordField.setText("");
-                passwordField.setEchoChar('*'); // Restore echo char to default (bullet)
+                passwordField.setEchoChar('\u2022'); // Restore echo char to default (bullet)
                 java.awt.Font font = passwordField.getFont().deriveFont(java.awt.Font.PLAIN); // Restore font to plain
                 passwordField.setFont(font);
                 passwordField.setForeground(Color.BLACK); // Restore text color to black
