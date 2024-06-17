@@ -28,9 +28,12 @@ import lib_project.mainOps.Admin;
  */
 public class AdminUserGUI extends MainJFrameProperties {
 
-    /**
-     * Creates new form UserGUI
-     */
+    private String textFieldPlaceholder = "Type Here...";
+    private String passFieldPlaceholder = "Password...";
+    private String searchFieldPlaceholder = "Keyword to Search...";
+    private String disabledFieldPlaceholder = "Disabled..!";
+    private String textFieldOptinalPlaceholder = "Type Here(Optinal)...";
+
     public AdminUserGUI() {
         MainJFrameProperties.MainFrame(this);
         this.setSize(super.width, super.height);
@@ -40,20 +43,6 @@ public class AdminUserGUI extends MainJFrameProperties {
         close_messege(this);
         initComponents();
         jLabel2.setText("Date : " + SystemVariables.getToday());
-    }
-
-    public AdminUserGUI(boolean call) {
-        if (call) {
-            MainJFrameProperties.MainFrame(this);
-            this.setSize(super.width, super.height);
-            UIManager.put("Button.arc", 10);
-            UIManager.put("TextComponent.arc", 10);
-            UIManager.put("Component.focusWidth", 3);
-            close_messege(this);
-            initComponents();
-            jLabel2.setText("Date : " + SystemVariables.getToday());
-            this.setVisible(call);
-        }
     }
 
     /**
@@ -711,6 +700,11 @@ public class AdminUserGUI extends MainJFrameProperties {
         parentPanel.setLayout(new java.awt.CardLayout());
 
         MemberManage.setBackground(new java.awt.Color(255, 255, 255));
+        MemberManage.addComponentListener(new java.awt.event.ComponentAdapter() {
+            public void componentShown(java.awt.event.ComponentEvent evt) {
+                MemberManageComponentShown(evt);
+            }
+        });
         MemberManage.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         MemberManage.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 620, 940, 10));
 
@@ -731,6 +725,9 @@ public class AdminUserGUI extends MainJFrameProperties {
         jTextField2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jTextField2MouseClicked(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jTextField2MouseExited(evt);
             }
         });
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
@@ -807,6 +804,9 @@ public class AdminUserGUI extends MainJFrameProperties {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jTextField1MouseClicked(evt);
             }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jTextField1MouseExited(evt);
+            }
         });
         jPanel12.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 370, 340, 40));
 
@@ -816,6 +816,9 @@ public class AdminUserGUI extends MainJFrameProperties {
         jTextField3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jTextField3MouseClicked(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jTextField3MouseExited(evt);
             }
         });
         jPanel12.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 70, 340, 40));
@@ -827,6 +830,9 @@ public class AdminUserGUI extends MainJFrameProperties {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jTextField4MouseClicked(evt);
             }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jTextField4MouseExited(evt);
+            }
         });
         jPanel12.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 120, 340, 40));
 
@@ -836,6 +842,9 @@ public class AdminUserGUI extends MainJFrameProperties {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jTextField7MouseClicked(evt);
             }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jTextField7MouseExited(evt);
+            }
         });
         jPanel12.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 270, 340, 40));
 
@@ -844,6 +853,9 @@ public class AdminUserGUI extends MainJFrameProperties {
         jTextField8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jTextField8MouseClicked(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jTextField8MouseExited(evt);
             }
         });
         jPanel12.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 320, 340, 40));
@@ -1033,6 +1045,11 @@ public class AdminUserGUI extends MainJFrameProperties {
         parentPanel.add(MemberManage, "card2");
 
         BookManage.setBackground(new java.awt.Color(255, 255, 255));
+        BookManage.addComponentListener(new java.awt.event.ComponentAdapter() {
+            public void componentShown(java.awt.event.ComponentEvent evt) {
+                BookManageComponentShown(evt);
+            }
+        });
         BookManage.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         BookManage.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 620, 940, 10));
 
@@ -1053,6 +1070,9 @@ public class AdminUserGUI extends MainJFrameProperties {
         jTextField11.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jTextField11MouseClicked(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jTextField11MouseExited(evt);
             }
         });
         BookManage.add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, 300, 40));
@@ -1130,6 +1150,9 @@ public class AdminUserGUI extends MainJFrameProperties {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jTextField12MouseClicked(evt);
             }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jTextField12MouseExited(evt);
+            }
         });
         jPanel15.add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 50, 280, 40));
 
@@ -1138,6 +1161,9 @@ public class AdminUserGUI extends MainJFrameProperties {
         jTextField13.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jTextField13MouseClicked(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jTextField13MouseExited(evt);
             }
         });
         jPanel15.add(jTextField13, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 100, 280, 30));
@@ -1148,6 +1174,9 @@ public class AdminUserGUI extends MainJFrameProperties {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jTextField14MouseClicked(evt);
             }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jTextField14MouseExited(evt);
+            }
         });
         jPanel15.add(jTextField14, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 140, 280, 30));
 
@@ -1157,6 +1186,9 @@ public class AdminUserGUI extends MainJFrameProperties {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jTextField15MouseClicked(evt);
             }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jTextField15MouseExited(evt);
+            }
         });
         jPanel15.add(jTextField15, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 180, 280, 30));
 
@@ -1165,6 +1197,9 @@ public class AdminUserGUI extends MainJFrameProperties {
         jTextField16.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jTextField16MouseClicked(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jTextField16MouseExited(evt);
             }
         });
         jPanel15.add(jTextField16, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 220, 280, 40));
@@ -1349,6 +1384,11 @@ public class AdminUserGUI extends MainJFrameProperties {
         parentPanel.add(BookManage, "card2");
 
         PayLatefee.setBackground(new java.awt.Color(255, 255, 255));
+        PayLatefee.addComponentListener(new java.awt.event.ComponentAdapter() {
+            public void componentShown(java.awt.event.ComponentEvent evt) {
+                PayLatefeeComponentShown(evt);
+            }
+        });
         PayLatefee.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         PayLatefee.add(jSeparator5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 620, 940, 10));
 
@@ -1372,6 +1412,9 @@ public class AdminUserGUI extends MainJFrameProperties {
         jTextField5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jTextField5MouseClicked(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jTextField5MouseExited(evt);
             }
         });
         PayLatefee.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 120, 270, 40));
@@ -1474,7 +1517,7 @@ public class AdminUserGUI extends MainJFrameProperties {
                 jButton5ActionPerformed(evt);
             }
         });
-        PayLatefee.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 520, 140, 40));
+        PayLatefee.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 520, 150, 40));
 
         jLabel60.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel60.setText("Paid Amount:");
@@ -1486,6 +1529,9 @@ public class AdminUserGUI extends MainJFrameProperties {
         jTextField6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jTextField6MouseClicked(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jTextField6MouseExited(evt);
             }
         });
         PayLatefee.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 520, 270, 40));
@@ -1514,6 +1560,11 @@ public class AdminUserGUI extends MainJFrameProperties {
         parentPanel.add(PayLatefee, "card2");
 
         Administrator.setBackground(new java.awt.Color(255, 255, 255));
+        Administrator.addComponentListener(new java.awt.event.ComponentAdapter() {
+            public void componentShown(java.awt.event.ComponentEvent evt) {
+                AdministratorComponentShown(evt);
+            }
+        });
         Administrator.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         Administrator.add(jSeparator7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 620, 940, 10));
 
@@ -1552,46 +1603,56 @@ public class AdminUserGUI extends MainJFrameProperties {
         currentAdmin.add(jLabel66, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 240, -1, 30));
 
         jTextField17.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField17.setText("Type Here");
         jTextField17.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jTextField17MouseClicked(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jTextField17MouseExited(evt);
             }
         });
         currentAdmin.add(jTextField17, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 50, 270, 30));
 
         jTextField20.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField20.setText("Type Here");
         jTextField20.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jTextField20MouseClicked(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jTextField20MouseExited(evt);
             }
         });
         currentAdmin.add(jTextField20, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 170, 270, 30));
 
         jTextField21.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField21.setText("Type Here");
         jTextField21.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jTextField21MouseClicked(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jTextField21MouseExited(evt);
             }
         });
         currentAdmin.add(jTextField21, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 210, 270, 30));
 
         jTextField22.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField22.setText("Type Here");
         jTextField22.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jTextField22MouseClicked(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jTextField22MouseExited(evt);
             }
         });
         currentAdmin.add(jTextField22, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 250, 270, 30));
 
         jTextField23.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField23.setText("Type Here");
         jTextField23.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jTextField23MouseClicked(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jTextField23MouseExited(evt);
             }
         });
         currentAdmin.add(jTextField23, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 10, 270, 30));
@@ -1601,10 +1662,12 @@ public class AdminUserGUI extends MainJFrameProperties {
         currentAdmin.add(jLabel67, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 290, -1, 30));
 
         jTextField24.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField24.setText("Type Here");
         jTextField24.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jTextField24MouseClicked(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jTextField24MouseExited(evt);
             }
         });
         currentAdmin.add(jTextField24, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 290, 270, 30));
@@ -1673,10 +1736,12 @@ public class AdminUserGUI extends MainJFrameProperties {
         jPanel20.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jTextField26.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField26.setText("Type Here");
         jTextField26.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jTextField26MouseClicked(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jTextField26MouseExited(evt);
             }
         });
         jPanel20.add(jTextField26, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 30, 270, 40));
@@ -1751,46 +1816,61 @@ public class AdminUserGUI extends MainJFrameProperties {
         otherAdminUpdatePanel.add(jLabel88, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 270, -1, 30));
 
         jTextField27.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField27.setText("Type Here");
+        jTextField27.setToolTipText("");
         jTextField27.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jTextField27MouseClicked(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jTextField27MouseExited(evt);
             }
         });
         otherAdminUpdatePanel.add(jTextField27, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 80, 270, 30));
 
         jTextField28.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField28.setText("Type Here");
+        jTextField28.setToolTipText("");
         jTextField28.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jTextField28MouseClicked(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jTextField28MouseExited(evt);
             }
         });
         otherAdminUpdatePanel.add(jTextField28, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 200, 270, 30));
 
         jTextField29.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField29.setText("Type Here");
+        jTextField29.setToolTipText("");
         jTextField29.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jTextField29MouseClicked(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jTextField29MouseExited(evt);
             }
         });
         otherAdminUpdatePanel.add(jTextField29, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 240, 270, 30));
 
         jTextField30.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField30.setText("Type Here");
+        jTextField30.setToolTipText("");
         jTextField30.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jTextField30MouseClicked(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jTextField30MouseExited(evt);
             }
         });
         otherAdminUpdatePanel.add(jTextField30, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 280, 270, 30));
 
         jTextField31.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField31.setText("Type Here");
+        jTextField31.setToolTipText("");
         jTextField31.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jTextField31MouseClicked(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jTextField31MouseExited(evt);
             }
         });
         otherAdminUpdatePanel.add(jTextField31, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 40, 270, 30));
@@ -1800,10 +1880,13 @@ public class AdminUserGUI extends MainJFrameProperties {
         otherAdminUpdatePanel.add(jLabel89, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 320, -1, 30));
 
         jTextField32.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField32.setText("Type Here");
+        jTextField32.setToolTipText("");
         jTextField32.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jTextField32MouseClicked(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jTextField32MouseExited(evt);
             }
         });
         otherAdminUpdatePanel.add(jTextField32, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 320, 270, 30));
@@ -1827,7 +1910,6 @@ public class AdminUserGUI extends MainJFrameProperties {
         jButton11.setForeground(new java.awt.Color(255, 255, 255));
         jButton11.setText("Back");
         jButton11.setToolTipText("");
-        jButton11.setActionCommand("Back");
         jButton11.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton11MouseClicked(evt);
@@ -2294,7 +2376,7 @@ public class AdminUserGUI extends MainJFrameProperties {
     }//GEN-LAST:event_jTextField2CaretUpdate
 
     private void jTextField2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField2MouseClicked
-
+        librarySystemUtils.removePlaceHolder(jTextField2, searchFieldPlaceholder);
     }//GEN-LAST:event_jTextField2MouseClicked
 
     private void jTable1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable1MouseClicked
@@ -2306,31 +2388,31 @@ public class AdminUserGUI extends MainJFrameProperties {
     }//GEN-LAST:event_jButton1MouseClicked
 
     private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
-        
+
     }//GEN-LAST:event_jButton2MouseClicked
 
     private void jTextField3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField3MouseClicked
-        
+        librarySystemUtils.removePlaceHolder(jTextField3, textFieldPlaceholder);
     }//GEN-LAST:event_jTextField3MouseClicked
 
     private void jTextField4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField4MouseClicked
-        
+        librarySystemUtils.removePlaceHolder(jTextField4, textFieldPlaceholder);
     }//GEN-LAST:event_jTextField4MouseClicked
 
     private void jTextField7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField7MouseClicked
-        
+        librarySystemUtils.removePlaceHolder(jTextField7, textFieldPlaceholder);
     }//GEN-LAST:event_jTextField7MouseClicked
 
     private void jTextField8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField8MouseClicked
-       
+        librarySystemUtils.removePlaceHolder(jTextField8, textFieldPlaceholder);
     }//GEN-LAST:event_jTextField8MouseClicked
 
     private void jTextField1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField1MouseClicked
-        
+        librarySystemUtils.removePlaceHolder(jTextField1, textFieldPlaceholder);
     }//GEN-LAST:event_jTextField1MouseClicked
 
     private void jTextField11CaretUpdate(javax.swing.event.CaretEvent evt) {//GEN-FIRST:event_jTextField11CaretUpdate
-        
+
     }//GEN-LAST:event_jTextField11CaretUpdate
 
     private void jTextField18MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField18MouseClicked
@@ -2338,63 +2420,63 @@ public class AdminUserGUI extends MainJFrameProperties {
     }//GEN-LAST:event_jTextField18MouseClicked
 
     private void jTextField12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField12MouseClicked
-        
+        librarySystemUtils.removePlaceHolder(jTextField12, textFieldPlaceholder);
     }//GEN-LAST:event_jTextField12MouseClicked
 
     private void jTextField13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField13MouseClicked
-        
+        librarySystemUtils.removePlaceHolder(jTextField13, textFieldPlaceholder);
     }//GEN-LAST:event_jTextField13MouseClicked
 
     private void jTextField14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField14MouseClicked
-        
+        librarySystemUtils.removePlaceHolder(jTextField14, textFieldPlaceholder);
     }//GEN-LAST:event_jTextField14MouseClicked
 
     private void jTextField15MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField15MouseClicked
-        
+        librarySystemUtils.removePlaceHolder(jTextField15, textFieldOptinalPlaceholder);
     }//GEN-LAST:event_jTextField15MouseClicked
 
     private void jTextField16MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField16MouseClicked
-        
+        librarySystemUtils.removePlaceHolder(jTextField16, textFieldPlaceholder);
     }//GEN-LAST:event_jTextField16MouseClicked
 
     private void jTextArea1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextArea1MouseClicked
-        
+
     }//GEN-LAST:event_jTextArea1MouseClicked
 
     private void jTextField11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField11MouseClicked
-        
+        librarySystemUtils.removePlaceHolder(jTextField11, searchFieldPlaceholder);
     }//GEN-LAST:event_jTextField11MouseClicked
 
     private void jTable2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable2MouseClicked
-        
+
     }//GEN-LAST:event_jTable2MouseClicked
 
     private void jButton4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton4MouseClicked
-        
+
     }//GEN-LAST:event_jButton4MouseClicked
 
     private void jButton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseClicked
-        
+
     }//GEN-LAST:event_jButton3MouseClicked
 
     private void jTextField19CaretUpdate(javax.swing.event.CaretEvent evt) {//GEN-FIRST:event_jTextField19CaretUpdate
-        
+
     }//GEN-LAST:event_jTextField19CaretUpdate
 
     private void jTextField19MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField19MouseClicked
-        
+
     }//GEN-LAST:event_jTextField19MouseClicked
 
     private void jTable3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable3MouseClicked
-        
+
     }//GEN-LAST:event_jTable3MouseClicked
 
     private void jTextField5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField5MouseClicked
-        
+        librarySystemUtils.removePlaceHolder(jTextField5, searchFieldPlaceholder);
     }//GEN-LAST:event_jTextField5MouseClicked
 
     private void jTextField6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField6MouseClicked
-        
+        librarySystemUtils.removePlaceHolder(jTextField6, textFieldPlaceholder);
     }//GEN-LAST:event_jTextField6MouseClicked
 
     private void jButton5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton5MouseClicked
@@ -2402,43 +2484,43 @@ public class AdminUserGUI extends MainJFrameProperties {
     }//GEN-LAST:event_jButton5MouseClicked
 
     private void jTextField5CaretUpdate(javax.swing.event.CaretEvent evt) {//GEN-FIRST:event_jTextField5CaretUpdate
-        
+
     }//GEN-LAST:event_jTextField5CaretUpdate
 
     private void jTextField23MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField23MouseClicked
-        
+        librarySystemUtils.removePlaceHolder(jTextField23, textFieldPlaceholder);
     }//GEN-LAST:event_jTextField23MouseClicked
 
     private void jTextField17MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField17MouseClicked
-        
+        librarySystemUtils.removePlaceHolder(jTextField17, textFieldPlaceholder);
     }//GEN-LAST:event_jTextField17MouseClicked
 
     private void jPasswordField2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPasswordField2MouseClicked
-        
+
     }//GEN-LAST:event_jPasswordField2MouseClicked
 
     private void jPasswordField1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPasswordField1MouseClicked
-        
+
     }//GEN-LAST:event_jPasswordField1MouseClicked
 
     private void jTextField20MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField20MouseClicked
-        
+        librarySystemUtils.removePlaceHolder(jTextField20, textFieldPlaceholder);
     }//GEN-LAST:event_jTextField20MouseClicked
 
     private void jTextField21MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField21MouseClicked
-        
+        librarySystemUtils.removePlaceHolder(jTextField21, textFieldPlaceholder);
     }//GEN-LAST:event_jTextField21MouseClicked
 
     private void jTextField22MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField22MouseClicked
-        
+        librarySystemUtils.removePlaceHolder(jTextField22, textFieldPlaceholder);
     }//GEN-LAST:event_jTextField22MouseClicked
 
     private void jTextField24MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField24MouseClicked
-        
+        librarySystemUtils.removePlaceHolder(jTextField24, textFieldPlaceholder);
     }//GEN-LAST:event_jTextField24MouseClicked
 
     private void jButton9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton9MouseClicked
-        
+
     }//GEN-LAST:event_jButton9MouseClicked
 
     private void jTextField25MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField25MouseClicked
@@ -2446,7 +2528,14 @@ public class AdminUserGUI extends MainJFrameProperties {
     }//GEN-LAST:event_jTextField25MouseClicked
 
     private void formComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_formComponentShown
-        
+        librarySystemUtils.setPlaceHolder(jTextField2, searchFieldPlaceholder);
+        librarySystemUtils.setPlaceHolder(jTextField9, disabledFieldPlaceholder);
+        librarySystemUtils.setPlaceHolder(jTextField1, textFieldPlaceholder);
+        librarySystemUtils.setPlaceHolder(jTextField3, textFieldPlaceholder);
+        librarySystemUtils.setPlaceHolder(jTextField4, textFieldPlaceholder);
+        librarySystemUtils.setPlaceHolder(jTextField7, textFieldPlaceholder);
+        librarySystemUtils.setPlaceHolder(jTextField8, textFieldPlaceholder);
+
     }//GEN-LAST:event_formComponentShown
 
     private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
@@ -2462,7 +2551,7 @@ public class AdminUserGUI extends MainJFrameProperties {
     }//GEN-LAST:event_jButton9ActionPerformed
 
     private void jTextField26MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField26MouseClicked
-        // TODO add your handling code here:
+        librarySystemUtils.removePlaceHolder(jTextField26, textFieldPlaceholder);
     }//GEN-LAST:event_jTextField26MouseClicked
 
     private void jPasswordField3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPasswordField3MouseClicked
@@ -2481,27 +2570,27 @@ public class AdminUserGUI extends MainJFrameProperties {
     }//GEN-LAST:event_jButton10ActionPerformed
 
     private void jTextField27MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField27MouseClicked
-        // TODO add your handling code here:
+        librarySystemUtils.removePlaceHolder(jTextField27, textFieldPlaceholder);
     }//GEN-LAST:event_jTextField27MouseClicked
 
     private void jTextField28MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField28MouseClicked
-        // TODO add your handling code here:
+        librarySystemUtils.removePlaceHolder(jTextField28, textFieldPlaceholder);
     }//GEN-LAST:event_jTextField28MouseClicked
 
     private void jTextField29MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField29MouseClicked
-        // TODO add your handling code here:
+        librarySystemUtils.removePlaceHolder(jTextField29, textFieldPlaceholder);
     }//GEN-LAST:event_jTextField29MouseClicked
 
     private void jTextField30MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField30MouseClicked
-        // TODO add your handling code here:
+        librarySystemUtils.removePlaceHolder(jTextField30, textFieldPlaceholder);
     }//GEN-LAST:event_jTextField30MouseClicked
 
     private void jTextField31MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField31MouseClicked
-        // TODO add your handling code here:
+        librarySystemUtils.removePlaceHolder(jTextField31, textFieldPlaceholder);
     }//GEN-LAST:event_jTextField31MouseClicked
 
     private void jTextField32MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField32MouseClicked
-        // TODO add your handling code here:
+        librarySystemUtils.removePlaceHolder(jTextField32, textFieldPlaceholder);
     }//GEN-LAST:event_jTextField32MouseClicked
 
     private void jTextField33MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField33MouseClicked
@@ -2551,7 +2640,7 @@ public class AdminUserGUI extends MainJFrameProperties {
     }//GEN-LAST:event_jPanel11MouseExited
 
     private void jTextField35MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField35MouseClicked
-        
+
     }//GEN-LAST:event_jTextField35MouseClicked
 
     private void jTextField35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField35ActionPerformed
@@ -2565,6 +2654,234 @@ public class AdminUserGUI extends MainJFrameProperties {
     private void jTextField36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField36ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField36ActionPerformed
+
+    private void MemberManageComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_MemberManageComponentShown
+
+    }//GEN-LAST:event_MemberManageComponentShown
+
+    private void jTextField2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField2MouseExited
+        if (jTextField2.getText().isEmpty()) {
+            librarySystemUtils.setPlaceHolder(jTextField2, searchFieldPlaceholder);
+            MemberManage.requestFocus();
+        }
+    }//GEN-LAST:event_jTextField2MouseExited
+
+    private void jTextField3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField3MouseExited
+        if (jTextField3.getText().isEmpty()) {
+            librarySystemUtils.setPlaceHolder(jTextField3, textFieldPlaceholder);
+            MemberManage.requestFocus();
+        }
+    }//GEN-LAST:event_jTextField3MouseExited
+
+    private void jTextField4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField4MouseExited
+        if (jTextField4.getText().isEmpty()) {
+            librarySystemUtils.setPlaceHolder(jTextField4, textFieldPlaceholder);
+            MemberManage.requestFocus();
+        }
+    }//GEN-LAST:event_jTextField4MouseExited
+
+    private void jTextField7MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField7MouseExited
+        if (jTextField7.getText().isEmpty()) {
+            librarySystemUtils.setPlaceHolder(jTextField7, textFieldPlaceholder);
+            MemberManage.requestFocus();
+        }
+    }//GEN-LAST:event_jTextField7MouseExited
+
+    private void jTextField8MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField8MouseExited
+        if (jTextField8.getText().isEmpty()) {
+            librarySystemUtils.setPlaceHolder(jTextField8, textFieldPlaceholder);
+            MemberManage.requestFocus();
+        }
+    }//GEN-LAST:event_jTextField8MouseExited
+
+    private void jTextField1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField1MouseExited
+        if (jTextField1.getText().isEmpty()) {
+            librarySystemUtils.setPlaceHolder(jTextField1, textFieldPlaceholder);
+            MemberManage.requestFocus();
+        }
+    }//GEN-LAST:event_jTextField1MouseExited
+
+    private void BookManageComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_BookManageComponentShown
+        librarySystemUtils.setPlaceHolder(jTextField11, searchFieldPlaceholder);
+        librarySystemUtils.setPlaceHolder(jTextField18, disabledFieldPlaceholder);
+        librarySystemUtils.setPlaceHolder(jTextField12, textFieldPlaceholder);
+        librarySystemUtils.setPlaceHolder(jTextField13, textFieldPlaceholder);
+        librarySystemUtils.setPlaceHolder(jTextField14, textFieldPlaceholder);
+        librarySystemUtils.setPlaceHolder(jTextField16, textFieldPlaceholder);
+        librarySystemUtils.setPlaceHolder(jTextField15, textFieldOptinalPlaceholder);
+    }//GEN-LAST:event_BookManageComponentShown
+
+    private void jTextField11MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField11MouseExited
+        if (jTextField11.getText().isEmpty()) {
+            librarySystemUtils.setPlaceHolder(jTextField11, searchFieldPlaceholder);
+            BookManage.requestFocus();
+        }
+    }//GEN-LAST:event_jTextField11MouseExited
+
+    private void jTextField12MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField12MouseExited
+        if (jTextField12.getText().isEmpty()) {
+            librarySystemUtils.setPlaceHolder(jTextField12, textFieldPlaceholder);
+            BookManage.requestFocus();
+        }
+    }//GEN-LAST:event_jTextField12MouseExited
+
+    private void jTextField13MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField13MouseExited
+        if (jTextField13.getText().isEmpty()) {
+            librarySystemUtils.setPlaceHolder(jTextField13, textFieldPlaceholder);
+            BookManage.requestFocus();
+        }
+    }//GEN-LAST:event_jTextField13MouseExited
+
+    private void jTextField14MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField14MouseExited
+        if (jTextField14.getText().isEmpty()) {
+            librarySystemUtils.setPlaceHolder(jTextField14, textFieldPlaceholder);
+            BookManage.requestFocus();
+        }
+    }//GEN-LAST:event_jTextField14MouseExited
+
+    private void jTextField16MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField16MouseExited
+        if (jTextField16.getText().isEmpty()) {
+            librarySystemUtils.setPlaceHolder(jTextField16, textFieldPlaceholder);
+            BookManage.requestFocus();
+        }
+    }//GEN-LAST:event_jTextField16MouseExited
+
+    private void jTextField15MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField15MouseExited
+        if (jTextField15.getText().isEmpty()) {
+            librarySystemUtils.setPlaceHolder(jTextField15, textFieldOptinalPlaceholder);
+            BookManage.requestFocus();
+        }
+    }//GEN-LAST:event_jTextField15MouseExited
+
+    private void PayLatefeeComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_PayLatefeeComponentShown
+        librarySystemUtils.setPlaceHolder(jTextField5, searchFieldPlaceholder);
+        librarySystemUtils.setPlaceHolder(jTextField6, textFieldPlaceholder);
+    }//GEN-LAST:event_PayLatefeeComponentShown
+
+    private void jTextField5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField5MouseExited
+        if (jTextField5.getText().isBlank()) {
+            librarySystemUtils.setPlaceHolder(jTextField5, searchFieldPlaceholder);
+            PayLatefee.requestFocus();
+        }
+    }//GEN-LAST:event_jTextField5MouseExited
+
+    private void jTextField6MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField6MouseExited
+        if (jTextField6.getText().isBlank()) {
+            librarySystemUtils.setPlaceHolder(jTextField6, textFieldPlaceholder);
+            PayLatefee.requestFocus();
+        }
+    }//GEN-LAST:event_jTextField6MouseExited
+
+    private void AdministratorComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_AdministratorComponentShown
+        librarySystemUtils.setPlaceHolder(jTextField17, textFieldPlaceholder);
+        librarySystemUtils.setPlaceHolder(jTextField20, textFieldPlaceholder);
+        librarySystemUtils.setPlaceHolder(jTextField21, textFieldPlaceholder);
+        librarySystemUtils.setPlaceHolder(jTextField22, textFieldPlaceholder);
+        librarySystemUtils.setPlaceHolder(jTextField23, textFieldPlaceholder);
+        librarySystemUtils.setPlaceHolder(jTextField24, textFieldPlaceholder);
+        
+        librarySystemUtils.setPlaceHolder(jTextField26, textFieldPlaceholder);
+        
+        librarySystemUtils.setPlaceHolder(jTextField27, textFieldPlaceholder);
+        librarySystemUtils.setPlaceHolder(jTextField28, textFieldPlaceholder);
+        librarySystemUtils.setPlaceHolder(jTextField29, textFieldPlaceholder);
+        librarySystemUtils.setPlaceHolder(jTextField30, textFieldPlaceholder);
+        librarySystemUtils.setPlaceHolder(jTextField31, textFieldPlaceholder);
+        librarySystemUtils.setPlaceHolder(jTextField32, textFieldPlaceholder);
+        
+        
+    }//GEN-LAST:event_AdministratorComponentShown
+
+    private void jTextField23MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField23MouseExited
+        if (jTextField23.getText().isBlank()) {
+            librarySystemUtils.setPlaceHolder(jTextField23, textFieldPlaceholder);
+            Administrator.requestFocus();
+        }
+    }//GEN-LAST:event_jTextField23MouseExited
+
+    private void jTextField17MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField17MouseExited
+        if (jTextField17.getText().isBlank()) {
+            librarySystemUtils.setPlaceHolder(jTextField17, textFieldPlaceholder);
+            Administrator.requestFocus();
+        }
+    }//GEN-LAST:event_jTextField17MouseExited
+
+    private void jTextField20MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField20MouseExited
+        if (jTextField20.getText().isBlank()) {
+            librarySystemUtils.setPlaceHolder(jTextField20, textFieldPlaceholder);
+            Administrator.requestFocus();
+        }
+    }//GEN-LAST:event_jTextField20MouseExited
+
+    private void jTextField21MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField21MouseExited
+        if (jTextField21.getText().isBlank()) {
+            librarySystemUtils.setPlaceHolder(jTextField21, textFieldPlaceholder);
+            Administrator.requestFocus();
+        }
+    }//GEN-LAST:event_jTextField21MouseExited
+
+    private void jTextField22MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField22MouseExited
+        if (jTextField22.getText().isBlank()) {
+            librarySystemUtils.setPlaceHolder(jTextField22, textFieldPlaceholder);
+            Administrator.requestFocus();
+        }
+    }//GEN-LAST:event_jTextField22MouseExited
+
+    private void jTextField24MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField24MouseExited
+        if (jTextField24.getText().isBlank()) {
+            librarySystemUtils.setPlaceHolder(jTextField24, textFieldPlaceholder);
+            Administrator.requestFocus();
+        }
+    }//GEN-LAST:event_jTextField24MouseExited
+
+    private void jTextField26MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField26MouseExited
+        if (jTextField26.getText().isBlank()) {
+            librarySystemUtils.setPlaceHolder(jTextField26, textFieldPlaceholder);
+            Administrator.requestFocus();
+        }
+    }//GEN-LAST:event_jTextField26MouseExited
+
+    private void jTextField31MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField31MouseExited
+        if (jTextField31.getText().isBlank()) {
+            librarySystemUtils.setPlaceHolder(jTextField31, textFieldPlaceholder);
+            Administrator.requestFocus();
+        }
+    }//GEN-LAST:event_jTextField31MouseExited
+
+    private void jTextField27MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField27MouseExited
+        if (jTextField27.getText().isBlank()) {
+            librarySystemUtils.setPlaceHolder(jTextField27, textFieldPlaceholder);
+            Administrator.requestFocus();
+        }
+    }//GEN-LAST:event_jTextField27MouseExited
+
+    private void jTextField28MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField28MouseExited
+        if (jTextField28.getText().isBlank()) {
+            librarySystemUtils.setPlaceHolder(jTextField28, textFieldPlaceholder);
+            Administrator.requestFocus();
+        }
+    }//GEN-LAST:event_jTextField28MouseExited
+
+    private void jTextField29MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField29MouseExited
+        if (jTextField29.getText().isBlank()) {
+            librarySystemUtils.setPlaceHolder(jTextField29, textFieldPlaceholder);
+            Administrator.requestFocus();
+        }
+    }//GEN-LAST:event_jTextField29MouseExited
+
+    private void jTextField30MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField30MouseExited
+        if (jTextField30.getText().isBlank()) {
+            librarySystemUtils.setPlaceHolder(jTextField30, textFieldPlaceholder);
+            Administrator.requestFocus();
+        }
+    }//GEN-LAST:event_jTextField30MouseExited
+
+    private void jTextField32MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField32MouseExited
+        if (jTextField32.getText().isBlank()) {
+            librarySystemUtils.setPlaceHolder(jTextField32, textFieldPlaceholder);
+            Administrator.requestFocus();
+        }
+    }//GEN-LAST:event_jTextField32MouseExited
 
     /**
      * @param args the command line arguments

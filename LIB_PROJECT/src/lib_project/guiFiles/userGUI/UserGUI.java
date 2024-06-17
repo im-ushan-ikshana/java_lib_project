@@ -2655,7 +2655,7 @@ public class UserGUI extends MainJFrameProperties {
         // If it is yes, then the frame is disposed.
         if (result == JOptionPane.YES_OPTION) {
             this.dispose();
-            new AdminUserGUI(true);
+            new AdminUserGUI();
         }
 
 
