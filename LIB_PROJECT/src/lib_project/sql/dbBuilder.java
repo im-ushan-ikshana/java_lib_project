@@ -14,7 +14,7 @@ import java.util.Set;
 import lib_project.sql.crudSql;
 import lib_project.sql.connSql;
 
-public class dbBuilder {
+public class dbBuilder extends crudSql{
 
     private static Set<String> executedQueries = new HashSet<>();
     
@@ -66,7 +66,7 @@ public class dbBuilder {
                         System.out.println("Executing query: " + query);
 
                         // Execute the query using CRUD_Ops.create()
-                        crudSql.create(query);
+                        crudSql.createRecord(query);
 
                         // Add the executed query to the set
                         executedQueries.add(query);

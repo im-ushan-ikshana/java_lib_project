@@ -47,7 +47,7 @@ import java.nio.file.Paths;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class sysUtils {
+public class sysUtils extends crudSql{
 
     /**
      * Shows a message in a JTextField or JLabel with specified color and
@@ -293,7 +293,7 @@ public class sysUtils {
 
         try {
             // Execute the query and get the ResultSet
-            ResultSet resultSet = crudSql.b(query);
+            ResultSet resultSet = crudSql.readRecord(query);
 
             // List to store MemberLatefeeIDs
             java.util.List<String> memberLatefeeIDs = new ArrayList<>();

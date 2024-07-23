@@ -90,6 +90,7 @@ public class crudSql extends connSql {
         try {
             if(connection != null){
                 connection.rollback();
+                System.out.println("Rolled back changes...");
             }
         } catch (SQLException rollBackError) {
             System.out.println("error has been occured when rollbacking changes : " + rollBackError.getMessage());
