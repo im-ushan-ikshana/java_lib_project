@@ -7,20 +7,20 @@ package lib_project.guiFiles;
 import java.awt.Color;
 import javax.swing.JOptionPane;
 import javax.swing.UIManager;
-import lib_project.MainJFrameProperties;
-import lib_project.mainOps.Admin;
+import lib_project.mainJframe;
+import lib_project.main.adminSql;
 
 /**
  *
  * @author ikush
  */
-public class FrogotPasswordPage extends MainJFrameProperties {
+public class passwordResetPage extends mainJframe {
 
     /**
      * Creates new form LoginPage
      */
-    public FrogotPasswordPage() {
-        MainJFrameProperties.MainFrame(this);
+    public passwordResetPage() {
+        mainJframe.MainFrame(this);
         this.setSize(super.width, super.height);
         close_messege(this);
         UIManager.put("Button.arc", 30);
@@ -29,9 +29,9 @@ public class FrogotPasswordPage extends MainJFrameProperties {
         initComponents();
     }
 
-    public FrogotPasswordPage(boolean call) {
+    public passwordResetPage(boolean call) {
         if (call) {
-            MainJFrameProperties.MainFrame(this);
+            mainJframe.MainFrame(this);
             this.setSize(super.width, super.height);
             UIManager.put("Button.arc", 30);
             UIManager.put("TextComponent.arc", 30);
@@ -272,13 +272,13 @@ public class FrogotPasswordPage extends MainJFrameProperties {
 
     private void jLabel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseClicked
         this.dispose();
-        new LoginPage();
+        new loginPage();
     }//GEN-LAST:event_jLabel4MouseClicked
 
     private void jButton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseClicked
-        if (Admin.changeAdminPass(jTextField2.getText(), jPasswordField3.getText(), jPasswordField4.getText())) {
+        if (adminSql.changeAdminPass(jTextField2.getText(), jPasswordField3.getText(), jPasswordField4.getText())) {
             this.dispose();
-            new LoginPage();
+            new loginPage();
         }
     }//GEN-LAST:event_jButton3MouseClicked
 
@@ -299,14 +299,18 @@ public class FrogotPasswordPage extends MainJFrameProperties {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(FrogotPasswordPage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(passwordResetPage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(FrogotPasswordPage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(passwordResetPage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(FrogotPasswordPage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(passwordResetPage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(FrogotPasswordPage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(passwordResetPage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -315,7 +319,7 @@ public class FrogotPasswordPage extends MainJFrameProperties {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new FrogotPasswordPage().setVisible(true);
+                new passwordResetPage().setVisible(true);
             }
         });
     }

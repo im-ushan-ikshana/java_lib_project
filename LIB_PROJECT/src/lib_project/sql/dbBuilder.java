@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package lib_project.sqlOperations;
+package lib_project.sql;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -11,10 +11,10 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.HashSet;
 import java.util.Set;
-import lib_project.sqlOperations.CRUD_Ops;
-import lib_project.sqlOperations.SqlConnection;
+import lib_project.sql.crudSql;
+import lib_project.sql.connSql;
 
-public class DatabaseBuilder {
+public class dbBuilder {
 
     private static Set<String> executedQueries = new HashSet<>();
     
@@ -25,7 +25,7 @@ public class DatabaseBuilder {
     public static void buildDatabase() {
         System.out.println("Creating the database and adding dummy data...");
 
-        Connection connection = SqlConnection.getSQLConnection();
+        Connection connection = connSql.getSQLConnection();
         try {
             connection.setAutoCommit(false); // Start transaction
 
@@ -41,13 +41,13 @@ public class DatabaseBuilder {
                 System.err.println("Error rolling back transaction: " + rollbackException.getMessage());
             }
         } finally {
-            SqlConnection.closeConnection(connection);
+            connSql.closeConnection(connection);
         }
     }
 
     private static void executeSQLFromFile(String filePath) {
     // Ensure the SqlConnection is configured properly
-    Connection connection = SqlConnection.getSQLConnection();
+    Connection connection = connSql.getSQLConnection();
 
     try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
         String line;
@@ -66,7 +66,7 @@ public class DatabaseBuilder {
                         System.out.println("Executing query: " + query);
 
                         // Execute the query using CRUD_Ops.create()
-                        CRUD_Ops.create(query);
+                        crudSql.create(query);
 
                         // Add the executed query to the set
                         executedQueries.add(query);

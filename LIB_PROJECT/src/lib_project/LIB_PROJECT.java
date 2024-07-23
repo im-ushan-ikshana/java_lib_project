@@ -4,8 +4,8 @@
  */
 package lib_project;
 
-import lib_project.guiFiles.LoginPage;
-import lib_project.sqlOperations.SqlConnection;
+import lib_project.guiFiles.loginPage;
+import lib_project.sql.connSql;
 import java.sql.Connection;
 import java.sql.SQLException;
 /**
@@ -21,12 +21,12 @@ public class LIB_PROJECT {
         /*
         * Create a tempory connection to trigger the auto database creating(if not exsits) method
         */
-        Connection tempCon = SqlConnection.getSQLConnection();
+        Connection tempCon = connSql.getSQLConnection();
         try {
             tempCon.close();
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        new LoginPage();
+        new loginPage();
     }
 }

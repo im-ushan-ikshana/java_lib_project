@@ -3630,6 +3630,9 @@
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
               </Properties>
+              <Events>
+                <EventHandler event="componentShown" listener="java.awt.event.ComponentListener" parameters="java.awt.event.ComponentEvent" handler="LendingOperationsComponentShown"/>
+              </Events>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
                   <CardConstraints cardName="card2"/>
@@ -3673,12 +3676,13 @@
                       <Color blue="99" green="ff" red="ff" type="rgb"/>
                     </Property>
                     <Property name="horizontalAlignment" type="int" value="0"/>
-                    <Property name="text" type="java.lang.String" value="keyword to search"/>
                     <Property name="toolTipText" type="java.lang.String" value="Memeber ID or Name"/>
                   </Properties>
                   <Events>
                     <EventHandler event="caretUpdate" listener="javax.swing.event.CaretListener" parameters="javax.swing.event.CaretEvent" handler="jTextField19CaretUpdate"/>
                     <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jTextField19MouseClicked"/>
+                    <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jTextField19MouseExited"/>
+                    <EventHandler event="componentShown" listener="java.awt.event.ComponentListener" parameters="java.awt.event.ComponentEvent" handler="jTextField19ComponentShown"/>
                   </Events>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -3750,6 +3754,9 @@
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
               </Properties>
+              <Events>
+                <EventHandler event="componentShown" listener="java.awt.event.ComponentListener" parameters="java.awt.event.ComponentEvent" handler="SettingsComponentShown"/>
+              </Events>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
                   <CardConstraints cardName="card7"/>
@@ -3810,6 +3817,7 @@
                   </Properties>
                   <Events>
                     <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jTextField35MouseClicked"/>
+                    <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jTextField35MouseExited"/>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField35ActionPerformed"/>
                   </Events>
                   <Constraints>
@@ -3836,7 +3844,7 @@
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Segoe UI" size="14" style="0"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="Records per Table :"/>
+                    <Property name="text" type="java.lang.String" value="Records per Table (View) :"/>
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -3845,6 +3853,9 @@
                   </Constraints>
                 </Component>
                 <Component class="javax.swing.JSpinner" name="jSpinner1">
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="jSpinner1.setModel(new javax.swing.SpinnerNumberModel(20, // initial value&#xa;                                                     20,  // minimum value&#xa;                                                     200, // maximum value&#xa;                                                     5)); // step size"/>
+                  </AuxValues>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                       <AbsoluteConstraints x="220" y="210" width="150" height="30"/>
@@ -3887,6 +3898,7 @@
                   </Properties>
                   <Events>
                     <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jTextField36MouseClicked"/>
+                    <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jTextField36MouseExited"/>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField36ActionPerformed"/>
                   </Events>
                   <Constraints>
@@ -3909,6 +3921,9 @@
                   </Constraints>
                 </Component>
                 <Component class="javax.swing.JSpinner" name="jSpinner2">
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="jSpinner2.setModel(new javax.swing.SpinnerNumberModel(1, // initial value&#xa;                                                     0,  // minimum value&#xa;                                                     100, // maximum value&#xa;                                                     1)); // step size"/>
+                  </AuxValues>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                       <AbsoluteConstraints x="250" y="130" width="150" height="30"/>
@@ -3942,6 +3957,9 @@
                   </Constraints>
                 </Component>
                 <Component class="javax.swing.JSpinner" name="jSpinner3">
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="jSpinner3.setModel(new javax.swing.SpinnerNumberModel(1, // initial value&#xa;                                                     0,  // minimum value&#xa;                                                     100, // maximum value&#xa;                                                     1)); // step size"/>
+                  </AuxValues>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                       <AbsoluteConstraints x="330" y="170" width="150" height="30"/>
@@ -3992,11 +4010,11 @@
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Segoe UI" size="14" style="0"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="Master Password :"/>
+                    <Property name="text" type="java.lang.String" value="(change)"/>
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="30" y="330" width="-1" height="30"/>
+                      <AbsoluteConstraints x="90" y="280" width="-1" height="30"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -4121,7 +4139,7 @@
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                           <Image iconType="3" name="/lib_project/guiFiles/img/telegram.png"/>
                         </Property>
-                        <Property name="text" type="java.lang.String" value=" Telegram : @im-ushan-ikshana"/>
+                        <Property name="text" type="java.lang.String" value=" Telegram : @im_ushan_ikshana"/>
                         <Property name="toolTipText" type="java.lang.String" value=""/>
                       </Properties>
                       <Constraints>
@@ -4398,6 +4416,19 @@
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                       <AbsoluteConstraints x="30" y="560" width="-1" height="30"/>
+                    </Constraint>
+                  </Constraints>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel158">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Segoe UI" size="14" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Master Password :"/>
+                  </Properties>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                      <AbsoluteConstraints x="30" y="330" width="-1" height="30"/>
                     </Constraint>
                   </Constraints>
                 </Component>

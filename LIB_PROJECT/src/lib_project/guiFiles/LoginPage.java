@@ -5,22 +5,22 @@
 package lib_project.guiFiles;
 
 import javax.swing.UIManager;
-import lib_project.MainJFrameProperties;
-import lib_project.guiFiles.userGUI.UserGUI;
-import lib_project.mainOps.Admin;
-import lib_project.SystemVariables;
-import lib_project.mainOps.systemOPS.librarySystemUtils;
+import lib_project.mainJframe;
+import lib_project.guiFiles.user.normalUserPanel;
+import lib_project.main.adminSql;
+import lib_project.sysVar;
+import lib_project.main.system.sysUtils;
 
 /**
  *
  * @author ikush
  */
-public class LoginPage extends MainJFrameProperties {
+public class loginPage extends mainJframe {
     private String usernamePlaceHolder = "Username";
     private String passwordPlaceHolder = "Password";
     
-    public LoginPage() {
-        MainJFrameProperties.MainFrame(this);
+    public loginPage() {
+        mainJframe.MainFrame(this);
         this.setSize(super.width, super.height);
         close_messege(this);
         UIManager.put("Button.arc", 20);
@@ -28,8 +28,8 @@ public class LoginPage extends MainJFrameProperties {
         UIManager.put("Component.focusWidth", 3);
         initComponents();
         this.getContentPane().requestFocusInWindow();
-        librarySystemUtils.setPlaceHolder(jTextField1, usernamePlaceHolder);
-        librarySystemUtils.setPlaceHolder(jPasswordField1, passwordPlaceHolder);
+        sysUtils.setPlaceHolder(jTextField1, usernamePlaceHolder);
+        sysUtils.setPlaceHolder(jPasswordField1, passwordPlaceHolder);
     }
 
 
@@ -155,11 +155,11 @@ public class LoginPage extends MainJFrameProperties {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jTextField1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField1MouseClicked
-        librarySystemUtils.removePlaceHolder(jTextField1, usernamePlaceHolder);
+        sysUtils.removePlaceHolder(jTextField1, usernamePlaceHolder);
     }//GEN-LAST:event_jTextField1MouseClicked
 
     private void jPasswordField1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPasswordField1MouseClicked
-        librarySystemUtils.removePlaceHolder(jPasswordField1, passwordPlaceHolder);
+        sysUtils.removePlaceHolder(jPasswordField1, passwordPlaceHolder);
     }//GEN-LAST:event_jPasswordField1MouseClicked
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
@@ -169,12 +169,12 @@ public class LoginPage extends MainJFrameProperties {
 
     private void jLabel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseClicked
         this.dispose();
-        new FrogotPasswordPage(true);
+        new passwordResetPage(true);
     }//GEN-LAST:event_jLabel8MouseClicked
 
     private void jTextField1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField1MouseExited
         if (jTextField1.getText().isEmpty()) {
-            librarySystemUtils.setPlaceHolder(jTextField1, usernamePlaceHolder);
+            sysUtils.setPlaceHolder(jTextField1, usernamePlaceHolder);
             this.requestFocus();
         }
     }//GEN-LAST:event_jTextField1MouseExited
@@ -185,7 +185,7 @@ public class LoginPage extends MainJFrameProperties {
 
     private void jPasswordField1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPasswordField1MouseExited
         if (jPasswordField1.getText().isEmpty()) {
-            librarySystemUtils.setPlaceHolder(jPasswordField1, passwordPlaceHolder);
+            sysUtils.setPlaceHolder(jPasswordField1, passwordPlaceHolder);
             this.requestFocus();
         }
     }//GEN-LAST:event_jPasswordField1MouseExited
@@ -207,21 +207,23 @@ public class LoginPage extends MainJFrameProperties {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(LoginPage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(loginPage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(LoginPage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(loginPage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(LoginPage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(loginPage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(LoginPage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(loginPage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new LoginPage().setVisible(true);
+                new loginPage().setVisible(true);
             }
         });
     }

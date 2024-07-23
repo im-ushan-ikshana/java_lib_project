@@ -2,31 +2,32 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package lib_project.guiFiles.adminGUI;
+package lib_project.guiFiles.admin;
 
+import lib_project.guiFiles.user.aboutProjectPage;
+import lib_project.guiFiles.user.normalUserPanel;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import javax.swing.JOptionPane;
 import javax.swing.UIManager;
 import javax.swing.table.DefaultTableModel;
-import lib_project.guiFiles.userGUI.*;
-import lib_project.MainJFrameProperties;
-import lib_project.mainOps.Book;
-import lib_project.mainOps.LibrarySystem;
-import lib_project.mainOps.Member;
-import lib_project.mainOps.Transaction;
-import lib_project.mainOps.systemOPS.librarySystemUtils;
-import lib_project.mainOps.validateOps.Validations;
-import lib_project.SystemVariables;
+import lib_project.mainJframe;
+import lib_project.main.bookSql;
+import lib_project.main.systemSql;
+import lib_project.main.memberSql;
+import lib_project.main.transactionSql;
+import lib_project.main.system.sysUtils;
+import lib_project.main.validations.sysValidation;
+import lib_project.sysVar;
 import java.sql.ResultSet;
 import javax.swing.JPasswordField;
-import lib_project.mainOps.Admin;
+import lib_project.main.adminSql;
 
 /**
  *
  * @author ikush
  */
-public class AdminUserGUI extends MainJFrameProperties {
+public class adminUserPanel extends mainJframe {
 
     private String textFieldPlaceholder = "Type Here...";
     private String passFieldPlaceholder = "Password...";
@@ -34,15 +35,15 @@ public class AdminUserGUI extends MainJFrameProperties {
     private String disabledFieldPlaceholder = "Disabled..!";
     private String textFieldOptinalPlaceholder = "Type Here(Optinal)...";
 
-    public AdminUserGUI() {
-        MainJFrameProperties.MainFrame(this);
+    public adminUserPanel() {
+        mainJframe.MainFrame(this);
         this.setSize(super.width, super.height);
         UIManager.put("Button.arc", 10);
         UIManager.put("TextComponent.arc", 10);
         UIManager.put("Component.focusWidth", 3);
         close_messege(this);
         initComponents();
-        jLabel2.setText("Date : " + SystemVariables.getToday());
+        jLabel2.setText("Date : " + sysVar.getToday());
     }
 
     /**
@@ -351,6 +352,7 @@ public class AdminUserGUI extends MainJFrameProperties {
         jButton7 = new javax.swing.JButton();
         jButton8 = new javax.swing.JButton();
         jLabel157 = new javax.swing.JLabel();
+        jLabel158 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setLocationByPlatform(true);
@@ -1978,6 +1980,11 @@ public class AdminUserGUI extends MainJFrameProperties {
         parentPanel.add(Administrator, "card2");
 
         LendingOperations.setBackground(new java.awt.Color(255, 255, 255));
+        LendingOperations.addComponentListener(new java.awt.event.ComponentAdapter() {
+            public void componentShown(java.awt.event.ComponentEvent evt) {
+                LendingOperationsComponentShown(evt);
+            }
+        });
         LendingOperations.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         LendingOperations.add(jSeparator9, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 620, 940, 10));
 
@@ -1988,7 +1995,6 @@ public class AdminUserGUI extends MainJFrameProperties {
 
         jTextField19.setBackground(new java.awt.Color(255, 255, 153));
         jTextField19.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField19.setText("keyword to search");
         jTextField19.setToolTipText("Memeber ID or Name");
         jTextField19.addCaretListener(new javax.swing.event.CaretListener() {
             public void caretUpdate(javax.swing.event.CaretEvent evt) {
@@ -1998,6 +2004,14 @@ public class AdminUserGUI extends MainJFrameProperties {
         jTextField19.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jTextField19MouseClicked(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jTextField19MouseExited(evt);
+            }
+        });
+        jTextField19.addComponentListener(new java.awt.event.ComponentAdapter() {
+            public void componentShown(java.awt.event.ComponentEvent evt) {
+                jTextField19ComponentShown(evt);
             }
         });
         LendingOperations.add(jTextField19, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, 240, 40));
@@ -2033,6 +2047,11 @@ public class AdminUserGUI extends MainJFrameProperties {
         parentPanel.add(LendingOperations, "card2");
 
         Settings.setBackground(new java.awt.Color(255, 255, 255));
+        Settings.addComponentListener(new java.awt.event.ComponentAdapter() {
+            public void componentShown(java.awt.event.ComponentEvent evt) {
+                SettingsComponentShown(evt);
+            }
+        });
         Settings.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         Settings.add(jSeparator11, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 620, 940, 10));
         Settings.add(jSeparator12, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 63, 940, 10));
@@ -2052,6 +2071,9 @@ public class AdminUserGUI extends MainJFrameProperties {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jTextField35MouseClicked(evt);
             }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jTextField35MouseExited(evt);
+            }
         });
         jTextField35.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -2065,188 +2087,210 @@ public class AdminUserGUI extends MainJFrameProperties {
         Settings.add(jLabel125, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 170, -1, 30));
 
         jLabel127.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel127.setText("Records per Table :");
+        jLabel127.setText("Records per Table (View) :");
         Settings.add(jLabel127, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 210, -1, 30));
-        Settings.add(jSpinner1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 210, 150, 30));
 
-        jLabel128.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel128.setText("Records");
-        Settings.add(jLabel128, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 210, -1, 30));
+        jSpinner1.setModel(new javax.swing.SpinnerNumberModel(20, // initial value
+            20,  // minimum value
+            200, // maximum value
+            5)); // step size
+    Settings.add(jSpinner1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 210, 150, 30));
 
-        jLabel129.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel129.setText("Lost Book Fine :");
-        Settings.add(jLabel129, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 170, -1, 30));
+    jLabel128.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+    jLabel128.setText("Records");
+    Settings.add(jLabel128, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 210, -1, 30));
 
-        jTextField36.setForeground(new java.awt.Color(102, 102, 102));
-        jTextField36.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField36.setText("Type Here");
-        jTextField36.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jTextField36MouseClicked(evt);
-            }
-        });
-        jTextField36.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField36ActionPerformed(evt);
-            }
-        });
-        Settings.add(jTextField36, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 330, 290, 30));
+    jLabel129.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+    jLabel129.setText("Lost Book Fine :");
+    Settings.add(jLabel129, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 170, -1, 30));
 
-        jLabel131.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel131.setText("Repeat Master Password :");
-        Settings.add(jLabel131, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 370, -1, 30));
-        Settings.add(jSpinner2, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 130, 150, 30));
+    jTextField36.setForeground(new java.awt.Color(102, 102, 102));
+    jTextField36.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+    jTextField36.setText("Type Here");
+    jTextField36.addMouseListener(new java.awt.event.MouseAdapter() {
+        public void mouseClicked(java.awt.event.MouseEvent evt) {
+            jTextField36MouseClicked(evt);
+        }
+        public void mouseExited(java.awt.event.MouseEvent evt) {
+            jTextField36MouseExited(evt);
+        }
+    });
+    jTextField36.addActionListener(new java.awt.event.ActionListener() {
+        public void actionPerformed(java.awt.event.ActionEvent evt) {
+            jTextField36ActionPerformed(evt);
+        }
+    });
+    Settings.add(jTextField36, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 330, 290, 30));
 
-        jLabel132.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel132.setText("Rs .");
-        Settings.add(jLabel132, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 130, -1, 30));
+    jLabel131.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+    jLabel131.setText("Repeat Master Password :");
+    Settings.add(jLabel131, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 370, -1, 30));
 
-        jLabel133.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel133.setText("Books Price    +");
-        Settings.add(jLabel133, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 170, -1, 30));
-        Settings.add(jSpinner3, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 170, 150, 30));
+    jSpinner2.setModel(new javax.swing.SpinnerNumberModel(1, // initial value
+        0,  // minimum value
+        100, // maximum value
+        1)); // step size
+Settings.add(jSpinner2, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 130, 150, 30));
 
-        jLabel134.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel134.setText("** Chnage using config file");
-        Settings.add(jLabel134, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 590, -1, 30));
+jLabel132.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+jLabel132.setText("Rs .");
+Settings.add(jLabel132, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 130, -1, 30));
 
-        jLabel135.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel135.setText("Database Details **");
-        Settings.add(jLabel135, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 430, -1, 30));
+jLabel133.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+jLabel133.setText("Books Price    +");
+Settings.add(jLabel133, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 170, -1, 30));
 
-        jLabel136.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel136.setText("Security ");
-        Settings.add(jLabel136, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 280, -1, 30));
+jSpinner3.setModel(new javax.swing.SpinnerNumberModel(1, // initial value
+    0,  // minimum value
+    100, // maximum value
+    1)); // step size
+    Settings.add(jSpinner3, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 170, 150, 30));
 
-        jLabel137.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel137.setText("Master Password :");
-        Settings.add(jLabel137, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 330, -1, 30));
+    jLabel134.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+    jLabel134.setText("** Chnage using config file");
+    Settings.add(jLabel134, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 590, -1, 30));
 
-        jLabel138.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel138.setText("********************");
-        Settings.add(jLabel138, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 560, -1, 30));
+    jLabel135.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+    jLabel135.setText("Database Details **");
+    Settings.add(jLabel135, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 430, -1, 30));
 
-        jLabel139.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel139.setText("Database Name :");
-        Settings.add(jLabel139, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 500, -1, 30));
+    jLabel136.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+    jLabel136.setText("Security ");
+    Settings.add(jLabel136, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 280, -1, 30));
 
-        jLabel140.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel140.setText("Database username :");
-        Settings.add(jLabel140, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 530, -1, 30));
+    jLabel137.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+    jLabel137.setText("(change)");
+    Settings.add(jLabel137, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 280, -1, 30));
 
-        jLabel141.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel141.setText("Database Connection url :");
-        Settings.add(jLabel141, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 470, -1, 30));
+    jLabel138.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+    jLabel138.setText("********************");
+    Settings.add(jLabel138, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 560, -1, 30));
 
-        jLabel142.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel142.setText("https://mysql.loclahost:3306/ushan");
-        Settings.add(jLabel142, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 470, -1, 30));
+    jLabel139.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+    jLabel139.setText("Database Name :");
+    Settings.add(jLabel139, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 500, -1, 30));
 
-        jLabel143.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel143.setText("LibDB");
-        Settings.add(jLabel143, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 500, -1, 30));
+    jLabel140.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+    jLabel140.setText("Database username :");
+    Settings.add(jLabel140, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 530, -1, 30));
 
-        jLabel144.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel144.setText("root");
-        Settings.add(jLabel144, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 530, -1, 30));
-        Settings.add(jSeparator16, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 460, 530, 10));
-        Settings.add(jSeparator18, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 310, 530, 10));
+    jLabel141.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+    jLabel141.setText("Database Connection url :");
+    Settings.add(jLabel141, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 470, -1, 30));
 
-        jPanel17.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+    jLabel142.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+    jLabel142.setText("https://mysql.loclahost:3306/ushan");
+    Settings.add(jLabel142, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 470, -1, 30));
 
-        jLabel97.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lib_project/guiFiles/img/telegram.png"))); // NOI18N
-        jLabel97.setText(" Telegram : @im-ushan-ikshana");
-        jLabel97.setToolTipText("");
-        jPanel17.add(jLabel97, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 420, -1, -1));
-        jPanel17.add(jSeparator17, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 290, 340, 10));
+    jLabel143.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+    jLabel143.setText("LibDB");
+    Settings.add(jLabel143, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 500, -1, 30));
 
-        jLabel96.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lib_project/guiFiles/img/github.png"))); // NOI18N
-        jLabel96.setText(" Github : @im-ushan-ikshana");
-        jLabel96.setToolTipText("");
-        jPanel17.add(jLabel96, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 380, -1, -1));
-        jPanel17.add(jSeparator20, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 340, 10));
+    jLabel144.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+    jLabel144.setText("root");
+    Settings.add(jLabel144, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 530, -1, 30));
+    Settings.add(jSeparator16, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 460, 530, 10));
+    Settings.add(jSeparator18, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 310, 530, 10));
 
-        jLabel156.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel156.setText("Contact");
-        jPanel17.add(jLabel156, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 260, -1, 30));
-        jPanel17.add(jSeparator21, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 200, 340, 10));
+    jPanel17.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel155.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel155.setText("to contact me.");
-        jPanel17.add(jLabel155, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 340, -1, 30));
+    jLabel97.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lib_project/guiFiles/img/telegram.png"))); // NOI18N
+    jLabel97.setText(" Telegram : @im_ushan_ikshana");
+    jLabel97.setToolTipText("");
+    jPanel17.add(jLabel97, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 420, -1, -1));
+    jPanel17.add(jSeparator17, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 290, 340, 10));
 
-        jLabel154.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel154.setText("issues while using the application, please don't hesitate ");
-        jPanel17.add(jLabel154, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 320, -1, 30));
+    jLabel96.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lib_project/guiFiles/img/github.png"))); // NOI18N
+    jLabel96.setText(" Github : @im-ushan-ikshana");
+    jLabel96.setToolTipText("");
+    jPanel17.add(jLabel96, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 380, -1, -1));
+    jPanel17.add(jSeparator20, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 340, 10));
 
-        jLabel153.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel153.setText("If you have any feedback, suggestions, or encounter any");
-        jPanel17.add(jLabel153, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 300, -1, 30));
+    jLabel156.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+    jLabel156.setText("Contact");
+    jPanel17.add(jLabel156, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 260, -1, 30));
+    jPanel17.add(jSeparator21, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 200, 340, 10));
 
-        jLabel152.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel152.setText("version 1.3 ( 2024-05-02)");
-        jPanel17.add(jLabel152, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 200, -1, 30));
+    jLabel155.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+    jLabel155.setText("to contact me.");
+    jPanel17.add(jLabel155, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 340, -1, 30));
 
-        jLabel151.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel151.setText("Version");
-        jPanel17.add(jLabel151, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 170, -1, 30));
+    jLabel154.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+    jLabel154.setText("issues while using the application, please don't hesitate ");
+    jPanel17.add(jLabel154, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 320, -1, 30));
 
-        jLabel150.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel150.setText("Continously adding new features and Improvements.");
-        jPanel17.add(jLabel150, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, -1, 30));
+    jLabel153.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+    jLabel153.setText("If you have any feedback, suggestions, or encounter any");
+    jPanel17.add(jLabel153, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 300, -1, 30));
 
-        jLabel149.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel149.setText("enhancing your experience with the system by ");
-        jPanel17.add(jLabel149, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 100, -1, 30));
+    jLabel152.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+    jLabel152.setText("version 1.3 ( 2024-05-02)");
+    jPanel17.add(jLabel152, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 200, -1, 30));
 
-        jLabel148.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel148.setText("Ushan Ikshana. As the Developer , I'm dedicated to  ");
-        jPanel17.add(jLabel148, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, -1, 30));
+    jLabel151.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+    jLabel151.setText("Version");
+    jPanel17.add(jLabel151, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 170, -1, 30));
 
-        jLabel147.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel147.setText("page. This Application is developed and Maintained by");
-        jPanel17.add(jLabel147, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, -1, 30));
+    jLabel150.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+    jLabel150.setText("Continously adding new features and Improvements.");
+    jPanel17.add(jLabel150, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, -1, 30));
 
-        jLabel146.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel146.setText("Welcome to the Library Management System Settings ");
-        jPanel17.add(jLabel146, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, -1, 30));
+    jLabel149.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+    jLabel149.setText("enhancing your experience with the system by ");
+    jPanel17.add(jLabel149, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 100, -1, 30));
 
-        jLabel130.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel130.setText("About the System");
-        jPanel17.add(jLabel130, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, 30));
+    jLabel148.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+    jLabel148.setText("Ushan Ikshana. As the Developer , I'm dedicated to  ");
+    jPanel17.add(jLabel148, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, -1, 30));
 
-        jLabel95.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lib_project/guiFiles/img/black_ptrn_4.jpg"))); // NOI18N
-        jLabel95.setToolTipText("");
-        jPanel17.add(jLabel95, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+    jLabel147.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+    jLabel147.setText("page. This Application is developed and Maintained by");
+    jPanel17.add(jLabel147, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, -1, 30));
 
-        Settings.add(jPanel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 80, 360, 510));
+    jLabel146.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+    jLabel146.setText("Welcome to the Library Management System Settings ");
+    jPanel17.add(jLabel146, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, -1, 30));
 
-        jLabel145.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel145.setText("System");
-        Settings.add(jLabel145, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 80, -1, 30));
-        Settings.add(jSeparator19, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, 530, 10));
+    jLabel130.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+    jLabel130.setText("About the System");
+    jPanel17.add(jLabel130, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, 30));
 
-        jButton7.setBackground(new java.awt.Color(204, 204, 255));
-        jButton7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton7.setText("Update");
-        Settings.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 420, 120, 30));
+    jLabel95.setIcon(new javax.swing.ImageIcon(getClass().getResource("/lib_project/guiFiles/img/black_ptrn_4.jpg"))); // NOI18N
+    jLabel95.setToolTipText("");
+    jPanel17.add(jLabel95, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        jButton8.setBackground(new java.awt.Color(204, 204, 255));
-        jButton8.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton8.setText("Update");
-        Settings.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 250, 120, 30));
+    Settings.add(jPanel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 80, 360, 510));
 
-        jLabel157.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel157.setText("Password :");
-        Settings.add(jLabel157, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 560, -1, 30));
+    jLabel145.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+    jLabel145.setText("System");
+    Settings.add(jLabel145, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 80, -1, 30));
+    Settings.add(jSeparator19, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, 530, 10));
 
-        parentPanel.add(Settings, "card7");
+    jButton7.setBackground(new java.awt.Color(204, 204, 255));
+    jButton7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+    jButton7.setText("Update");
+    Settings.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 420, 120, 30));
 
-        MainPanel.add(parentPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 50, 960, 670));
+    jButton8.setBackground(new java.awt.Color(204, 204, 255));
+    jButton8.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+    jButton8.setText("Update");
+    Settings.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 250, 120, 30));
 
-        getContentPane().add(MainPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));
+    jLabel157.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+    jLabel157.setText("Password :");
+    Settings.add(jLabel157, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 560, -1, 30));
 
-        pack();
+    jLabel158.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+    jLabel158.setText("Master Password :");
+    Settings.add(jLabel158, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 330, -1, 30));
+
+    parentPanel.add(Settings, "card7");
+
+    MainPanel.add(parentPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 50, 960, 670));
+
+    getContentPane().add(MainPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));
+
+    pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void jPanel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel1MouseClicked
@@ -2290,7 +2334,7 @@ public class AdminUserGUI extends MainJFrameProperties {
         // If it is yes, then the frame is disposed.
         if (result == JOptionPane.YES_OPTION) {
             this.dispose();
-            new UserGUI();
+            new normalUserPanel();
         }
 
     }//GEN-LAST:event_jPanel7MouseClicked
@@ -2352,7 +2396,7 @@ public class AdminUserGUI extends MainJFrameProperties {
     }//GEN-LAST:event_jPanel6MouseClicked
 
     private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
-        new AboutPage().setVisible(true);
+        new aboutProjectPage().setVisible(true);
     }//GEN-LAST:event_jLabel3MouseClicked
 
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
@@ -2376,7 +2420,7 @@ public class AdminUserGUI extends MainJFrameProperties {
     }//GEN-LAST:event_jTextField2CaretUpdate
 
     private void jTextField2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField2MouseClicked
-        librarySystemUtils.removePlaceHolder(jTextField2, searchFieldPlaceholder);
+        sysUtils.removePlaceHolder(jTextField2, searchFieldPlaceholder);
     }//GEN-LAST:event_jTextField2MouseClicked
 
     private void jTable1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable1MouseClicked
@@ -2392,23 +2436,23 @@ public class AdminUserGUI extends MainJFrameProperties {
     }//GEN-LAST:event_jButton2MouseClicked
 
     private void jTextField3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField3MouseClicked
-        librarySystemUtils.removePlaceHolder(jTextField3, textFieldPlaceholder);
+        sysUtils.removePlaceHolder(jTextField3, textFieldPlaceholder);
     }//GEN-LAST:event_jTextField3MouseClicked
 
     private void jTextField4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField4MouseClicked
-        librarySystemUtils.removePlaceHolder(jTextField4, textFieldPlaceholder);
+        sysUtils.removePlaceHolder(jTextField4, textFieldPlaceholder);
     }//GEN-LAST:event_jTextField4MouseClicked
 
     private void jTextField7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField7MouseClicked
-        librarySystemUtils.removePlaceHolder(jTextField7, textFieldPlaceholder);
+        sysUtils.removePlaceHolder(jTextField7, textFieldPlaceholder);
     }//GEN-LAST:event_jTextField7MouseClicked
 
     private void jTextField8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField8MouseClicked
-        librarySystemUtils.removePlaceHolder(jTextField8, textFieldPlaceholder);
+        sysUtils.removePlaceHolder(jTextField8, textFieldPlaceholder);
     }//GEN-LAST:event_jTextField8MouseClicked
 
     private void jTextField1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField1MouseClicked
-        librarySystemUtils.removePlaceHolder(jTextField1, textFieldPlaceholder);
+        sysUtils.removePlaceHolder(jTextField1, textFieldPlaceholder);
     }//GEN-LAST:event_jTextField1MouseClicked
 
     private void jTextField11CaretUpdate(javax.swing.event.CaretEvent evt) {//GEN-FIRST:event_jTextField11CaretUpdate
@@ -2420,23 +2464,23 @@ public class AdminUserGUI extends MainJFrameProperties {
     }//GEN-LAST:event_jTextField18MouseClicked
 
     private void jTextField12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField12MouseClicked
-        librarySystemUtils.removePlaceHolder(jTextField12, textFieldPlaceholder);
+        sysUtils.removePlaceHolder(jTextField12, textFieldPlaceholder);
     }//GEN-LAST:event_jTextField12MouseClicked
 
     private void jTextField13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField13MouseClicked
-        librarySystemUtils.removePlaceHolder(jTextField13, textFieldPlaceholder);
+        sysUtils.removePlaceHolder(jTextField13, textFieldPlaceholder);
     }//GEN-LAST:event_jTextField13MouseClicked
 
     private void jTextField14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField14MouseClicked
-        librarySystemUtils.removePlaceHolder(jTextField14, textFieldPlaceholder);
+        sysUtils.removePlaceHolder(jTextField14, textFieldPlaceholder);
     }//GEN-LAST:event_jTextField14MouseClicked
 
     private void jTextField15MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField15MouseClicked
-        librarySystemUtils.removePlaceHolder(jTextField15, textFieldOptinalPlaceholder);
+        sysUtils.removePlaceHolder(jTextField15, textFieldOptinalPlaceholder);
     }//GEN-LAST:event_jTextField15MouseClicked
 
     private void jTextField16MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField16MouseClicked
-        librarySystemUtils.removePlaceHolder(jTextField16, textFieldPlaceholder);
+        sysUtils.removePlaceHolder(jTextField16, textFieldPlaceholder);
     }//GEN-LAST:event_jTextField16MouseClicked
 
     private void jTextArea1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextArea1MouseClicked
@@ -2444,7 +2488,7 @@ public class AdminUserGUI extends MainJFrameProperties {
     }//GEN-LAST:event_jTextArea1MouseClicked
 
     private void jTextField11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField11MouseClicked
-        librarySystemUtils.removePlaceHolder(jTextField11, searchFieldPlaceholder);
+        sysUtils.removePlaceHolder(jTextField11, searchFieldPlaceholder);
     }//GEN-LAST:event_jTextField11MouseClicked
 
     private void jTable2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable2MouseClicked
@@ -2464,7 +2508,7 @@ public class AdminUserGUI extends MainJFrameProperties {
     }//GEN-LAST:event_jTextField19CaretUpdate
 
     private void jTextField19MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField19MouseClicked
-
+        sysUtils.removePlaceHolder(jTextField19, textFieldPlaceholder);
     }//GEN-LAST:event_jTextField19MouseClicked
 
     private void jTable3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable3MouseClicked
@@ -2472,11 +2516,11 @@ public class AdminUserGUI extends MainJFrameProperties {
     }//GEN-LAST:event_jTable3MouseClicked
 
     private void jTextField5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField5MouseClicked
-        librarySystemUtils.removePlaceHolder(jTextField5, searchFieldPlaceholder);
+        sysUtils.removePlaceHolder(jTextField5, searchFieldPlaceholder);
     }//GEN-LAST:event_jTextField5MouseClicked
 
     private void jTextField6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField6MouseClicked
-        librarySystemUtils.removePlaceHolder(jTextField6, textFieldPlaceholder);
+        sysUtils.removePlaceHolder(jTextField6, textFieldPlaceholder);
     }//GEN-LAST:event_jTextField6MouseClicked
 
     private void jButton5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton5MouseClicked
@@ -2488,11 +2532,11 @@ public class AdminUserGUI extends MainJFrameProperties {
     }//GEN-LAST:event_jTextField5CaretUpdate
 
     private void jTextField23MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField23MouseClicked
-        librarySystemUtils.removePlaceHolder(jTextField23, textFieldPlaceholder);
+        sysUtils.removePlaceHolder(jTextField23, textFieldPlaceholder);
     }//GEN-LAST:event_jTextField23MouseClicked
 
     private void jTextField17MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField17MouseClicked
-        librarySystemUtils.removePlaceHolder(jTextField17, textFieldPlaceholder);
+        sysUtils.removePlaceHolder(jTextField17, textFieldPlaceholder);
     }//GEN-LAST:event_jTextField17MouseClicked
 
     private void jPasswordField2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPasswordField2MouseClicked
@@ -2504,19 +2548,19 @@ public class AdminUserGUI extends MainJFrameProperties {
     }//GEN-LAST:event_jPasswordField1MouseClicked
 
     private void jTextField20MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField20MouseClicked
-        librarySystemUtils.removePlaceHolder(jTextField20, textFieldPlaceholder);
+        sysUtils.removePlaceHolder(jTextField20, textFieldPlaceholder);
     }//GEN-LAST:event_jTextField20MouseClicked
 
     private void jTextField21MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField21MouseClicked
-        librarySystemUtils.removePlaceHolder(jTextField21, textFieldPlaceholder);
+        sysUtils.removePlaceHolder(jTextField21, textFieldPlaceholder);
     }//GEN-LAST:event_jTextField21MouseClicked
 
     private void jTextField22MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField22MouseClicked
-        librarySystemUtils.removePlaceHolder(jTextField22, textFieldPlaceholder);
+        sysUtils.removePlaceHolder(jTextField22, textFieldPlaceholder);
     }//GEN-LAST:event_jTextField22MouseClicked
 
     private void jTextField24MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField24MouseClicked
-        librarySystemUtils.removePlaceHolder(jTextField24, textFieldPlaceholder);
+        sysUtils.removePlaceHolder(jTextField24, textFieldPlaceholder);
     }//GEN-LAST:event_jTextField24MouseClicked
 
     private void jButton9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton9MouseClicked
@@ -2528,13 +2572,13 @@ public class AdminUserGUI extends MainJFrameProperties {
     }//GEN-LAST:event_jTextField25MouseClicked
 
     private void formComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_formComponentShown
-        librarySystemUtils.setPlaceHolder(jTextField2, searchFieldPlaceholder);
-        librarySystemUtils.setPlaceHolder(jTextField9, disabledFieldPlaceholder);
-        librarySystemUtils.setPlaceHolder(jTextField1, textFieldPlaceholder);
-        librarySystemUtils.setPlaceHolder(jTextField3, textFieldPlaceholder);
-        librarySystemUtils.setPlaceHolder(jTextField4, textFieldPlaceholder);
-        librarySystemUtils.setPlaceHolder(jTextField7, textFieldPlaceholder);
-        librarySystemUtils.setPlaceHolder(jTextField8, textFieldPlaceholder);
+        sysUtils.setPlaceHolder(jTextField2, searchFieldPlaceholder);
+        sysUtils.setPlaceHolder(jTextField9, disabledFieldPlaceholder);
+        sysUtils.setPlaceHolder(jTextField1, textFieldPlaceholder);
+        sysUtils.setPlaceHolder(jTextField3, textFieldPlaceholder);
+        sysUtils.setPlaceHolder(jTextField4, textFieldPlaceholder);
+        sysUtils.setPlaceHolder(jTextField7, textFieldPlaceholder);
+        sysUtils.setPlaceHolder(jTextField8, textFieldPlaceholder);
 
     }//GEN-LAST:event_formComponentShown
 
@@ -2551,7 +2595,7 @@ public class AdminUserGUI extends MainJFrameProperties {
     }//GEN-LAST:event_jButton9ActionPerformed
 
     private void jTextField26MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField26MouseClicked
-        librarySystemUtils.removePlaceHolder(jTextField26, textFieldPlaceholder);
+        sysUtils.removePlaceHolder(jTextField26, textFieldPlaceholder);
     }//GEN-LAST:event_jTextField26MouseClicked
 
     private void jPasswordField3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPasswordField3MouseClicked
@@ -2570,27 +2614,27 @@ public class AdminUserGUI extends MainJFrameProperties {
     }//GEN-LAST:event_jButton10ActionPerformed
 
     private void jTextField27MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField27MouseClicked
-        librarySystemUtils.removePlaceHolder(jTextField27, textFieldPlaceholder);
+        sysUtils.removePlaceHolder(jTextField27, textFieldPlaceholder);
     }//GEN-LAST:event_jTextField27MouseClicked
 
     private void jTextField28MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField28MouseClicked
-        librarySystemUtils.removePlaceHolder(jTextField28, textFieldPlaceholder);
+        sysUtils.removePlaceHolder(jTextField28, textFieldPlaceholder);
     }//GEN-LAST:event_jTextField28MouseClicked
 
     private void jTextField29MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField29MouseClicked
-        librarySystemUtils.removePlaceHolder(jTextField29, textFieldPlaceholder);
+        sysUtils.removePlaceHolder(jTextField29, textFieldPlaceholder);
     }//GEN-LAST:event_jTextField29MouseClicked
 
     private void jTextField30MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField30MouseClicked
-        librarySystemUtils.removePlaceHolder(jTextField30, textFieldPlaceholder);
+        sysUtils.removePlaceHolder(jTextField30, textFieldPlaceholder);
     }//GEN-LAST:event_jTextField30MouseClicked
 
     private void jTextField31MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField31MouseClicked
-        librarySystemUtils.removePlaceHolder(jTextField31, textFieldPlaceholder);
+        sysUtils.removePlaceHolder(jTextField31, textFieldPlaceholder);
     }//GEN-LAST:event_jTextField31MouseClicked
 
     private void jTextField32MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField32MouseClicked
-        librarySystemUtils.removePlaceHolder(jTextField32, textFieldPlaceholder);
+        sysUtils.removePlaceHolder(jTextField32, textFieldPlaceholder);
     }//GEN-LAST:event_jTextField32MouseClicked
 
     private void jTextField33MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField33MouseClicked
@@ -2640,7 +2684,7 @@ public class AdminUserGUI extends MainJFrameProperties {
     }//GEN-LAST:event_jPanel11MouseExited
 
     private void jTextField35MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField35MouseClicked
-
+        sysUtils.removePlaceHolder(jTextField35, textFieldPlaceholder);
     }//GEN-LAST:event_jTextField35MouseClicked
 
     private void jTextField35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField35ActionPerformed
@@ -2648,11 +2692,11 @@ public class AdminUserGUI extends MainJFrameProperties {
     }//GEN-LAST:event_jTextField35ActionPerformed
 
     private void jTextField36MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField36MouseClicked
-        // TODO add your handling code here:
+        sysUtils.removePlaceHolder(jTextField36, textFieldPlaceholder);
     }//GEN-LAST:event_jTextField36MouseClicked
 
     private void jTextField36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField36ActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_jTextField36ActionPerformed
 
     private void MemberManageComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_MemberManageComponentShown
@@ -2661,227 +2705,261 @@ public class AdminUserGUI extends MainJFrameProperties {
 
     private void jTextField2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField2MouseExited
         if (jTextField2.getText().isEmpty()) {
-            librarySystemUtils.setPlaceHolder(jTextField2, searchFieldPlaceholder);
+            sysUtils.setPlaceHolder(jTextField2, searchFieldPlaceholder);
             MemberManage.requestFocus();
         }
     }//GEN-LAST:event_jTextField2MouseExited
 
     private void jTextField3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField3MouseExited
         if (jTextField3.getText().isEmpty()) {
-            librarySystemUtils.setPlaceHolder(jTextField3, textFieldPlaceholder);
+            sysUtils.setPlaceHolder(jTextField3, textFieldPlaceholder);
             MemberManage.requestFocus();
         }
     }//GEN-LAST:event_jTextField3MouseExited
 
     private void jTextField4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField4MouseExited
         if (jTextField4.getText().isEmpty()) {
-            librarySystemUtils.setPlaceHolder(jTextField4, textFieldPlaceholder);
+            sysUtils.setPlaceHolder(jTextField4, textFieldPlaceholder);
             MemberManage.requestFocus();
         }
     }//GEN-LAST:event_jTextField4MouseExited
 
     private void jTextField7MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField7MouseExited
         if (jTextField7.getText().isEmpty()) {
-            librarySystemUtils.setPlaceHolder(jTextField7, textFieldPlaceholder);
+            sysUtils.setPlaceHolder(jTextField7, textFieldPlaceholder);
             MemberManage.requestFocus();
         }
     }//GEN-LAST:event_jTextField7MouseExited
 
     private void jTextField8MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField8MouseExited
         if (jTextField8.getText().isEmpty()) {
-            librarySystemUtils.setPlaceHolder(jTextField8, textFieldPlaceholder);
+            sysUtils.setPlaceHolder(jTextField8, textFieldPlaceholder);
             MemberManage.requestFocus();
         }
     }//GEN-LAST:event_jTextField8MouseExited
 
     private void jTextField1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField1MouseExited
         if (jTextField1.getText().isEmpty()) {
-            librarySystemUtils.setPlaceHolder(jTextField1, textFieldPlaceholder);
+            sysUtils.setPlaceHolder(jTextField1, textFieldPlaceholder);
             MemberManage.requestFocus();
         }
     }//GEN-LAST:event_jTextField1MouseExited
 
     private void BookManageComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_BookManageComponentShown
-        librarySystemUtils.setPlaceHolder(jTextField11, searchFieldPlaceholder);
-        librarySystemUtils.setPlaceHolder(jTextField18, disabledFieldPlaceholder);
-        librarySystemUtils.setPlaceHolder(jTextField12, textFieldPlaceholder);
-        librarySystemUtils.setPlaceHolder(jTextField13, textFieldPlaceholder);
-        librarySystemUtils.setPlaceHolder(jTextField14, textFieldPlaceholder);
-        librarySystemUtils.setPlaceHolder(jTextField16, textFieldPlaceholder);
-        librarySystemUtils.setPlaceHolder(jTextField15, textFieldOptinalPlaceholder);
+        sysUtils.setPlaceHolder(jTextField11, searchFieldPlaceholder);
+        sysUtils.setPlaceHolder(jTextField18, disabledFieldPlaceholder);
+        sysUtils.setPlaceHolder(jTextField12, textFieldPlaceholder);
+        sysUtils.setPlaceHolder(jTextField13, textFieldPlaceholder);
+        sysUtils.setPlaceHolder(jTextField14, textFieldPlaceholder);
+        sysUtils.setPlaceHolder(jTextField16, textFieldPlaceholder);
+        sysUtils.setPlaceHolder(jTextField15, textFieldOptinalPlaceholder);
     }//GEN-LAST:event_BookManageComponentShown
 
     private void jTextField11MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField11MouseExited
         if (jTextField11.getText().isEmpty()) {
-            librarySystemUtils.setPlaceHolder(jTextField11, searchFieldPlaceholder);
+            sysUtils.setPlaceHolder(jTextField11, searchFieldPlaceholder);
             BookManage.requestFocus();
         }
     }//GEN-LAST:event_jTextField11MouseExited
 
     private void jTextField12MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField12MouseExited
         if (jTextField12.getText().isEmpty()) {
-            librarySystemUtils.setPlaceHolder(jTextField12, textFieldPlaceholder);
+            sysUtils.setPlaceHolder(jTextField12, textFieldPlaceholder);
             BookManage.requestFocus();
         }
     }//GEN-LAST:event_jTextField12MouseExited
 
     private void jTextField13MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField13MouseExited
         if (jTextField13.getText().isEmpty()) {
-            librarySystemUtils.setPlaceHolder(jTextField13, textFieldPlaceholder);
+            sysUtils.setPlaceHolder(jTextField13, textFieldPlaceholder);
             BookManage.requestFocus();
         }
     }//GEN-LAST:event_jTextField13MouseExited
 
     private void jTextField14MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField14MouseExited
         if (jTextField14.getText().isEmpty()) {
-            librarySystemUtils.setPlaceHolder(jTextField14, textFieldPlaceholder);
+            sysUtils.setPlaceHolder(jTextField14, textFieldPlaceholder);
             BookManage.requestFocus();
         }
     }//GEN-LAST:event_jTextField14MouseExited
 
     private void jTextField16MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField16MouseExited
         if (jTextField16.getText().isEmpty()) {
-            librarySystemUtils.setPlaceHolder(jTextField16, textFieldPlaceholder);
+            sysUtils.setPlaceHolder(jTextField16, textFieldPlaceholder);
             BookManage.requestFocus();
         }
     }//GEN-LAST:event_jTextField16MouseExited
 
     private void jTextField15MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField15MouseExited
         if (jTextField15.getText().isEmpty()) {
-            librarySystemUtils.setPlaceHolder(jTextField15, textFieldOptinalPlaceholder);
+            sysUtils.setPlaceHolder(jTextField15, textFieldOptinalPlaceholder);
             BookManage.requestFocus();
         }
     }//GEN-LAST:event_jTextField15MouseExited
 
     private void PayLatefeeComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_PayLatefeeComponentShown
-        librarySystemUtils.setPlaceHolder(jTextField5, searchFieldPlaceholder);
-        librarySystemUtils.setPlaceHolder(jTextField6, textFieldPlaceholder);
+        sysUtils.setPlaceHolder(jTextField5, searchFieldPlaceholder);
+        sysUtils.setPlaceHolder(jTextField6, textFieldPlaceholder);
     }//GEN-LAST:event_PayLatefeeComponentShown
 
     private void jTextField5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField5MouseExited
         if (jTextField5.getText().isBlank()) {
-            librarySystemUtils.setPlaceHolder(jTextField5, searchFieldPlaceholder);
+            sysUtils.setPlaceHolder(jTextField5, searchFieldPlaceholder);
             PayLatefee.requestFocus();
         }
     }//GEN-LAST:event_jTextField5MouseExited
 
     private void jTextField6MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField6MouseExited
         if (jTextField6.getText().isBlank()) {
-            librarySystemUtils.setPlaceHolder(jTextField6, textFieldPlaceholder);
+            sysUtils.setPlaceHolder(jTextField6, textFieldPlaceholder);
             PayLatefee.requestFocus();
         }
     }//GEN-LAST:event_jTextField6MouseExited
 
     private void AdministratorComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_AdministratorComponentShown
-        librarySystemUtils.setPlaceHolder(jTextField17, textFieldPlaceholder);
-        librarySystemUtils.setPlaceHolder(jTextField20, textFieldPlaceholder);
-        librarySystemUtils.setPlaceHolder(jTextField21, textFieldPlaceholder);
-        librarySystemUtils.setPlaceHolder(jTextField22, textFieldPlaceholder);
-        librarySystemUtils.setPlaceHolder(jTextField23, textFieldPlaceholder);
-        librarySystemUtils.setPlaceHolder(jTextField24, textFieldPlaceholder);
-        
-        librarySystemUtils.setPlaceHolder(jTextField26, textFieldPlaceholder);
-        
-        librarySystemUtils.setPlaceHolder(jTextField27, textFieldPlaceholder);
-        librarySystemUtils.setPlaceHolder(jTextField28, textFieldPlaceholder);
-        librarySystemUtils.setPlaceHolder(jTextField29, textFieldPlaceholder);
-        librarySystemUtils.setPlaceHolder(jTextField30, textFieldPlaceholder);
-        librarySystemUtils.setPlaceHolder(jTextField31, textFieldPlaceholder);
-        librarySystemUtils.setPlaceHolder(jTextField32, textFieldPlaceholder);
-        
-        
+        sysUtils.setPlaceHolder(jTextField17, textFieldPlaceholder);
+        sysUtils.setPlaceHolder(jTextField20, textFieldPlaceholder);
+        sysUtils.setPlaceHolder(jTextField21, textFieldPlaceholder);
+        sysUtils.setPlaceHolder(jTextField22, textFieldPlaceholder);
+        sysUtils.setPlaceHolder(jTextField23, textFieldPlaceholder);
+        sysUtils.setPlaceHolder(jTextField24, textFieldPlaceholder);
+
+        sysUtils.setPlaceHolder(jTextField26, textFieldPlaceholder);
+
+        sysUtils.setPlaceHolder(jTextField27, textFieldPlaceholder);
+        sysUtils.setPlaceHolder(jTextField28, textFieldPlaceholder);
+        sysUtils.setPlaceHolder(jTextField29, textFieldPlaceholder);
+        sysUtils.setPlaceHolder(jTextField30, textFieldPlaceholder);
+        sysUtils.setPlaceHolder(jTextField31, textFieldPlaceholder);
+        sysUtils.setPlaceHolder(jTextField32, textFieldPlaceholder);
+
+
     }//GEN-LAST:event_AdministratorComponentShown
 
     private void jTextField23MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField23MouseExited
         if (jTextField23.getText().isBlank()) {
-            librarySystemUtils.setPlaceHolder(jTextField23, textFieldPlaceholder);
+            sysUtils.setPlaceHolder(jTextField23, textFieldPlaceholder);
             Administrator.requestFocus();
         }
     }//GEN-LAST:event_jTextField23MouseExited
 
     private void jTextField17MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField17MouseExited
         if (jTextField17.getText().isBlank()) {
-            librarySystemUtils.setPlaceHolder(jTextField17, textFieldPlaceholder);
+            sysUtils.setPlaceHolder(jTextField17, textFieldPlaceholder);
             Administrator.requestFocus();
         }
     }//GEN-LAST:event_jTextField17MouseExited
 
     private void jTextField20MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField20MouseExited
         if (jTextField20.getText().isBlank()) {
-            librarySystemUtils.setPlaceHolder(jTextField20, textFieldPlaceholder);
+            sysUtils.setPlaceHolder(jTextField20, textFieldPlaceholder);
             Administrator.requestFocus();
         }
     }//GEN-LAST:event_jTextField20MouseExited
 
     private void jTextField21MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField21MouseExited
         if (jTextField21.getText().isBlank()) {
-            librarySystemUtils.setPlaceHolder(jTextField21, textFieldPlaceholder);
+            sysUtils.setPlaceHolder(jTextField21, textFieldPlaceholder);
             Administrator.requestFocus();
         }
     }//GEN-LAST:event_jTextField21MouseExited
 
     private void jTextField22MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField22MouseExited
         if (jTextField22.getText().isBlank()) {
-            librarySystemUtils.setPlaceHolder(jTextField22, textFieldPlaceholder);
+            sysUtils.setPlaceHolder(jTextField22, textFieldPlaceholder);
             Administrator.requestFocus();
         }
     }//GEN-LAST:event_jTextField22MouseExited
 
     private void jTextField24MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField24MouseExited
         if (jTextField24.getText().isBlank()) {
-            librarySystemUtils.setPlaceHolder(jTextField24, textFieldPlaceholder);
+            sysUtils.setPlaceHolder(jTextField24, textFieldPlaceholder);
             Administrator.requestFocus();
         }
     }//GEN-LAST:event_jTextField24MouseExited
 
     private void jTextField26MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField26MouseExited
         if (jTextField26.getText().isBlank()) {
-            librarySystemUtils.setPlaceHolder(jTextField26, textFieldPlaceholder);
+            sysUtils.setPlaceHolder(jTextField26, textFieldPlaceholder);
             Administrator.requestFocus();
         }
     }//GEN-LAST:event_jTextField26MouseExited
 
     private void jTextField31MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField31MouseExited
         if (jTextField31.getText().isBlank()) {
-            librarySystemUtils.setPlaceHolder(jTextField31, textFieldPlaceholder);
+            sysUtils.setPlaceHolder(jTextField31, textFieldPlaceholder);
             Administrator.requestFocus();
         }
     }//GEN-LAST:event_jTextField31MouseExited
 
     private void jTextField27MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField27MouseExited
         if (jTextField27.getText().isBlank()) {
-            librarySystemUtils.setPlaceHolder(jTextField27, textFieldPlaceholder);
+            sysUtils.setPlaceHolder(jTextField27, textFieldPlaceholder);
             Administrator.requestFocus();
         }
     }//GEN-LAST:event_jTextField27MouseExited
 
     private void jTextField28MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField28MouseExited
         if (jTextField28.getText().isBlank()) {
-            librarySystemUtils.setPlaceHolder(jTextField28, textFieldPlaceholder);
+            sysUtils.setPlaceHolder(jTextField28, textFieldPlaceholder);
             Administrator.requestFocus();
         }
     }//GEN-LAST:event_jTextField28MouseExited
 
     private void jTextField29MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField29MouseExited
         if (jTextField29.getText().isBlank()) {
-            librarySystemUtils.setPlaceHolder(jTextField29, textFieldPlaceholder);
+            sysUtils.setPlaceHolder(jTextField29, textFieldPlaceholder);
             Administrator.requestFocus();
         }
     }//GEN-LAST:event_jTextField29MouseExited
 
     private void jTextField30MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField30MouseExited
         if (jTextField30.getText().isBlank()) {
-            librarySystemUtils.setPlaceHolder(jTextField30, textFieldPlaceholder);
+            sysUtils.setPlaceHolder(jTextField30, textFieldPlaceholder);
             Administrator.requestFocus();
         }
     }//GEN-LAST:event_jTextField30MouseExited
 
     private void jTextField32MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField32MouseExited
         if (jTextField32.getText().isBlank()) {
-            librarySystemUtils.setPlaceHolder(jTextField32, textFieldPlaceholder);
+            sysUtils.setPlaceHolder(jTextField32, textFieldPlaceholder);
             Administrator.requestFocus();
         }
     }//GEN-LAST:event_jTextField32MouseExited
+
+    private void jTextField19ComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_jTextField19ComponentShown
+        sysUtils.setPlaceHolder(jTextField19, textFieldPlaceholder);
+    }//GEN-LAST:event_jTextField19ComponentShown
+
+    private void jTextField19MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField19MouseExited
+        if (jTextField19.getText().isBlank()) {
+            sysUtils.setPlaceHolder(jTextField19, textFieldPlaceholder);
+            LendingOperations.requestFocus();
+        }
+    }//GEN-LAST:event_jTextField19MouseExited
+
+    private void LendingOperationsComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_LendingOperationsComponentShown
+        sysUtils.setPlaceHolder(jTextField19, textFieldPlaceholder);
+    }//GEN-LAST:event_LendingOperationsComponentShown
+
+    private void SettingsComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_SettingsComponentShown
+        sysUtils.setPlaceHolder(jTextField35, textFieldPlaceholder);
+        sysUtils.setPlaceHolder(jTextField36, textFieldPlaceholder);
+    }//GEN-LAST:event_SettingsComponentShown
+
+    private void jTextField36MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField36MouseExited
+        if (jTextField36.getText().isBlank()) {
+            sysUtils.setPlaceHolder(jTextField36, textFieldPlaceholder);
+            Settings.requestFocus();
+        }
+    }//GEN-LAST:event_jTextField36MouseExited
+
+    private void jTextField35MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField35MouseExited
+        if (jTextField35.getText().isBlank()) {
+            sysUtils.setPlaceHolder(jTextField35, textFieldPlaceholder);
+            Settings.requestFocus();
+        }
+    }//GEN-LAST:event_jTextField35MouseExited
 
     /**
      * @param args the command line arguments
@@ -2900,14 +2978,26 @@ public class AdminUserGUI extends MainJFrameProperties {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(AdminUserGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(adminUserPanel.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(AdminUserGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(adminUserPanel.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(AdminUserGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(adminUserPanel.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(AdminUserGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(adminUserPanel.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -2916,7 +3006,7 @@ public class AdminUserGUI extends MainJFrameProperties {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new AdminUserGUI().setVisible(true);
+                new adminUserPanel().setVisible(true);
             }
         });
     }
@@ -2989,6 +3079,7 @@ public class AdminUserGUI extends MainJFrameProperties {
     private javax.swing.JLabel jLabel155;
     private javax.swing.JLabel jLabel156;
     private javax.swing.JLabel jLabel157;
+    private javax.swing.JLabel jLabel158;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel164;
     private javax.swing.JLabel jLabel165;

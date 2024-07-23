@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package lib_project.sqlOperations;
+package lib_project.sql;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -18,7 +18,7 @@ import java.util.Properties;
  *
  * @author ikush
  */
-public class SqlConnection {
+public class connSql {
 
     /**
      * Establishes a connection to a MySQL database using configuration details
@@ -78,7 +78,7 @@ public class SqlConnection {
                                 String createDBQuery = "CREATE DATABASE " + dbName;
                                 try (PreparedStatement createStatement = rootConnection.prepareStatement(createDBQuery)) {
                                     createStatement.executeUpdate();
-                                    DatabaseBuilder.buildDatabase();
+                                    dbBuilder.buildDatabase();
                                 }
                             }
                         }

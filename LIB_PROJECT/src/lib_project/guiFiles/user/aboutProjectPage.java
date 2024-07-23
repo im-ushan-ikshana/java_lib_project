@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package lib_project.guiFiles.userGUI;
+package lib_project.guiFiles.user;
 
 import com.formdev.flatlaf.FlatIntelliJLaf;
 import com.formdev.flatlaf.themes.FlatMacDarkLaf;
@@ -15,12 +15,12 @@ import javax.swing.JTextArea;
  *
  * @author ikush
  */
-public class AboutPage extends javax.swing.JFrame {
+public class aboutProjectPage extends javax.swing.JFrame {
 
     /**
      * Creates new form HelpSupportPage
      */
-    public AboutPage() {
+    public aboutProjectPage() {
         FlatIntelliJLaf.setup();
         initComponents();
 
@@ -113,21 +113,23 @@ public class AboutPage extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(AboutPage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(aboutProjectPage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(AboutPage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(aboutProjectPage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(AboutPage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(aboutProjectPage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(AboutPage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(aboutProjectPage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new AboutPage().setVisible(true);
+                new aboutProjectPage().setVisible(true);
             }
         });
     }

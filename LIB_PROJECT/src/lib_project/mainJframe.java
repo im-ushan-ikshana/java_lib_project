@@ -9,14 +9,14 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
-import lib_project.sqlOperations.CRUD_Ops;
-import lib_project.sqlOperations.SqlConnection;
+import lib_project.sql.crudSql;
+import lib_project.sql.connSql;
 
 /**
  *
  * @author ikush
  */
-public class MainJFrameProperties extends JFrame {
+public class mainJframe extends JFrame {
 
     // Default width and height for the frame
     public final int width = 1280;
@@ -49,7 +49,6 @@ public class MainJFrameProperties extends JFrame {
                 int result = JOptionPane.showConfirmDialog(_name, "Are you sure?", "Confirmation", JOptionPane.YES_NO_OPTION);
                 // If it is yes, then the frame is disposed.
                 if (result == JOptionPane.YES_OPTION) {
-                    CRUD_Ops.closeConnection();
                     _name.dispose();
                 }
             }

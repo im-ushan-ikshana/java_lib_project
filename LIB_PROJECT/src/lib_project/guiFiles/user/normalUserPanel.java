@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package lib_project.guiFiles.userGUI;
+package lib_project.guiFiles.user;
 
 import com.formdev.flatlaf.FlatClientProperties;
 import java.awt.event.WindowAdapter;
@@ -10,16 +10,16 @@ import java.awt.event.WindowEvent;
 import javax.swing.JOptionPane;
 import javax.swing.UIManager;
 import javax.swing.table.DefaultTableModel;
-import lib_project.MainJFrameProperties;
-import lib_project.guiFiles.LoginPage;
-import lib_project.guiFiles.adminGUI.AdminUserGUI;
-import lib_project.mainOps.Book;
-import lib_project.mainOps.LibrarySystem;
-import lib_project.mainOps.Member;
-import lib_project.mainOps.Transaction;
-import lib_project.mainOps.systemOPS.librarySystemUtils;
-import lib_project.mainOps.validateOps.Validations;
-import lib_project.SystemVariables;
+import lib_project.mainJframe;
+import lib_project.guiFiles.loginPage;
+import lib_project.guiFiles.admin.adminUserPanel;
+import lib_project.main.bookSql;
+import lib_project.main.systemSql;
+import lib_project.main.memberSql;
+import lib_project.main.transactionSql;
+import lib_project.main.system.sysUtils;
+import lib_project.main.validations.sysValidation;
+import lib_project.sysVar;
 
 /**
  *
@@ -27,20 +27,20 @@ import lib_project.SystemVariables;
  *
  * @author ikush
  */
-public class UserGUI extends MainJFrameProperties {
+public class normalUserPanel extends mainJframe {
 
     private String textFieldPlaceHolder = "Type Here";
     private String passFieldPlaceHolder = "Password";
 
-    public UserGUI() {
-        MainJFrameProperties.MainFrame(this);
+    public normalUserPanel() {
+        mainJframe.MainFrame(this);
         this.setSize(super.width, super.height);
         UIManager.put("Button.arc", 10);
         UIManager.put("TextComponent.arc", 10);
         UIManager.put("Component.focusWidth", 3);
         close_messege(this);
         initComponents();
-        jLabel18.setText("Date : " + SystemVariables.getToday());
+        jLabel18.setText("Date : " + sysVar.getToday());
     }
 
     /**
@@ -2655,7 +2655,7 @@ public class UserGUI extends MainJFrameProperties {
         // If it is yes, then the frame is disposed.
         if (result == JOptionPane.YES_OPTION) {
             this.dispose();
-            new AdminUserGUI();
+            new adminUserPanel();
         }
 
 
@@ -2720,7 +2720,7 @@ public class UserGUI extends MainJFrameProperties {
         // If it is yes, then the frame is disposed.
         if (result == JOptionPane.YES_OPTION) {
             this.dispose();
-            new LoginPage();
+            new loginPage();
         }
 
     }//GEN-LAST:event_jLabel34MouseClicked
@@ -2730,7 +2730,7 @@ public class UserGUI extends MainJFrameProperties {
     }//GEN-LAST:event_jTextField3ActionPerformed
 
     private void jPanel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel8MouseClicked
-        new AboutPage().setVisible(true);
+        new aboutProjectPage().setVisible(true);
     }//GEN-LAST:event_jPanel8MouseClicked
 
     private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
@@ -2786,43 +2786,43 @@ public class UserGUI extends MainJFrameProperties {
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jTextField3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField3MouseClicked
-        librarySystemUtils.removePlaceHolder(jTextField3, textFieldPlaceHolder);
+        sysUtils.removePlaceHolder(jTextField3, textFieldPlaceHolder);
     }//GEN-LAST:event_jTextField3MouseClicked
 
     private void jTextField4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField4MouseClicked
-        librarySystemUtils.removePlaceHolder(jTextField4, textFieldPlaceHolder);
+        sysUtils.removePlaceHolder(jTextField4, textFieldPlaceHolder);
     }//GEN-LAST:event_jTextField4MouseClicked
 
     private void jTextField5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField5MouseClicked
-        librarySystemUtils.removePlaceHolder(jTextField5, textFieldPlaceHolder);
+        sysUtils.removePlaceHolder(jTextField5, textFieldPlaceHolder);
     }//GEN-LAST:event_jTextField5MouseClicked
 
     private void jTextField6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField6MouseClicked
-        librarySystemUtils.removePlaceHolder(jTextField6, textFieldPlaceHolder);
+        sysUtils.removePlaceHolder(jTextField6, textFieldPlaceHolder);
     }//GEN-LAST:event_jTextField6MouseClicked
 
     private void jTextField7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField7MouseClicked
-        librarySystemUtils.removePlaceHolder(jTextField7, textFieldPlaceHolder);
+        sysUtils.removePlaceHolder(jTextField7, textFieldPlaceHolder);
     }//GEN-LAST:event_jTextField7MouseClicked
 
     private void jTextField8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField8MouseClicked
-        librarySystemUtils.removePlaceHolder(jTextField8, textFieldPlaceHolder);
+        sysUtils.removePlaceHolder(jTextField8, textFieldPlaceHolder);
     }//GEN-LAST:event_jTextField8MouseClicked
 
     private void jTextField9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField9MouseClicked
-        librarySystemUtils.removePlaceHolder(jTextField9, textFieldPlaceHolder);
+        sysUtils.removePlaceHolder(jTextField9, textFieldPlaceHolder);
     }//GEN-LAST:event_jTextField9MouseClicked
 
     private void jTextField10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField10MouseClicked
-        librarySystemUtils.removePlaceHolder(jTextField10, textFieldPlaceHolder);
+        sysUtils.removePlaceHolder(jTextField10, textFieldPlaceHolder);
     }//GEN-LAST:event_jTextField10MouseClicked
 
     private void jTextField11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField11MouseClicked
-        librarySystemUtils.removePlaceHolder(jTextField11, textFieldPlaceHolder);
+        sysUtils.removePlaceHolder(jTextField11, textFieldPlaceHolder);
     }//GEN-LAST:event_jTextField11MouseClicked
 
     private void jTextField12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField12MouseClicked
-        librarySystemUtils.removePlaceHolder(jTextField12, textFieldPlaceHolder);
+        sysUtils.removePlaceHolder(jTextField12, textFieldPlaceHolder);
     }//GEN-LAST:event_jTextField12MouseClicked
 
     private void jTable2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable2MouseClicked
@@ -2830,7 +2830,7 @@ public class UserGUI extends MainJFrameProperties {
     }//GEN-LAST:event_jTable2MouseClicked
 
     private void jTextField13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField13MouseClicked
-        librarySystemUtils.removePlaceHolder(jTextField13, textFieldPlaceHolder);
+        sysUtils.removePlaceHolder(jTextField13, textFieldPlaceHolder);
     }//GEN-LAST:event_jTextField13MouseClicked
 
     private void jTextField13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField13ActionPerformed
@@ -2838,7 +2838,7 @@ public class UserGUI extends MainJFrameProperties {
     }//GEN-LAST:event_jTextField13ActionPerformed
 
     private void jTextField14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField14MouseClicked
-        librarySystemUtils.removePlaceHolder(jTextField14, textFieldPlaceHolder);
+        sysUtils.removePlaceHolder(jTextField14, textFieldPlaceHolder);
     }//GEN-LAST:event_jTextField14MouseClicked
 
     private void jTextField14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField14ActionPerformed
@@ -2846,7 +2846,7 @@ public class UserGUI extends MainJFrameProperties {
     }//GEN-LAST:event_jTextField14ActionPerformed
 
     private void jTextField15MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField15MouseClicked
-        librarySystemUtils.removePlaceHolder(jTextField15, textFieldPlaceHolder);
+        sysUtils.removePlaceHolder(jTextField15, textFieldPlaceHolder);
     }//GEN-LAST:event_jTextField15MouseClicked
 
     private void jTextField15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField15ActionPerformed
@@ -2882,7 +2882,7 @@ public class UserGUI extends MainJFrameProperties {
     }//GEN-LAST:event_jTextField3CaretUpdate
 
     private void jTextField16MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField16MouseClicked
-        librarySystemUtils.removePlaceHolder(jTextField16, textFieldPlaceHolder);
+        sysUtils.removePlaceHolder(jTextField16, textFieldPlaceHolder);
     }//GEN-LAST:event_jTextField16MouseClicked
 
     private void jTextField16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField16ActionPerformed
@@ -2890,7 +2890,7 @@ public class UserGUI extends MainJFrameProperties {
     }//GEN-LAST:event_jTextField16ActionPerformed
 
     private void jTextField17MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField17MouseClicked
-        librarySystemUtils.removePlaceHolder(jTextField17, textFieldPlaceHolder);
+        sysUtils.removePlaceHolder(jTextField17, textFieldPlaceHolder);
     }//GEN-LAST:event_jTextField17MouseClicked
 
     private void jTextField17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField17ActionPerformed
@@ -2898,7 +2898,7 @@ public class UserGUI extends MainJFrameProperties {
     }//GEN-LAST:event_jTextField17ActionPerformed
 
     private void jTextField18MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField18MouseClicked
-        librarySystemUtils.removePlaceHolder(jTextField18, textFieldPlaceHolder);
+        sysUtils.removePlaceHolder(jTextField18, textFieldPlaceHolder);
     }//GEN-LAST:event_jTextField18MouseClicked
 
     private void jTextField18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField18ActionPerformed
@@ -2906,7 +2906,7 @@ public class UserGUI extends MainJFrameProperties {
     }//GEN-LAST:event_jTextField18ActionPerformed
 
     private void jTextField19MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField19MouseClicked
-        librarySystemUtils.removePlaceHolder(jTextField19, textFieldPlaceHolder);
+        sysUtils.removePlaceHolder(jTextField19, textFieldPlaceHolder);
     }//GEN-LAST:event_jTextField19MouseClicked
 
     private void jTextField19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField19ActionPerformed
@@ -2923,7 +2923,7 @@ public class UserGUI extends MainJFrameProperties {
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jTextField20MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField20MouseClicked
-        librarySystemUtils.removePlaceHolder(jTextField20, textFieldPlaceHolder);
+        sysUtils.removePlaceHolder(jTextField20, textFieldPlaceHolder);
     }//GEN-LAST:event_jTextField20MouseClicked
 
     private void jTextField20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField20ActionPerformed
@@ -2931,7 +2931,7 @@ public class UserGUI extends MainJFrameProperties {
     }//GEN-LAST:event_jTextField20ActionPerformed
 
     private void jTextField21MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField21MouseClicked
-        librarySystemUtils.removePlaceHolder(jTextField21, textFieldPlaceHolder);
+        sysUtils.removePlaceHolder(jTextField21, textFieldPlaceHolder);
     }//GEN-LAST:event_jTextField21MouseClicked
 
     private void jTextField21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField21ActionPerformed
@@ -2955,7 +2955,7 @@ public class UserGUI extends MainJFrameProperties {
     }//GEN-LAST:event_jCheckBox2ActionPerformed
 
     private void jTextField22MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField22MouseClicked
-        librarySystemUtils.removePlaceHolder(jTextField22, textFieldPlaceHolder);
+        sysUtils.removePlaceHolder(jTextField22, textFieldPlaceHolder);
     }//GEN-LAST:event_jTextField22MouseClicked
 
     private void jTextField22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField22ActionPerformed
@@ -2979,199 +2979,199 @@ public class UserGUI extends MainJFrameProperties {
     }//GEN-LAST:event_jButton11ActionPerformed
 
     private void NewMemberComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_NewMemberComponentShown
-        librarySystemUtils.setPlaceHolder(jTextField10, textFieldPlaceHolder);
-        librarySystemUtils.setPlaceHolder(jTextField11, textFieldPlaceHolder);
-        librarySystemUtils.setPlaceHolder(jTextField12, textFieldPlaceHolder);
-        librarySystemUtils.setPlaceHolder(jTextField13, textFieldPlaceHolder);
-        librarySystemUtils.setPlaceHolder(jTextField14, textFieldPlaceHolder);
-        librarySystemUtils.setPlaceHolder(jTextField15, textFieldPlaceHolder);
+        sysUtils.setPlaceHolder(jTextField10, textFieldPlaceHolder);
+        sysUtils.setPlaceHolder(jTextField11, textFieldPlaceHolder);
+        sysUtils.setPlaceHolder(jTextField12, textFieldPlaceHolder);
+        sysUtils.setPlaceHolder(jTextField13, textFieldPlaceHolder);
+        sysUtils.setPlaceHolder(jTextField14, textFieldPlaceHolder);
+        sysUtils.setPlaceHolder(jTextField15, textFieldPlaceHolder);
 
     }//GEN-LAST:event_NewMemberComponentShown
 
     private void jTextField10MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField10MouseExited
         if (jTextField10.getText().isEmpty()) {
-            librarySystemUtils.setPlaceHolder(jTextField10, textFieldPlaceHolder);
+            sysUtils.setPlaceHolder(jTextField10, textFieldPlaceHolder);
             this.requestFocus();
         }
     }//GEN-LAST:event_jTextField10MouseExited
 
     private void jTextField11MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField11MouseExited
         if (jTextField11.getText().isEmpty()) {
-            librarySystemUtils.setPlaceHolder(jTextField11, textFieldPlaceHolder);
+            sysUtils.setPlaceHolder(jTextField11, textFieldPlaceHolder);
             this.requestFocus();
         }
     }//GEN-LAST:event_jTextField11MouseExited
 
     private void jTextField15MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField15MouseExited
         if (jTextField15.getText().isEmpty()) {
-            librarySystemUtils.setPlaceHolder(jTextField15, textFieldPlaceHolder);
+            sysUtils.setPlaceHolder(jTextField15, textFieldPlaceHolder);
             this.requestFocus();
         }
     }//GEN-LAST:event_jTextField15MouseExited
 
     private void jTextField13MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField13MouseExited
         if (jTextField13.getText().isEmpty()) {
-            librarySystemUtils.setPlaceHolder(jTextField13, textFieldPlaceHolder);
+            sysUtils.setPlaceHolder(jTextField13, textFieldPlaceHolder);
             this.requestFocus();
         }
     }//GEN-LAST:event_jTextField13MouseExited
 
     private void jTextField14MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField14MouseExited
         if (jTextField14.getText().isEmpty()) {
-            librarySystemUtils.setPlaceHolder(jTextField14, textFieldPlaceHolder);
+            sysUtils.setPlaceHolder(jTextField14, textFieldPlaceHolder);
             this.requestFocus();
         }
     }//GEN-LAST:event_jTextField14MouseExited
 
     private void jTextField12MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField12MouseExited
         if (jTextField12.getText().isEmpty()) {
-            librarySystemUtils.setPlaceHolder(jTextField12, textFieldPlaceHolder);
+            sysUtils.setPlaceHolder(jTextField12, textFieldPlaceHolder);
             this.requestFocus();
         }
     }//GEN-LAST:event_jTextField12MouseExited
 
     private void NewBookComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_NewBookComponentShown
-        librarySystemUtils.setPlaceHolder(jTextField4, textFieldPlaceHolder);
-        librarySystemUtils.setPlaceHolder(jTextField5, textFieldPlaceHolder);
-        librarySystemUtils.setPlaceHolder(jTextField6, textFieldPlaceHolder);
-        librarySystemUtils.setPlaceHolder(jTextField7, textFieldPlaceHolder);
-        librarySystemUtils.setPlaceHolder(jTextField8, textFieldPlaceHolder);
-        librarySystemUtils.setPlaceHolder(jTextField9, textFieldPlaceHolder);
-        librarySystemUtils.setPlaceHolder(jTextField22, textFieldPlaceHolder);
+        sysUtils.setPlaceHolder(jTextField4, textFieldPlaceHolder);
+        sysUtils.setPlaceHolder(jTextField5, textFieldPlaceHolder);
+        sysUtils.setPlaceHolder(jTextField6, textFieldPlaceHolder);
+        sysUtils.setPlaceHolder(jTextField7, textFieldPlaceHolder);
+        sysUtils.setPlaceHolder(jTextField8, textFieldPlaceHolder);
+        sysUtils.setPlaceHolder(jTextField9, textFieldPlaceHolder);
+        sysUtils.setPlaceHolder(jTextField22, textFieldPlaceHolder);
 
     }//GEN-LAST:event_NewBookComponentShown
 
     private void jTextField4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField4MouseExited
         if (jTextField4.getText().isEmpty()) {
-            librarySystemUtils.setPlaceHolder(jTextField4, textFieldPlaceHolder);
+            sysUtils.setPlaceHolder(jTextField4, textFieldPlaceHolder);
             this.requestFocus();
         }
     }//GEN-LAST:event_jTextField4MouseExited
 
     private void jTextField5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField5MouseExited
         if (jTextField5.getText().isEmpty()) {
-            librarySystemUtils.setPlaceHolder(jTextField5, textFieldPlaceHolder);
+            sysUtils.setPlaceHolder(jTextField5, textFieldPlaceHolder);
             this.requestFocus();
         }
     }//GEN-LAST:event_jTextField5MouseExited
 
     private void jTextField6MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField6MouseExited
         if (jTextField6.getText().isEmpty()) {
-            librarySystemUtils.setPlaceHolder(jTextField6, textFieldPlaceHolder);
+            sysUtils.setPlaceHolder(jTextField6, textFieldPlaceHolder);
             this.requestFocus();
         }
     }//GEN-LAST:event_jTextField6MouseExited
 
     private void jTextField7MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField7MouseExited
         if (jTextField7.getText().isEmpty()) {
-            librarySystemUtils.setPlaceHolder(jTextField7, textFieldPlaceHolder);
+            sysUtils.setPlaceHolder(jTextField7, textFieldPlaceHolder);
             this.requestFocus();
         }
     }//GEN-LAST:event_jTextField7MouseExited
 
     private void jTextField8MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField8MouseExited
         if (jTextField8.getText().isEmpty()) {
-            librarySystemUtils.setPlaceHolder(jTextField8, textFieldPlaceHolder);
+            sysUtils.setPlaceHolder(jTextField8, textFieldPlaceHolder);
             this.requestFocus();
         }
     }//GEN-LAST:event_jTextField8MouseExited
 
     private void jTextField9MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField9MouseExited
         if (jTextField9.getText().isEmpty()) {
-            librarySystemUtils.setPlaceHolder(jTextField9, textFieldPlaceHolder);
+            sysUtils.setPlaceHolder(jTextField9, textFieldPlaceHolder);
             this.requestFocus();
         }
     }//GEN-LAST:event_jTextField9MouseExited
 
     private void jTextField22MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField22MouseExited
         if (jTextField22.getText().isEmpty()) {
-            librarySystemUtils.setPlaceHolder(jTextField22, textFieldPlaceHolder);
+            sysUtils.setPlaceHolder(jTextField22, textFieldPlaceHolder);
             this.requestFocus();
         }
     }//GEN-LAST:event_jTextField22MouseExited
 
     private void searchBookComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_searchBookComponentShown
-        librarySystemUtils.setPlaceHolder(jTextField3, textFieldPlaceHolder);
+        sysUtils.setPlaceHolder(jTextField3, textFieldPlaceHolder);
     }//GEN-LAST:event_searchBookComponentShown
 
     private void jTextField3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField3MouseExited
         if (jTextField3.getText().isEmpty()) {
-            librarySystemUtils.setPlaceHolder(jTextField3, textFieldPlaceHolder);
+            sysUtils.setPlaceHolder(jTextField3, textFieldPlaceHolder);
             this.requestFocus();
         }
     }//GEN-LAST:event_jTextField3MouseExited
 
     private void CheckInComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_CheckInComponentShown
-        librarySystemUtils.setPlaceHolder(jTextField18, textFieldPlaceHolder);
-        librarySystemUtils.setPlaceHolder(jTextField19, textFieldPlaceHolder);
-        librarySystemUtils.setPlaceHolder(jTextField16, textFieldPlaceHolder);
-        librarySystemUtils.setPlaceHolder(jTextField17, textFieldPlaceHolder);
-        librarySystemUtils.setPlaceHolder(jTextField20, textFieldPlaceHolder);
-        librarySystemUtils.setPlaceHolder(jTextField1, textFieldPlaceHolder);
-        librarySystemUtils.setPlaceHolder(jTextField2, textFieldPlaceHolder);
-        librarySystemUtils.setPlaceHolder(jTextField21, textFieldPlaceHolder);
+        sysUtils.setPlaceHolder(jTextField18, textFieldPlaceHolder);
+        sysUtils.setPlaceHolder(jTextField19, textFieldPlaceHolder);
+        sysUtils.setPlaceHolder(jTextField16, textFieldPlaceHolder);
+        sysUtils.setPlaceHolder(jTextField17, textFieldPlaceHolder);
+        sysUtils.setPlaceHolder(jTextField20, textFieldPlaceHolder);
+        sysUtils.setPlaceHolder(jTextField1, textFieldPlaceHolder);
+        sysUtils.setPlaceHolder(jTextField2, textFieldPlaceHolder);
+        sysUtils.setPlaceHolder(jTextField21, textFieldPlaceHolder);
     }//GEN-LAST:event_CheckInComponentShown
 
     private void jTextField1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField1MouseClicked
-        librarySystemUtils.removePlaceHolder(jTextField1, textFieldPlaceHolder);
+        sysUtils.removePlaceHolder(jTextField1, textFieldPlaceHolder);
     }//GEN-LAST:event_jTextField1MouseClicked
 
     private void jTextField2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField2MouseClicked
-        librarySystemUtils.removePlaceHolder(jTextField2, textFieldPlaceHolder);
+        sysUtils.removePlaceHolder(jTextField2, textFieldPlaceHolder);
     }//GEN-LAST:event_jTextField2MouseClicked
 
     private void jTextField18MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField18MouseExited
         if (jTextField18.getText().isEmpty()) {
-            librarySystemUtils.setPlaceHolder(jTextField18, textFieldPlaceHolder);
+            sysUtils.setPlaceHolder(jTextField18, textFieldPlaceHolder);
             this.requestFocus();
         }
     }//GEN-LAST:event_jTextField18MouseExited
 
     private void jTextField19MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField19MouseExited
         if (jTextField19.getText().isEmpty()) {
-            librarySystemUtils.setPlaceHolder(jTextField19, textFieldPlaceHolder);
+            sysUtils.setPlaceHolder(jTextField19, textFieldPlaceHolder);
             this.requestFocus();
         }
     }//GEN-LAST:event_jTextField19MouseExited
 
     private void jTextField16MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField16MouseExited
         if (jTextField16.getText().isEmpty()) {
-            librarySystemUtils.setPlaceHolder(jTextField16, textFieldPlaceHolder);
+            sysUtils.setPlaceHolder(jTextField16, textFieldPlaceHolder);
             this.requestFocus();
         }
     }//GEN-LAST:event_jTextField16MouseExited
 
     private void jTextField17MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField17MouseExited
         if (jTextField17.getText().isEmpty()) {
-            librarySystemUtils.setPlaceHolder(jTextField17, textFieldPlaceHolder);
+            sysUtils.setPlaceHolder(jTextField17, textFieldPlaceHolder);
             this.requestFocus();
         }
     }//GEN-LAST:event_jTextField17MouseExited
 
     private void jTextField20MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField20MouseExited
         if (jTextField20.getText().isEmpty()) {
-            librarySystemUtils.setPlaceHolder(jTextField20, textFieldPlaceHolder);
+            sysUtils.setPlaceHolder(jTextField20, textFieldPlaceHolder);
             this.requestFocus();
         }
     }//GEN-LAST:event_jTextField20MouseExited
 
     private void jTextField1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField1MouseExited
         if (jTextField1.getText().isEmpty()) {
-            librarySystemUtils.setPlaceHolder(jTextField1, textFieldPlaceHolder);
+            sysUtils.setPlaceHolder(jTextField1, textFieldPlaceHolder);
             this.requestFocus();
         }
     }//GEN-LAST:event_jTextField1MouseExited
 
     private void jTextField2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField2MouseExited
         if (jTextField2.getText().isEmpty()) {
-            librarySystemUtils.setPlaceHolder(jTextField2, textFieldPlaceHolder);
+            sysUtils.setPlaceHolder(jTextField2, textFieldPlaceHolder);
             this.requestFocus();
         }
     }//GEN-LAST:event_jTextField2MouseExited
 
     private void jTextField21MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextField21MouseExited
         if (jTextField21.getText().isEmpty()) {
-            librarySystemUtils.setPlaceHolder(jTextField21, textFieldPlaceHolder);
+            sysUtils.setPlaceHolder(jTextField21, textFieldPlaceHolder);
             this.requestFocus();
         }
     }//GEN-LAST:event_jTextField21MouseExited
@@ -3193,21 +3193,27 @@ public class UserGUI extends MainJFrameProperties {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(UserGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(normalUserPanel.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(UserGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(normalUserPanel.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(UserGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(normalUserPanel.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(UserGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(normalUserPanel.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new UserGUI().setVisible(true);
+                new normalUserPanel().setVisible(true);
             }
         });
     }

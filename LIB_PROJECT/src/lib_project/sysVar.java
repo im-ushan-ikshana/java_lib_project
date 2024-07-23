@@ -16,7 +16,7 @@ import java.time.LocalDate;
  *
  * @author ikush
  */
-public class SystemVariables {
+public class sysVar {
 
     // Private static SystemVariables to store admin username and current date
     private static String adminUsername;
@@ -37,7 +37,7 @@ public class SystemVariables {
      * @param adminUsername The new admin username
      */
     public static void setAdminUsername(String adminUsername) {
-        SystemVariables.adminUsername = adminUsername;
+        sysVar.adminUsername = adminUsername;
     }
 
     /**

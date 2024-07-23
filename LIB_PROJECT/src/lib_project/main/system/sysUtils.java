@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package lib_project.mainOps.systemOPS;
+package lib_project.main.system;
 
 /**
  * Utility class for displaying messages in JTextField or JLabel with specified
@@ -28,7 +28,7 @@ import java.util.Date;
 import java.util.Timer;
 import java.util.TimerTask;
 import javax.swing.table.DefaultTableModel;
-import lib_project.sqlOperations.CRUD_Ops;
+import lib_project.sql.crudSql;
 import com.itextpdf.text.Document;
 import com.itextpdf.text.DocumentException;
 import com.itextpdf.text.Element;
@@ -47,7 +47,7 @@ import java.nio.file.Paths;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class librarySystemUtils {
+public class sysUtils {
 
     /**
      * Shows a message in a JTextField or JLabel with specified color and
@@ -293,7 +293,7 @@ public class librarySystemUtils {
 
         try {
             // Execute the query and get the ResultSet
-            ResultSet resultSet = CRUD_Ops.read(query);
+            ResultSet resultSet = crudSql.b(query);
 
             // List to store MemberLatefeeIDs
             java.util.List<String> memberLatefeeIDs = new ArrayList<>();
